@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <DefaultLayout/>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DefaultLayout,
   }
 }
 </script>
@@ -20,7 +21,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+
 }
+
 </style>
