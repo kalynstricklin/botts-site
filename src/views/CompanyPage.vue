@@ -1,56 +1,38 @@
 <script setup>
-
-// import TeamComponent from "@/components/company/TeamComponent.vue";
-import HistoryComponent from "@/components/company/HistoryComponent.vue";
-import MikeSypnosis from "@/components/company/MikeSypnosis.vue";
-
-
+// import TeamScroller from "@/components/company/TeamScroller.vue";
+import AboutUs from "@/components/company/AboutUs.vue";
+import TestimonialScroller from "@/components/company/TestimonialScroller.vue";
+// import JoinTeam from "@/components/company/JoinTeam.vue";
 </script>
 
 <template>
   <div>
-    <section id="history" class="py-3">
-      <HistoryComponent/>
-    </section>
+    <div class="card company-card">
+      <section id="history" class="py-2">
+        <AboutUs/>
+      </section>
 
-<!--    <section>-->
-<!--      <MissionStatement/>-->
-<!--    </section>-->
+      <section id="test-scroller" class="py-3">
+        <TestimonialScroller/>
+      </section>
 
-    <section id="mike" class="py-4">
-      <MikeSypnosis/>
-    </section>
-
-
-<!--    <div>-->
-<!--      <section class="py-5">-->
-<!--        <div class="container">-->
-<!--          <div class="row justify-content-center text-center mb-2 mb-lg-4">-->
-<!--            <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">-->
-<!--              <span class="text-muted">Our Team</span>-->
-<!--              <h2 class="display-5 fw-bold">Meet the Team</h2>-->
-<!--              <p class="lead">Botts Inc has a team of leading technologists to advance the vision for national security, public sector, private sector, and scientific communities.</p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </section>-->
-
-
-<!--      <section id="leadership">-->
-<!--        <TeamComponent/>-->
+<!--      <section id="leadership" class="py-4">-->
+<!--        <TeamScroller/>-->
 <!--      </section>-->
 
 <!--      <section id="joinTeam" class="py-4">-->
-<!--        <JoinTeamComponent/>-->
+<!--        <JoinTeam/>-->
 <!--      </section>-->
-<!--    </div>-->
-
+    </div>
 
   </div>
+
 </template>
 
 <style scoped>
-section{
-
+.company-card{
+  border-color: #faf6ed;
+  background-color: #faf6ed;
+  padding: 15px;
 }
 </style>

@@ -9,9 +9,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    background-color: #11151e;
+    background-color: #faf6ed;
 }
+/*131720*/
 /*f3efdf*/
+/*fcead9*/
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
     font-weight: 600;
@@ -32,5 +34,29 @@ html {
     min-height: 100vh;
 
 }
+
+container{
+    padding-top: 60px;
+}
+
+.gen-sm-title{
+    font-weight: bold;
+    color: #d39f44;
+}
+
+.gen-btn {
+    background-color: #d39f44;
+    border-color: #d39f44;
+    color: #fff;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.gen-btn:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
 /*faf7f0*/
+/*efe9d3*/
 

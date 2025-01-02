@@ -31,52 +31,60 @@ const team = [
 
 <template>
 
-  <div class="container">
-<!--    <div class="row justify-content-center text-center mb-2 mb-lg-4">-->
-<!--      <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">-->
-<!--        <span class="text-muted">Our Team</span>-->
-<!--        <h2 class="display-5 fw-bold">Meet the Team</h2>-->
-<!--        <p class="lead">Botts Inc has a team of leading technologists to advance the vision for national security, public sector, private sector, and scientific communities.</p>-->
-<!--      </div>-->
-<!--    </div>-->
+  <div class="container-fluid">
 
-    <div class="row">
-      <div class="col-md-3" v-for="(member, index) in team" :key="index">
-        <div class="card team-card text-center border-0 mb-3" >
-          <div class="card-body p-2">
-            <div class="mb-4">
-              <img :src="member.photo" :alt="`${member.name} photo`" class="img-fluid rounded-circle"/>
-            </div>
-            <h5 class="fw-bold">{{ member.name }}</h5>
-            <div class="text-muted mb-3">{{ member.job }}</div>
+
+    <div class="card meet-card">
+      <div class="row justify-content-center text-center mb-2 mb-lg-4">
+        <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+          <span class="text-muted">Our Team</span>
+          <h2 class="display-5 fw-bold">Meet the Team</h2>
+          <p class="lead">Botts Inc has a team of leading technologists to advance the vision for national security, public sector, private sector, and scientific communities.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-3" v-for="(member, index) in team" :key="index">
+          <div class="card team-card text-center border-0 mb-3" >
+<!--            <div class="card-body">-->
+              <div class="mb-4">
+                <img :src="member.photo" :alt="`${member.name}`" class="img-fluid headshot"/>
+              </div>
+              <h5 class="fw-bold">{{ member.name }}</h5>
+              <div class="text-muted mb-3">{{ member.job }}</div>
+<!--            </div>-->
           </div>
         </div>
       </div>
     </div>
-
-
-<!--    <ul class="team-list justify-content-center">-->
-<!--      <li v-for="(member, index) in team" :key="index">-->
-<!--        <div class="mb-4 mx-xl-5">-->
-<!--          <img :src="member.photo" :alt="`${member.name} photo`" class="img-fluid rounded-circle"/>-->
-<!--        </div>-->
-<!--        <h4 class="fw-bold">{{ member.name }}</h4>-->
-<!--        <p class="text-muted mb-3">{{ member.job }}</p>-->
-<!--      </li>-->
-<!--    </ul>-->
   </div>
+
+
+
+
 </template>
 
 <style scoped>
+
+
+.meet-card{
+  background-color: #faf6ed;
+  border-color: #faf6ed;
+  padding: 10px;
+}
 .team-card{
   background-color: transparent;
 }
-img-fluid{
-  border-radius: 50%;
-  height: 225px;
-  width: 225px;
+
+
+.headshot{
+
+  height: auto;
+  max-width: 300px;
+  width: 100%;
 }
 
+/**
 .team-list {
   list-style: none;
   padding: 0;
@@ -92,5 +100,16 @@ img-fluid{
 .team-photo {
   justify-content: center;
 }
-
+**/
 </style>
+
+
+<!--    <ul class="team-list justify-content-center">-->
+<!--      <li v-for="(member, index) in team" :key="index">-->
+<!--        <div class="mb-4 mx-xl-5">-->
+<!--          <img :src="member.photo" :alt="`${member.name} photo`" class="img-fluid rounded-circle"/>-->
+<!--        </div>-->
+<!--        <h4 class="fw-bold">{{ member.name }}</h4>-->
+<!--        <p class="text-muted mb-3">{{ member.job }}</p>-->
+<!--      </li>-->
+<!--    </ul>-->

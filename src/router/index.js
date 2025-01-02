@@ -8,8 +8,10 @@ import CareersPage from "@/views/CareersPage.vue";
 import DocumentationPage from "@/views/DocumentationPage.vue";
 import PresentationPage from "@/views/PresentationPage.vue";
 import SoftwarePage from "@/views/SoftwarePage.vue";
-import InfoPage from "@/views/InfoPage.vue";
 import TeamPage from "@/views/TeamPage.vue";
+import LearnPage from "@/views/LearnPage.vue";
+import ServicesPage from "@/views/ServicesPage.vue";
+import ProjectPage from "@/views/ProjectPage.vue";
 
 
 
@@ -23,8 +25,11 @@ export default new Router({
         { path: "/team", name: "Team", component: TeamPage },
         { path: "/careers", name: "Careers", component: CareersPage },
         { path: "/documentation", name: "Documentation", component: DocumentationPage },
-        { path: "/presentation", name: "Presentations", component: PresentationPage },
+        { path: "/presentations", name: "Presentations", component: PresentationPage },
         { path: "/software", name: "Software", component: SoftwarePage },
-        { path: "/learn", name: "Information", component: InfoPage },
+        { path: "/learn", name: "Learn", component: LearnPage },
+        { path: "/services", name: "Services", component: ServicesPage },
+        { path: "/projects", name: "Services", component: ProjectPage },
+
     ],
 });

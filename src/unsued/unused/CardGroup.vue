@@ -58,22 +58,22 @@ const cards = [
 /**#d7c72b**/
 .custom-button {
   background-color: transparent;
-  border-color: #d39e43;
-  color: #d39e43;
+  border-color: #fcead9;
+  color: #fcead9;
   transition: all 0.3s ease;
 }
 /**#f1d914**/
 .custom-button:hover {
   background-color: transparent;
-  border-color: #b45341;
-  color: #b45341;
+  border-color: #501f10;
+  color: #501f10;
 }
 
 .card-text{
-  color: #333;
+  color: #0a0203;
 }
 .card-title{
-  color: #333;
+  color: #0a0203;
 }
 .card-group{
   display: flex;
@@ -83,9 +83,10 @@ const cards = [
 
 }
 /**#e3e2e2**/
+/**#f6f6f6**/
 .custom-card{
-  background-color: #f6f6f6;
-  border-color: #f6f6f6;
+  background-color: #c34727;
+  border-color: #c34727;
 }
 
 @media (max-width: 768px) {

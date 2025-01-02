@@ -5,46 +5,55 @@ import teamImg from "@/assets/arch.webp";
 
 
 <template>
-  <div class="card join-card">
-    <div class="row g-0 align-items-center justify-content-center">
-      <div class="col-lg-6">
-        <div class="col-lg-8 mx-auto">
-          <span class="text-muted">Let's Build Something Together!</span>
-          <h2 class="display-5 fw-bold">Join Our Team</h2>
-          <p>Botts is a team of</p>
+<!--  <div class="container">-->
+    <div class="card rounded join-card">
+      <div class="row g-0 align-items-center justify-content-center">
+        <div class="col-lg-4">
+            <span class="text-muted">Let's Build Something Together!</span>
+            <h2 class="display-5 fw-bold">Join Our Team</h2>
+            <p>Botts is a team of</p>
 
-          <b-button href="/careers" class="contact-button">See Openings</b-button>
+            <b-button href="/careers" class="contact-button">See Openings</b-button>
+
         </div>
-      </div>
 
-      <div class="col-lg-4">
-        <div class="mt-5 mt-lg-0">
-          <img alt="" class="img-fluid rounded"  :src="teamImg"/>
+        <div class="col-lg-6">
+<!--          <div class="mt-5 mt-lg-0">-->
+            <img alt="" class="img-fluid rounded"  :src="teamImg"/>
+<!--          </div>-->
         </div>
       </div>
     </div>
-  </div>
+<!--  </div>-->
+
 </template>
 
 <style>
 .join-card{
-  background-color: #b55442;
-  border-color: #b55442;
+  background-color: #d39e43;
+  border-color: #d39e43;
   padding: 20px;
 }
 
-/* Contact Button */
+.image-card {
+  background-color: rgba(239, 233, 211, 0.37);
+  border-color: #efe9d3;
+  padding: 10px;
+  text-align: center;
+}
+
+
 .contact-button {
   background-color: transparent;
-  border-color: #f3efdf;
-  color: #f3efdf;
+  border-color: #faf6ed;
+  color: #faf6ed;
   transition: all 0.3s ease;
 }
 /**#f1d914**/
 .contact-button:hover {
   background-color: transparent;
-  border-color: #d39e43;
-  color: #d39e43;
+  border-color: #efe9d3;
+  color: #efe9d3;
 
 }
 

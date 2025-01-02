@@ -9,19 +9,34 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
         <img
             :src="headerImage"
             alt="Header"
-            class="img-fluid rounded shadow"
-            style="max-height: 500px; width: 100%; object-fit: cover;"
+            class="img rounded header-img"
+            style="max-height: 550px; width: 100%; object-fit: cover;"
         />
         <div class="text-overlay">
           <h2>Designing and Deploying Open Standards for Sensor Systems</h2>
           <p>Across national security, public sector, private sector, and scientific communities</p>
+
+          <div class="mt-5">
+
+            <b-button href="/company" target="_self" class="gen-btn">
+              About Us
+            </b-button>
+
+
+          </div>
         </div>
+
+
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.header-img{
+  opacity: 60%;
+}
+
 
 .text-overlay {
   position: absolute;
@@ -29,13 +44,12 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #fff;
   width: 100%;
   padding: 0 10px;
   box-sizing: border-box;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
 
+}
 
 .text-overlay h2,
 .text-overlay p {
@@ -59,4 +73,3 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   }
 }
 </style>
-
