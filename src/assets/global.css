@@ -4,14 +4,16 @@
 }
 
 body {
-    font-family: var(--font-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    background-color: #faf6ed;
+    background-color: #131720;
 }
 /*131720*/
+/*faf6ed*/
 /*f3efdf*/
 /*fcead9*/
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +28,7 @@ p, span, a, li {
 html {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 #app {
@@ -37,6 +40,11 @@ html {
 
 container{
     padding-top: 60px;
+}
+
+.white-container{
+    background-color: #faf6ed;
+    border-color: #faf6ed;
 }
 
 .gen-sm-title{

@@ -1,86 +1,104 @@
-<script>
-
+<script setup>
 </script>
 
 <template>
-  <b-navbar toggleable="lg" type="dark" class="header" id="bottsHeader">
-    <b-navbar-brand href="#">
-      <router-link to="/">
-        <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />
-      </router-link>
-    </b-navbar-brand>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <router-link to="/">
+            <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />
+          </router-link>
+        </div>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <b-collapse id="nav-collapse" is-nav class="justify-content-end">
-      <b-navbar-nav>
-        <b-nav-item-dropdown text="Company" right>
-          <b-dropdown-item :to="{path: '/company', hash: '#history'}">Our History</b-dropdown-item>
-          <b-dropdown-item :to="{path: '/team'}">Team</b-dropdown-item>
-        </b-nav-item-dropdown>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/company">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/careers">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/learn">Learn</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-outline-warning" href="mailto:info@botts-inc.com" type="button">Get in Touch</button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <b-nav-item :to="{path: '/careers'}">Careers</b-nav-item>
+<!--    <b-navbar toggleable="lg" type="dark" class="header" id="bottsHeader">-->
+<!--      &lt;!&ndash; Left section with logo and toggle button &ndash;&gt;-->
+<!--      <div class="d-flex align-items-center">-->
+<!--        <b-navbar-brand>-->
+<!--          <router-link to="/">-->
+<!--            <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />-->
+<!--          </router-link>-->
+<!--        </b-navbar-brand>-->
 
-<!--        <b-nav-item-dropdown text="Careers" right>-->
-<!--          <b-dropdown-item :to="{path: '/careers', hash: '#whybotts'}">Why Choose Bott's</b-dropdown-item>-->
-<!--          <b-dropdown-item :to="{path: '/careers', hash: '#jobs'}">Job Openings</b-dropdown-item>-->
-<!--        </b-nav-item-dropdown>-->
+<!--        &lt;!&ndash; Navbar toggle button  &ndash;&gt;-->
+<!--        <b-navbar-toggle target="nav-collapse" class="ml-auto d-lg-none"></b-navbar-toggle>-->
+<!--      </div>-->
 
-<!--        <b-nav-item-dropdown text="Learn" right>-->
-<!--          <b-dropdown-item :to="{path: '/documentation'}">Documentation</b-dropdown-item>-->
-<!--          <b-dropdown-item :to="{path: '/presentation'}">Presentations</b-dropdown-item>-->
-<!--          <b-dropdown-item :to="{path: '/software'}">Software</b-dropdown-item>-->
-<!--        </b-nav-item-dropdown>-->
+<!--      &lt;!&ndash; Navigation items &ndash;&gt;-->
+<!--      <b-collapse id="nav-collapse" is-nav>-->
+<!--        <b-navbar-nav class="">-->
+<!--          <b-nav-item-dropdown text="Company">-->
+<!--            <b-dropdown-item>-->
+<!--              <router-link :to="{ path: '/company', hash: '#history' }" class="text-reset text-decoration-none">Our History</router-link>-->
+<!--            </b-dropdown-item>-->
+<!--            <b-dropdown-item>-->
+<!--              <router-link :to="{ path: '/team' }" class="text-reset text-decoration-none">Team</router-link>-->
+<!--            </b-dropdown-item>-->
+<!--          </b-nav-item-dropdown>-->
 
-        <b-nav-item :to="{path: '/learn'}">Learn</b-nav-item>
+<!--          <b-nav-item>-->
+<!--            <router-link :to="{ path: '/careers' }" class="text-reset text-decoration-none">Careers</router-link>-->
+<!--          </b-nav-item>-->
 
-        <b-nav-item href="https://opensensorhub.org/">OpenSensorHub</b-nav-item>
+<!--          <b-nav-item>-->
+<!--            <router-link :to="{ path: '/learn' }" class="text-reset text-decoration-none">Learn</router-link>-->
+<!--          </b-nav-item>-->
 
+<!--          <b-nav-item href="https://opensensorhub.org/" target="_blank" rel="noopener noreferrer">-->
+<!--            OpenSensorHub-->
+<!--          </b-nav-item>-->
 
-        <!--        <b-nav-item href="#https://opensensorhub.org/blog/">Blog</b-nav-item>-->
+<!--          <div>-->
+<!--            <b-button href="mailto:info@botts-inc.com" class="gen-btn">Get in Touch</b-button>-->
+<!--          </div>-->
+<!--        </b-navbar-nav>-->
+<!--      </b-collapse>-->
+<!--    </b-navbar>-->
 
-        <b-button href="mailto:info@botts-inc.com" target="_blank" rel="noopener noreferrer" class="contact-btn">Get in Touch</b-button>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
-
+  </header>
 </template>
 
 <style scoped>
-.header{
-/**  position: sticky;
-  top: 0;**/
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 5px 25px;
-  background-color: #11151e;
-}
-
-
-.contact-btn{
-  border-radius: 20px;
-  background-color: #ce9c43;
-  border-color: #ce9c43;
-  margin-left: 20px;
-}
-.contact-btn:hover{
-  border-radius: 20px;
-  background-color: #c08013;
-  border-color: #c08013;
-  margin-left: 20px;
-}
-
-
-.logo{
+.logo {
   max-height: 65px;
   height: auto;
   width: 100%;
 }
-b-navbar-nav {
-  gap: 20px;
-  display: flex;
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .logo {
+    max-height: 45px;
+  }
+}
+
+@media (max-width: 430px) {
+  .logo {
+    max-height: 40px;
+  }
+
 }
 </style>
-<!--efe9d3-->
-<!--c34727-->

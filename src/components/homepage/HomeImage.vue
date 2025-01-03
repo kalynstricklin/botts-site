@@ -4,7 +4,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
 
 <template>
   <div>
-    <div class="container-fluid">
+    <div class="container-fluid image-container">
       <div class="position-relative">
         <img
             :src="headerImage"
@@ -13,19 +13,10 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
             style="max-height: 550px; width: 100%; object-fit: cover;"
         />
         <div class="text-overlay">
-          <h2>Designing and Deploying Open Standards for Sensor Systems</h2>
+          <h1>Designing and Deploying Open Standards for Sensor Systems</h1>
           <p>Across national security, public sector, private sector, and scientific communities</p>
 
-          <div class="mt-5">
-
-            <b-button href="/company" target="_self" class="gen-btn">
-              About Us
-            </b-button>
-
-
-          </div>
         </div>
-
 
       </div>
     </div>
@@ -37,12 +28,16 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   opacity: 60%;
 }
 
+.image-container{
+  background-color: #131720;
+}
+
 
 .text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
   text-align: center;
   color: #fff;
   width: 100%;
@@ -73,3 +68,13 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   }
 }
 </style>
+
+
+<!--          <div class="mt-5">-->
+
+<!--            <b-button href="/company" target="_self" class="gen-btn">-->
+<!--              About Us-->
+<!--            </b-button>-->
+
+
+<!--          </div>-->
