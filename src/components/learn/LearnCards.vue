@@ -15,9 +15,9 @@ onMounted(() => {
       }
     });
     },
-    // {
-    //   threshold: 0.2,
-    // }
+    {
+      threshold: 0.2,
+    }
   );
 
   const cards = document.querySelectorAll('.card');

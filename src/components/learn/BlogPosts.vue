@@ -1,5 +1,15 @@
 <script setup>
-
+// import image from "@/assets/black.jpg"
+//
+//
+// const blogPosts = [
+//   {
+//     date: "",
+//     title: "",
+//     text: "",
+//     link: "",
+//   },
+// ]
 </script>
 
 <template>
@@ -15,9 +25,39 @@
             Keep up to date with the latest enhancements by checking out our blog. Keep up to date with the latest enhancements by checking out our blog.
           </p>
 
-          <b-button href="http://opensensorhub.com/blog/" class="btn-sm gen-btn">Read More
-            <i class="bi bi-arrow-down-right"></i>
+          <b-button href="https://opensensorhub.org/blog/" class="gen-btn text-uppercase">All Blog Posts
+            <i class="bi bi-arrow-right"></i>
           </b-button>
+
+
+<!--          <div class="row">-->
+<!--            <div class="col-12 col-lg-3 col-md-6 col-sm-12">-->
+
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="card blog-card rounded" v-for="(item, index) in blogPosts" :key="index">-->
+<!--            <div class="card-img-top">-->
+<!--              <img :src="image" class="img-fluid"/>-->
+<!--            </div>-->
+<!--            <div class="card-body">-->
+<!--              <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                  <span>-->
+<!--                    <i class="bi bi-calendar"></i>-->
+<!--                    Date-->
+<!--                  </span>-->
+<!--                  <p>Title</p>-->
+<!--                  <span>Text</span>-->
+
+
+<!--                </div>-->
+<!--              </div>-->
+
+<!--            </div>-->
+<!--          </div>-->
+
+
 
         </div>
 

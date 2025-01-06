@@ -1,8 +1,8 @@
 <script setup>
-// import TeamScroller from "@/components/company/TeamScroller.vue";
 import AboutUs from "@/components/company/AboutUs.vue";
-import TestimonialScroller from "@/components/company/TestimonialScroller.vue";
-// import JoinTeam from "@/components/company/JoinTeam.vue";
+import ImageGallery from "@/components/company/ImageGallery.vue";
+import FounderCard from "@/components/company/FounderCard.vue";
+
 </script>
 
 <template>
@@ -12,17 +12,15 @@ import TestimonialScroller from "@/components/company/TestimonialScroller.vue";
         <AboutUs/>
       </section>
 
-      <section id="test-scroller" class="py-3">
-        <TestimonialScroller/>
+      <section id="company-images" class="py-3">
+          <ImageGallery/>
       </section>
 
-<!--      <section id="leadership" class="py-4">-->
-<!--        <TeamScroller/>-->
-<!--      </section>-->
 
-<!--      <section id="joinTeam" class="py-4">-->
-<!--        <JoinTeam/>-->
-<!--      </section>-->
+      <section id="company-images" class="py-3">
+        <FounderCard/>
+      </section>
+
     </div>
 
   </div>
@@ -35,4 +33,6 @@ import TestimonialScroller from "@/components/company/TestimonialScroller.vue";
   background-color: #faf6ed;
   padding: 15px;
 }
+
+
 </style>

@@ -6,10 +6,9 @@ import BlogPosts from "@/components/learn/BlogPosts.vue";
 </script>
 
 <template>
-  <div>
-    <div class="card team-card">
-
-      <section id="cards">
+  <div class="container-fluid white-container">
+    <div>
+      <section id="cards" class="py-4">
         <LearnCards/>
       </section>
 

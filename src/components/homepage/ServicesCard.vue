@@ -31,6 +31,7 @@ onMounted(() => {
 
     <div class="row mb-3">
       <div class="col-12 col-lg-8 col-xxl-7">
+<!--        <h2 class="gen-sm-title">THIS IS HOW WE HELP</h2>-->
         <span class="gen-sm-title">Discover our Services</span>
       </div>
     </div>
@@ -42,7 +43,6 @@ onMounted(() => {
           <div class="card-body">
             <h2 class="card-title">R&D Services</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
 
@@ -57,8 +57,7 @@ onMounted(() => {
           <div class="card-body">
             <h2 class="card-title">Architecture</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text to build on the card title and make up the bulk of the card's content.
+             Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
 
             <b-button href="#" class="btn-sm gen-btn">Discover more
@@ -73,7 +72,6 @@ onMounted(() => {
           <div class="card-body">
             <h2 class="card-title">Implementation</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
 
@@ -107,9 +105,14 @@ onMounted(() => {
   }
 }
 
+.arrow-btn{
+  background-color: transparent;
+  border: none;
+}
 .card-title{
   font-weight: bold;
   color: #fff;
+  align-items: center;
 }
 
 .card-text{
@@ -117,13 +120,20 @@ onMounted(() => {
 }
 
 .card{
-  background-image: linear-gradient(to right, rgba(223, 193, 140, 0.73), #d39f44);
+  background-image: linear-gradient(to left, rgba(223, 193, 140, 0.73), #d39f44);
   border-color: #f4e9d4;
   border-radius: 20px;
   /**height: 350px;**/
   padding: 15px;
 }
 
+.card:hover{
+  background-image: linear-gradient(to left, rgba(223, 193, 140, 0.73), #d39f44);
+  border-color: #f4e9d4;
+  border-radius: 20px;
+  /**height: 350px;**/
+  padding: 15px;
+}
 
 </style>
 

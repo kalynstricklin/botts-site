@@ -44,6 +44,8 @@ const presentationsList = [
 
     <div class="row mb-4 text-center">
       <h2>Presentations</h2>
+       <span class="text-center">All Presentations and Documents are available to use. Please reference appropriately.</span>
+
     </div>
 
     <div class="row p-2" v-for="(presentation, index) in presentationsList" :key="index">

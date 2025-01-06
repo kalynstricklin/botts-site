@@ -43,7 +43,7 @@ const developerTeam = [
 
 <!--      <span class="gen-sm-title ">Leadership</span>-->
       <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-2" v-for="(member, index) in coreTeam" :key="index">
+        <div class="col-12 col-lg-2 col-sm-3" v-for="(member, index) in coreTeam" :key="index">
           <div class="card team-card text-center border-0 mb-3" >
             <div class="card-body">
               <div class="mb-4">
@@ -95,37 +95,8 @@ const developerTeam = [
 
 .headshot{
   height: auto;
-  max-width: 250px;
-  width: 100%;
-
+  max-width: 180px;
+  border-radius: 10px;
 }
 
-/**
-.team-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.team-list li {
-  text-align: center;
-  margin: 5px;
-}
-
-.team-photo {
-  justify-content: center;
-}
-**/
 </style>
-
-
-<!--    <ul class="team-list justify-content-center">-->
-<!--      <li v-for="(member, index) in team" :key="index">-->
-<!--        <div class="mb-4 mx-xl-5">-->
-<!--          <img :src="member.photo" :alt="`${member.name} photo`" class="img-fluid rounded-circle"/>-->
-<!--        </div>-->
-<!--        <h4 class="fw-bold">{{ member.name }}</h4>-->
-<!--        <p class="text-muted mb-3">{{ member.job }}</p>-->
-<!--      </li>-->
-<!--    </ul>-->
