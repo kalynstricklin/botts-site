@@ -3,11 +3,15 @@
 import LearnCards from "@/components/learn/LearnCards.vue";
 import PresentationCard from "@/components/learn/PresentationCard.vue";
 import BlogPosts from "@/components/learn/BlogPosts.vue";
+import ProjectCarousels from "@/components/learn/ProjectCarousels.vue";
+
+
+
 </script>
 
 <template>
-  <div class="container-fluid white-container">
-    <div>
+  <div>
+    <div class="container-fluid white-container">
       <section id="cards" class="py-4">
         <LearnCards/>
       </section>
@@ -16,16 +20,19 @@ import BlogPosts from "@/components/learn/BlogPosts.vue";
         <PresentationCard/>
       </section>
 
+    </div>
+
+
+    <section id="projects" class="py-3">
+      <ProjectCarousels/>
+    </section>
+
+    <div class="container-fluid white-container">
       <section id="presentations">
         <BlogPosts/>
       </section>
-
     </div>
 
-    <div class="justify-content-center text-center py-4">
-      <span class="text-center fw-bold">All Presentations and Documents are available to use. Please reference appropriately.</span>
-
-    </div>
 
   </div>
 </template>

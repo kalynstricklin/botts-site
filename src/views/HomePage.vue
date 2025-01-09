@@ -4,7 +4,7 @@ import ServicesCard from "@/components/homepage/ServiceCards.vue";
 // import GetInTouchForm from "@/components/homepage/GetInTouchForm.vue";
 import {onMounted} from "vue";
 import TestimonialScroller from "@/components/company/TestimonialScroller.vue";
-import ImageOverlay from "@/components/homepage/ImageOverlay.vue";
+// import ImageOverlay from "@/components/homepage/ImageOverlay.vue";
 
 
 onMounted(() => {
@@ -52,9 +52,6 @@ onMounted(() => {
 
     </section>
 
-    <section id="" class="py-3">
-     <image-overlay/>
-    </section>
 
     <!--    <section id="contact-section" class="py-4 homeSection">-->
 <!--      <GetInTouchForm />-->

@@ -17,7 +17,7 @@
            <div class="row justify-content-end align-content-end">
              <!--Company-->
              <div class="col-md-4 col-lg-3 col-xl-2">
-               <h6 class="text-uppercase mb-3">Inside Botts</h6>
+               <h6 class="text-uppercase">Inside Botts</h6>
                <p>
                  <a href="/company" class="" target="_self">
                    About Us
@@ -42,9 +42,37 @@
                </p>
              </div>
 
+             <!--connect with us-->
+             <div class="col-md-4 col-lg-3 col-xl-2">
+               <h6 class="text-uppercase">Connect with Us</h6>
+               <p>
+                 <a href="https://github.com/Botts-Innovative-Research" class="me-4 text-reset" target="_blank">
+                   <b-icon icon="github"></b-icon> Github
+                 </a>
+               </p>
+
+               <p>
+                 <a href="https://www.linkedin.com/company/botts-innovative-research-inc" class="me-4 text-reset" target="_blank">
+                   <b-icon icon="linkedin"></b-icon> LinkedIn
+                 </a>
+               </p>
+
+               <p>
+                 <a href="https://www.youtube.com/@OpenSensorHubOrg2015" class="me-4 text-reset" target="_blank">
+                   <b-icon icon="youtube"></b-icon> YouTube
+                 </a>
+               </p>
+               <p>
+                 <a href="mailto:work@botts-inc.com" class="me-4 text-reset" target="_blank">
+                   <b-icon icon="envelope-fill"></b-icon> Email
+                 </a>
+               </p>
+             </div>
+             <!--connect with us-->
+
              <!--featured blog posts-->
              <div class="col-md-4 col-lg-3 col-xl-2">
-               <h6 class="text-uppercase mb-3">Featured blog posts</h6>
+               <h6 class="text-uppercase">Featured blog posts</h6>
 
                <p>
                  <a href="https://opensensorhub.org/category/osh-capabilities-and-advancements/" class="" target="_blank">
@@ -131,30 +159,3 @@ hr{
 
 
 
-<!--              &lt;!&ndash;connect with us&ndash;&gt;-->
-<!--              <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 text-center">-->
-<!--                <h6 class="text-uppercase mb-3">Connect with Us</h6>-->
-<!--                <p>-->
-<!--                  <a href="https://github.com/Botts-Innovative-Research" class="me-4 text-reset" target="_blank">-->
-<!--                    <b-icon icon="github"></b-icon> Github-->
-<!--                  </a>-->
-<!--                </p>-->
-
-<!--                <p>-->
-<!--                  <a href="https://www.linkedin.com/company/botts-innovative-research-inc" class="me-4 text-reset" target="_blank">-->
-<!--                    <b-icon icon="linkedin"></b-icon> LinkedIn-->
-<!--                  </a>-->
-<!--                </p>-->
-
-<!--                <p>-->
-<!--                  <a href="https://www.youtube.com/@OpenSensorHubOrg2015" class="me-4 text-reset" target="_blank">-->
-<!--                    <b-icon icon="youtube"></b-icon> YouTube-->
-<!--                  </a>-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                  <a href="mailto:work@botts-inc.com" class="me-4 text-reset" target="_blank">-->
-<!--                    <b-icon icon="envelope-fill"></b-icon> Email-->
-<!--                  </a>-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              &lt;!&ndash;connect with us&ndash;&gt;-->

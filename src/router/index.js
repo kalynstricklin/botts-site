@@ -11,7 +11,7 @@ import SoftwarePage from "@/views/SoftwarePage.vue";
 import TeamPage from "@/views/TeamPage.vue";
 import LearnPage from "@/views/LearnPage.vue";
 import ServicesPage from "@/views/ServicesPage.vue";
-import ProjectPage from "@/views/ProjectPage.vue";
+// import ProjectPage from "@/unsued/projects/ProjectPage.vue";
 
 
 
@@ -29,7 +29,7 @@ export default new Router({
         { path: "/software", name: "Software", component: SoftwarePage },
         { path: "/learn", name: "Learn", component: LearnPage },
         { path: "/services", name: "Services", component: ServicesPage },
-        { path: "/projects", name: "Services", component: ProjectPage },
+        // { path: "/projects", name: "Services", component: ProjectPage },
 
     ],
 });

@@ -5,13 +5,14 @@ import pexels from "@/assets/pexels-photo.jpg"
 
 <template>
   <div class="container-fluid">
+
     <div class="row g-3 justify-content-center">
       <div class="col-12 col-lg-5 position-relative">
         <div class="card black-card">
           <img :src="headInClouds" class="img rounded img-overlay"/>
           <div class="text-overlay">
-            <span class="text-uppercase mb-2">for companies</span>
-            <h1 class="">Text for the bigger header</h1>
+            <span class="text-uppercase mb-2">small text</span>
+            <h1 class="">Fusion and visualization of disparate sensor data</h1>
             <p>Across national security, public sector, private sector, and scientific communities</p>
             <b-button class="btn btn-outline-light learn-more-btn">Learn More</b-button>
           </div>
@@ -25,17 +26,105 @@ import pexels from "@/assets/pexels-photo.jpg"
           <div class="text-overlay">
             <span class="text-uppercase">for companies</span>
 
-            <h1 class="">Text for the bigger header</h1>
+            <h1 class="">Geolocation of data from a wide variety of remote sensors</h1>
             <p>Across national security, public sector, private sector, and scientific communities</p>
             <b-button class="btn learn-more-btn">Learn More</b-button>
           </div>
         </div>
       </div>
     </div>
+
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-lg-5 position-relative">
+        <div class="card black-card">
+          <img :src="headInClouds" class="img rounded img-overlay"/>
+          <div class="text-overlay">
+            <span class="text-uppercase mb-2">small text</span>
+            <h1 class="">Application of SensorWebs to “detect and react”</h1>
+            <p>Across national security, public sector, private sector, and scientific communities</p>
+            <b-button class="btn btn-outline-light learn-more-btn">Learn More</b-button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 position-relative">
+        <div class="card black-card">
+          <img :src="pexels" class="img rounded img-overlay"/>
+
+          <div class="text-overlay">
+            <span class="text-uppercase">for companies</span>
+
+            <h1 class="">Processing and fusion of video from multiple sources</h1>
+            <p>Across national security, public sector, private sector, and scientific communities</p>
+            <b-button class="btn learn-more-btn">Learn More</b-button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-lg-5 position-relative">
+        <div class="card black-card">
+          <img :src="headInClouds" class="img rounded img-overlay"/>
+          <div class="text-overlay">
+            <span class="text-uppercase mb-2">small text</span>
+            <h1 class="">Enabling airborne resources in a SensorWeb environment</h1>
+            <p>Across national security, public sector, private sector, and scientific communities</p>
+            <b-button class="btn btn-outline-light learn-more-btn">Learn More</b-button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 position-relative">
+        <div class="card black-card">
+          <img :src="pexels" class="img rounded img-overlay"/>
+
+          <div class="text-overlay">
+            <span class="text-uppercase">for companies</span>
+
+            <h1 class="">Integration of UxS and robotics platforms within a SensorWeb environment</h1>
+            <p>Across national security, public sector, private sector, and scientific communities</p>
+            <b-button class="btn learn-more-btn">Learn More</b-button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-lg-5 position-relative">
+        <div class="card black-card">
+          <img :src="headInClouds" class="img rounded img-overlay"/>
+          <div class="text-overlay">
+            <span class="text-uppercase mb-2">small text</span>
+            <h1 class="">Participation in military/intelligence testbeds</h1>
+            <p>Across national security, public sector, private sector, and scientific communities</p>
+            <b-button class="btn btn-outline-light learn-more-btn">Learn More</b-button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 position-relative">
+        <div class="card black-card">
+          <img :src="pexels" class="img rounded img-overlay"/>
+
+          <div class="text-overlay">
+            <span class="text-uppercase">for companies</span>
+
+            <h1 class="">Integration of UxS and robotics platforms within a SensorWeb environment</h1>
+            <p>Across national security, public sector, private sector, and scientific communities</p>
+            <b-button class="btn learn-more-btn">Learn More</b-button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <style scoped>
+
 .black-card {
   background-color: black;
   max-height: 500px;

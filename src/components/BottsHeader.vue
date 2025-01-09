@@ -27,7 +27,7 @@
               <router-link class="nav-link" to="/learn" :class="{ active: $route.path === '/learn' }">Learn</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="http://OpenSensorHub.org/">OpenSensorHub</router-link>
+              <a class="nav-link" href="http://OpenSensorHub.org/">OpenSensorHub</a>
             </li>
           </ul>
           <div class="d-flex">

@@ -16,12 +16,12 @@ const positions = [
 
 <template>
   <div class="container-fluid py-2">
-    <div class="row gap-2 justify-content-center">
-      <!-- Adjust column classes for multiple columns -->
-      <div class="col-12 col-md-6 col-lg-6 rounded shadow-sm doc-card" v-for="(item, index) in positions" :key="index">
+    <div class="row gap-3 justify-content-center">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-5 rounded shadow-sm doc-card" v-for="(item, index) in positions" :key="index">
         <div class="card-content">
-          <div class="row">
-            <div class="col-12 col-lg-9">
+          <div class="row g-2">
+
+            <div class="col-12 col-md-8">
               <h5 class="doc-title">{{ item.position }}</h5>
               <span class="text-white">
                 <i class="bi bi-geo-alt"></i> Remote
@@ -31,14 +31,13 @@ const positions = [
 <!--              </span>-->
             </div>
 
-            <div class="col-12 col-lg-3 align-content-center">
+            <div class="col-12 col-md-4 col-lg-3 align-content-center">
               <b-button
                   href="/job"
                   target="_blank"
-                  class="btn btn-outline-light"
-                  style="background-color: transparent"
+                  class="white-btn"
               >
-                Apply Here
+                View & Apply
               </b-button>
             </div>
 
@@ -53,19 +52,18 @@ const positions = [
 <!--send resume-->
     <div class="row gap-2 justify-content-center mt-3">
 
-      <div class="col-12 col-md-6 col-lg-8 rounded shadow-sm doc-card">
+      <div class="col-12 col-sm-12 col-lg-10 rounded shadow-sm doc-card" >
         <div class="card-content justify-content-center">
-          <div class="row">
-            <div class="col-12 col-lg-10">
+          <div class="row g-2">
+            <div class="col-12  col-lg-8 col-md-8">
               <span style="color: white; font-size: 1.25rem;">Not seeing the perfect fit? No worries! Send your resume to work@botts-inc.com and be considered for future opportunities.</span>
             </div>
 
-            <div class="col-12 col-lg-2 align-content-center">
+            <div class="col-12 col-lg-2 col-md-4 align-content-center">
               <b-button
                   href="/job"
                   target="_blank"
-                  class="btn btn-outline-light"
-                  style="background-color: transparent"
+                  class="white-btn"
               >
                 Send Resume
               </b-button>
@@ -82,6 +80,19 @@ const positions = [
 </template>
 
 <style scoped>
+.white-btn {
+  background-color: transparent;
+  border-color: #faf6ed;
+  color: #faf6ed;
+  padding: 10px 25px;
+}
+
+.white-btn:hover {
+  background-color: #faf6ed;
+  border-color: #faf6ed;
+  color: #000;
+  padding: 10px 25px;
+}
 
 h1 {
   color: #fff;

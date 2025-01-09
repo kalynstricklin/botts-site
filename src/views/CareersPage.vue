@@ -11,7 +11,7 @@ import image1 from "@/assets/black.jpg"
 <template>
   <div class="container-fluid white-container">
 
-    <div class="row mb-3 py-5">
+    <div class="row py-4">
       <div class="text-center justify-content-center align-content-center">
         <h1>Careers at Botts</h1>
         <hr/>
@@ -22,13 +22,13 @@ import image1 from "@/assets/black.jpg"
      <div class="container-fluid">
        <div class="row g-2">
          <div class="col-12 col-lg-4">
-           <img :src="image1" class="img-fluid">
+           <img :src="image1" class="img-fluid rounded">
          </div>
          <div class="col-12 col-lg-4">
-           <img :src="image1" class="img-fluid">
+           <img :src="image1" class="img-fluid rounded">
          </div>
          <div class="col-12 col-lg-4">
-           <img :src="image1" class="img-fluid">
+           <img :src="image1" class="img-fluid rounded">
          </div>
        </div>
      </div>

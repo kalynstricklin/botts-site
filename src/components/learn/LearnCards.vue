@@ -23,6 +23,12 @@ onMounted(() => {
   const cards = document.querySelectorAll('.card');
   cards.forEach((card) => observer.observe(card));
 });
+
+
+const scroll = () => {
+  const element = document.getElementById("projects");
+  element.scrollIntoView({behavior: 'smooth'});
+}
 </script>
 
 
@@ -77,7 +83,7 @@ onMounted(() => {
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
 
-            <b-button href="/projects" class="btn-sm gen-btn">Learn more
+            <b-button  @click="scroll" class="btn-sm gen-btn">Learn more
               <i class="bi bi-arrow-down-right"></i>
             </b-button>
           </div>
