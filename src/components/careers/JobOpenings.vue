@@ -17,7 +17,8 @@ const positions = [
 <template>
   <div class="container-fluid py-2">
     <div class="row gap-3 justify-content-center">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-5 rounded shadow-sm doc-card" v-for="(item, index) in positions" :key="index">
+
+      <div class="col-10 col-sm-12 col-md-8 col-lg-5 rounded shadow-sm doc-card" v-for="(item, index) in positions" :key="index">
         <div class="card-content">
           <div class="row g-2">
 
@@ -26,9 +27,6 @@ const positions = [
               <span class="text-white">
                 <i class="bi bi-geo-alt"></i> Remote
               </span>
-<!--              <span class="text-white">-->
-<!--                <i class="bi bi-suitcase-lg"></i> Full Time/ PartTime-->
-<!--              </span>-->
             </div>
 
             <div class="col-12 col-md-4 col-lg-3 align-content-center">
@@ -47,23 +45,20 @@ const positions = [
       </div>
     </div>
 
-
-
 <!--send resume-->
     <div class="row gap-2 justify-content-center mt-3">
-
-      <div class="col-12 col-sm-12 col-lg-10 rounded shadow-sm doc-card" >
+      <div class="col-12 col-sm-12 col-md-8 col-lg-6 rounded shadow-sm doc-card" >
         <div class="card-content justify-content-center">
           <div class="row g-2">
-            <div class="col-12  col-lg-8 col-md-8">
+            <div class="col-12 col-lg-8 col-md-8">
               <span style="color: white; font-size: 1.25rem;">Not seeing the perfect fit? No worries! Send your resume to work@botts-inc.com and be considered for future opportunities.</span>
             </div>
 
-            <div class="col-12 col-lg-2 col-md-4 align-content-center">
+            <div class="col-12 col-md-4 col-lg-3 align-content-center">
               <b-button
                   href="/job"
                   target="_blank"
-                  class="white-btn"
+                  class="white-btn button"
               >
                 Send Resume
               </b-button>

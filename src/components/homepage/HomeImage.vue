@@ -62,20 +62,6 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   display: inline-block
 }
 
-.white-btn {
-  background-color: transparent;
-  border-color: #faf6ed;
-  color: #faf6ed;
-  padding: 10px 25px;
-}
-
-.white-btn:hover {
-  background-color: #faf6ed;
-  border-color: #faf6ed;
-  color: #000;
-  padding: 10px 25px;
-}
-
 .text-overlay {
   position: absolute;
   top: 50%;
@@ -99,7 +85,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   text-align: left;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .text-overlay span {
     margin: 0;
     font-size: 2.5rem;
@@ -114,39 +100,43 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px){
-  .text-overlay span {
-    margin: 0;
-    font-size: 1.75rem;
-  }
-
-  .text-overlay p {
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-  .white-btn {
-    padding: 6px 10px;
-  }
-
-}
-
-@media (max-width: 575px) {
-  .text-overlay span {
-    margin: 0px;
-    font-size: 1.25rem;
-  }
-
-  .text-overlay p {
-    font-size: 10pt;
-    margin-top: 10px;
-  }
-  .white-btn {
-    padding: 4px 8px;
-    font-size: 0.7rem;
-  }
-}
 </style>
 
-
+<!--
+//@media (min-width: 768px) and (max-width: 991px) {
+//
+//}
+//
+//@media (min-width: 576px) and (max-width: 767px){
+//  .text-overlay span {
+//    margin: 0;
+//    font-size: 1.75rem;
+//  }
+//
+//  .text-overlay p {
+//    font-size: 1rem;
+//    margin-top: 10px;
+//  }
+//  .white-btn {
+//    padding: 6px 10px;
+//  }
+//
+//}
+//
+//@media (max-width: 575px) {
+//  .text-overlay span {
+//    margin: 0px;
+//    font-size: 1.25rem;
+//  }
+//
+//  .text-overlay p {
+//    font-size: 10pt;
+//    margin-top: 10px;
+//  }
+//  .white-btn {
+//    padding: 4px 8px;
+//    font-size: 0.7rem;
+//  }
+//}-->
 <!--          style="display: inline;"-->
 <!--          <h2 class="gen-sm-title text-uppercase" style="color: #d39f44; display: inline;">Open Standards</h2>-->
