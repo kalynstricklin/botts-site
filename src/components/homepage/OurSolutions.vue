@@ -15,7 +15,7 @@ const scrollToContent = () =>{
 
     <div class="row mb-3">
       <div class="col-12 col-lg-8 col-xxl-7">
-        <span class="gen-sm-title">Our Solutions</span>
+        <span class="gen-orange-title">Our Solutions</span>
       </div>
     </div>
 
@@ -28,7 +28,7 @@ const scrollToContent = () =>{
           </p>
 
           <div class="text-end">
-            <b-button @click="scrollToContent" class="btn-sm gen-btn text-end">Discover more
+            <b-button @click="scrollToContent" class="btn-sm gen-orange-btn text-end">Discover more
               <i class="bi bi-arrow-down-right"></i>
             </b-button>
           </div>

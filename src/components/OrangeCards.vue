@@ -47,7 +47,7 @@ onMounted(() => {
               {{ item.text }}
             </p>
 
-            <b-button :href="item.link" class="btn-sm gen-btn">
+            <b-button :href="item.link" class="btn-sm gen-orange-btn">
               {{ item.button }}
             </b-button>
           </div>

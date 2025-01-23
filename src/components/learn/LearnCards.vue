@@ -34,56 +34,46 @@ const scroll = () => {
 
 <template>
   <div class="container-fluid">
-
-    <div class="row mb-3">
-      <div class="text-center justify-content-center align-content-center">
-        <h2>Let's Build Something Together!</h2>
-      </div>
-    </div>
-
-    <div class="row g-5 justify-content-center align-items-center">
-      <div class="col-12 col-lg-4 col-lg-4 col-md-8 col-sm-12">
+    <div class="row g-3 justify-content-center align-items-center">
+      <div class="col-12 col-lg-4 col-md-8 col-sm-12">
         <div class="card">
 
           <div class="card-body">
-            <h2 class="card-title">Documentation</h2>
+            <h2 class="card-title">Presentations</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text to build on the card title and make up the bulk of the card's content.
+              Botts’ team presentations from conferences and other events. Dive into this material to learn more about OpenSensorHub.
             </p>
 
-            <b-button href="/documentation" class="btn-sm gen-btn">Learn more
+            <b-button href="/learn/documentation" class="btn-sm gen-orange-btn">Learn more
               <i class="bi bi-arrow-down-right"></i>
             </b-button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4 col-lg-4 col-md-8 col-sm-12">
+      <div class="col-12 col-lg-4 col-md-8 col-sm-12">
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">Software</h2>
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
 
-            <b-button href="/software" class="btn-sm gen-btn">Learn more
+            <b-button href="/learn/software" class="btn-sm gen-orange-btn">Learn more
               <i class="bi bi-arrow-down-right"></i>
             </b-button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4 col-lg-4 col-md-8 col-sm-12">
+      <div class="col-12 col-lg-4 col-md-8 col-sm-12">
         <div class="card">
 
           <div class="card-body">
             <h2 class="card-title">Projects</h2>
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
 
-            <b-button  @click="scroll" class="btn-sm gen-btn">Learn more
+            <b-button  @click="scroll" class="btn-sm gen-orange-btn">Learn more
               <i class="bi bi-arrow-down-right"></i>
             </b-button>
           </div>

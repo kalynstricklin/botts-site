@@ -103,8 +103,8 @@
 
        <!-- Copyright -->
        <hr/>
-       <div class="justify-content-start align-items-center p-3 fw-semibold">
-         Botts Innovative Research © All Rights Reserved
+       <div class="justify-content-start align-items-center p-3">
+         <span>Botts Innovative Research © All Rights Reserved</span>
        </div>
 
      </div>
@@ -155,6 +155,9 @@ hr{
 }
 
 
+@media only screen and (max-width: 480px) {
+
+}
 </style>
 
 

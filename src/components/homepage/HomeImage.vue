@@ -13,7 +13,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
         />
         <div class="text-overlay">
 
-          <h2 class="font-heading mb-2">
+          <h2 class="mb-2">
             <span>Designing and Deploying Open Standards</span>
             <span class="text-uppercase" style="display: inline-block">for Sensor Systems</span>
 
@@ -44,24 +44,16 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
 </template>
 
 <style scoped>
-.white-txt{
-  color: #faf6ed;
-  line-height: 1.2vh;
-  font-size: 1.6vh;
+.image-container {
+  position: relative;
+  display: inline-block
 }
-
 .header-img {
   opacity: 50%;
   max-height: 550px;
   width: 100%;
   object-fit: cover;
 }
-
-.image-container {
-  position: relative;
-  display: inline-block
-}
-
 .text-overlay {
   position: absolute;
   top: 50%;
@@ -78,65 +70,158 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   text-align: left;
   text-transform: uppercase;
 }
-
 .text-overlay p {
   font-size: 1.4rem;
   margin-top: 10px;
   text-align: left;
 }
+.white-btn {
+  font-size: 1rem;
+}
+.white-txt{
+  color: #faf6ed;
+  line-height: 1.2;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.white-txt:hover {
+  text-decoration: underline;
+}
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (min-width: 1200px) {
   .text-overlay span {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
 
   .text-overlay p {
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 1.4rem;
   }
-  .white-btn{
+
+  .white-txt {
+    font-size: 1.4rem;
+  }
+
+  .white-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .text-overlay span {
+    font-size: 2.75rem;
+  }
+
+  .text-overlay p {
+    font-size: 1.3rem;
+  }
+
+  .white-txt {
+    font-size: 1.25rem;
+  }
+
+  .white-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .text-overlay span {
+    font-size: 2.2rem;
+  }
+
+  .text-overlay p {
+    font-size: 1.1rem;
+  }
+
+  .white-txt {
+    font-size: 1.2rem;
+  }
+
+  .white-btn {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .text-overlay span {
+    margin: 0 auto;
+    font-size: 1.25rem;
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .white-txt {
+    font-size: 1rem;
+  }
+
+  .white-btn {
+    font-size: 0.85rem;
     padding: 8px 12px;
   }
 }
 
+
+
+
 </style>
 
-<!--
-//@media (min-width: 768px) and (max-width: 991px) {
-//
-//}
-//
-//@media (min-width: 576px) and (max-width: 767px){
-//  .text-overlay span {
-//    margin: 0;
-//    font-size: 1.75rem;
-//  }
-//
-//  .text-overlay p {
-//    font-size: 1rem;
-//    margin-top: 10px;
-//  }
-//  .white-btn {
-//    padding: 6px 10px;
-//  }
-//
-//}
-//
-//@media (max-width: 575px) {
-//  .text-overlay span {
-//    margin: 0px;
-//    font-size: 1.25rem;
-//  }
-//
-//  .text-overlay p {
-//    font-size: 10pt;
-//    margin-top: 10px;
-//  }
-//  .white-btn {
-//    padding: 4px 8px;
-//    font-size: 0.7rem;
-//  }
-//}-->
-<!--          style="display: inline;"-->
-<!--          <h2 class="gen-sm-title text-uppercase" style="color: #d39f44; display: inline;">Open Standards</h2>-->
+<!--/* Mobile First / Smaller to Larger */-->
+
+<!--/* X-Small devices (portrait phones, less than 576px) */-->
+
+<!--/* Small devices (landscape phones, 576px and up) */-->
+<!--@media (min-width: 576px) {-->
+
+<!--}-->
+
+<!--/* Medium devices (tablets, 768px and up) */-->
+<!--@media (min-width: 768px) {-->
+
+<!--}-->
+
+<!--/* Large devices (desktops, 992px and up) */-->
+<!--@media (min-width: 992px) {-->
+
+<!--}-->
+
+<!--/* X-Large devices (large desktops, 1200px and up) */-->
+<!--@media (min-width: 1200px) {-->
+
+<!--}-->
+
+<!--/* XX-Large devices (larger desktops, 1400px and up) */-->
+<!--@media (min-width: 1400px) {-->
+
+<!--}-->
+
+
+<!--/* Desktop First / Larger to Smaller */-->
+
+<!--/* X-Small devices (portrait phones, less than 576px) */-->
+<!--@media (max-width: 575.98px) {-->
+
+<!--}-->
+
+<!--/* Small devices (landscape phones, less than 768px) */-->
+<!--@media (max-width: 767.98px) {-->
+
+<!--}-->
+
+<!--/* Medium devices (tablets, less than 992px) */-->
+<!--@media (max-width: 991.98px) {-->
+
+<!--}-->
+
+<!--/* Large devices (desktops, less than 1200px) */-->
+<!--@media (max-width: 1199.98px) {-->
+
+<!--}-->
+
+<!--/* X-Large devices (large desktops, less than 1400px) */-->
+<!--@media (max-width: 1399.98px) {-->
+
+<!--}-->

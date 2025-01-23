@@ -40,31 +40,31 @@ const presentationsList = [
 </script>
 
 <template>
-  <div class="container-fluid py-4">
+  <div class="container-fluid">
 
-    <div class="row mb-4 text-center">
-      <h2>Presentations</h2>
-       <span class="text-center">All Presentations and Documents are available to use. Please reference appropriately.</span>
-
-    </div>
-
-    <div class="row p-2" v-for="(presentation, index) in presentationsList" :key="index">
-      <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
-        <img
-            :src="presentation.image"
-            class="img-fluid rounded about-img"
-            :alt="presentation.title"
-        />
-      </div>
-      <div class="col-lg-8 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
-        <h2 class="gen-sm-title">{{ presentation.title }}</h2>
-        <p class="about-text">{{ presentation.desc }}</p>
-
-        <div>
-          <b-button :href="presentation.link" class="gen-btn" target="_blank">
-            View Slides
-          </b-button>
+    <div class="row align-items-center justify-content-center align-content-end" v-for="(presentation, index) in presentationsList" :key="index">
+      <div class="col-lg-4 col-md-6 text-center mb-4">
+        <div class="card-img">
+          <img
+              :src="presentation.image"
+              class="img-fluid rounded about-img"
+              :alt="presentation.title"
+          />
         </div>
+
+      </div>
+      <div class="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
+        <div class="py-4 px-5">
+          <h4 class="gen-orange-title">{{ presentation.title }}</h4>
+          <p>{{ presentation.desc }}</p>
+
+          <div>
+            <b-button :href="presentation.link" class="gen-orange-btn" target="_blank">
+              View Slides
+            </b-button>
+          </div>
+        </div>
+
 
       </div>
 
@@ -74,40 +74,26 @@ const presentationsList = [
 </template>
 
 <style scoped>
-.about-text {
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  font-size: 1.1em;
+p{
+  color: white;
 }
 
 .about-img {
-  width: 100%;
-  max-width: 400px;
+  width: 80%;
   height: auto;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 8px;
-  margin: auto;
+  padding: 10px;
 }
-
-.gen-sm-title {
-  font-size: 1.5em;
-  margin-bottom: 1rem;
-}
-
 
 
 @media (max-width: 768px) {
-  .about-text {
-    font-size: 1em;
-  }
-
-  .gen-sm-title {
-    font-size: 1.25em;
-  }
-
   .about-img {
     max-width: 300px;
   }
+}
+
+@media screen and (max-width: 480px) {
+
 }
 </style>

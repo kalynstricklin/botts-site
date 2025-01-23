@@ -36,12 +36,12 @@ const developerTeam = [
     <div class="card meet-card">
       <div class="row mb-3">
         <div class="text-center justify-content-center align-content-center">
-          <span class="gen-sm-title ">Our Team</span>
+          <span class="gen-orange-title ">Our Team</span>
           <h2>Meet our team of innovative problem solvers</h2>
         </div>
       </div>
 
-<!--      <span class="gen-sm-title ">Leadership</span>-->
+<!--      <span class="gen-orange-title ">Leadership</span>-->
       <div class="row justify-content-center align-items-center">
         <div class="col-12 col-lg-2 col-sm-3" v-for="(member, index) in coreTeam" :key="index">
           <div class="card team-card text-center border-0 mb-3" >
@@ -57,7 +57,7 @@ const developerTeam = [
       </div>
 
 
-<!--      <span class="gen-sm-title ">Developers</span>-->
+<!--      <span class="gen-orange-title ">Developers</span>-->
       <div class="row justify-content-center align-items-center">
         <div class="col-12 col-lg-2" v-for="(member, index) in developerTeam" :key="index">
           <div class="card team-card text-center border-0 mb-3" >

@@ -8,11 +8,11 @@
 
 <!--      <div class="col-md">-->
 <!--        <div class="flex-grow-1 py-4 px-5 justify-content-center">-->
-<!--          <span class="gen-sm-title">Let's Build Something Together</span>-->
+<!--          <span class="gen-orange-title">Let's Build Something Together</span>-->
 <!--          <h2 class="about-lg-title">Join Our Team</h2>-->
 
 <!--          <div class="mt-5">-->
-<!--            <b-button class="btn-sm gen-btn">-->
+<!--            <b-button class="btn-sm gen-orange-btn">-->
 <!--              Available Positions-->
 <!--            </b-button>-->
 <!--          </div>-->
@@ -51,12 +51,12 @@ import image from "@/assets/black.jpg"
 
       <div class="col-md-6">
         <div class="py-4 px-5">
-<!--          <span class="gen-sm-title">Let's Build Something Together</span>-->
+<!--          <span class="gen-orange-title">Let's Build Something Together</span>-->
           <h2 class="display-5">Join Our Team</h2>
           <p class="about-text flex-wrap flex-grow-1">
           </p>
 
-          <b-button href="/presentations" class="btn-sm gen-btn">
+          <b-button href="/presentations" class="btn-sm gen-orange-btn">
             Available Positions
           </b-button>
 

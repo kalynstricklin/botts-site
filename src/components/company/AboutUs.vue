@@ -14,8 +14,8 @@ import image from "@/assets/black.jpg"
 
       <div class="col-lg-6 col-md-6 col-sm-10">
         <div class="py-4 px-5">
-          <h3 class="gen-sm-title">Our History</h3>
-          <p class="about-text flex-wrap flex-grow-1">
+          <h3 class="section-title">Our History</h3>
+          <p class="section-text flex-wrap flex-grow-1">
             Botts Innovative Research, Inc. (Botts Inc.) is a boutique R&D services firm founded by Dr. Michael Botts, who has been in business for nearly two decades. Drawing from his experience running the VisAnalysis and Systems Technology (VAST) Lab, Botts Inc. serves a diverse range of private and public sector clients.
           </p>
 
@@ -32,6 +32,7 @@ import image from "@/assets/black.jpg"
   line-height: 1.6;
   letter-spacing: 0.03em;
   font-size: 1.25em;
+  color: white;
 }
 
 .about-img {

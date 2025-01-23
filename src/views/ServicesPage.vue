@@ -14,7 +14,6 @@
              The Botts-Inc team has provided field defining R&D services to the national security community, government agencies, commercial customers, and scientific agencies for nearly two decades.  These R&D services have helped define the art of the possible with regard to integrating diverse sensors seamlessly, precision geopositioning across disparate sensor systems, advanced geoprocessing, resilient field sensing architectures, UxS integration strategies, heterogeneous space mission integration, 4D visualization frameworks, and much more.  The Botts-Inc team is always up for a new challenge, and manages an ongoing R&D roadmap for continuously advancing the frontiers of capability.
            </p>
 
-
          <a href="/services" class="btn btn-primary">Contact Us</a>
        </div>
 

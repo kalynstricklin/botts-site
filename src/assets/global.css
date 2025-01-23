@@ -10,7 +10,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    background-color: #131824;
+    background-color: #131822;
 }
 
 h1, h2, h3, h4, h5, h6, span {
@@ -19,8 +19,8 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 p, a, li {
-    font-family: var(--font-primary);
-    /*font-family: var(--font-secondary);*/
+    /*font-family: var(--font-primary);*/
+    font-family: var(--font-secondary);
     font-weight: 400;
 }
 
@@ -41,8 +41,9 @@ html {
     color: white;
 }
 
-.container {
-    padding-top: 60px;
+.light-mode{
+    background-color: #faf6ed;
+    color: #d39f44;
 }
 
 .white-container {
@@ -50,26 +51,57 @@ html {
     border-color: #faf6ed;
 }
 
-.gen-sm-title {
+.section-subtitle {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /*font-size: 0.875rem;*/
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.section-text {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #d39f44;
+}
+
+.gen-orange-title {
     font-weight: bold;
     color: #d39f44;
 }
 
-.gen-btn {
+.gen-white-title {
+    font-weight: bold;
+    color: #fff;
+}
+
+.gen-orange-btn {
     background-color: #d39f44;
     border-color: #d39f44;
     color: #fff;
     padding: 10px 15px;
     transition: all 0.3s ease-in-out;
     font-family: var(--font-primary);
+    font-size: 0.875rem;
 }
 
 button{
     font-family: var(--font-primary);
 }
-.gen-btn:hover {
+
+.gen-orange-btn:hover {
     color: #fff;
     transform: translateY(-5px);
+    font-family: var(--font-primary);
 }
 
 .img-box {
@@ -84,12 +116,16 @@ button{
     background-color: transparent;
     border-color: #faf6ed;
     color: #faf6ed;
-    padding: 10px 25px;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-primary);
+    font-size: 1rem;
 }
 
 .white-btn:hover {
     background-color: #faf6ed;
     border-color: #faf6ed;
-    color: #000;
-    padding: 10px 25px;
+    color: #d39f44;
 }
+
+
+

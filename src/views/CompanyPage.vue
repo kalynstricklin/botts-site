@@ -1,65 +1,105 @@
 <script setup>
 import AboutUs from "@/components/company/AboutUs.vue";
-import image1 from "@/assets/black.jpg";
+import image1 from "@/assets/team.webp";
+import TeamComp from "@/components/company/TeamComp.vue";
+import JoinTeam from "@/components/company/JoinTeam.vue";
+
 
 </script>
 
 <template>
-  <div>
-    <div class="card company-card">
+  <div class="container-fluid">
+    <section id="history" class="py-4">
+      <AboutUs/>
+    </section>
+
+
+    <section id="team-pics" class="mb-3">
+
+      <div class="container-fluid">
+        <div class="row py-4">
+          <h4 class="gen-orange-title">Team Photos</h4>
+        </div>
+        <div class="row g-2">
+          <div class="col-12 col-lg-4">
+            <img :src="image1" class="img-fluid rounded">
+          </div>
+          <div class="col-12 col-lg-4">
+            <img :src="image1" class="img-fluid rounded">
+          </div>
+          <div class="col-12 col-lg-4">
+            <img :src="image1" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="team" class="py-5 bg-soft">
+      <TeamComp/>
+    </section>
+
+    <section id="join" class="py-3">
+      <JoinTeam/>
+    </section>
+
+
+  </div>
+</template>
+
+
+<!--.bg-soft {
+  background-color: #f8f9fa;
+}-->
+<style scoped>
+
+</style>
+
+
+<!--  <div>-->
+<!--    <div class="card">-->
+<!--&lt;!&ndash;      <section id="team-pics" class="mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container-fluid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="row justify-content-center align-content-center">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-12 col-lg-10">&ndash;&gt;-->
+<!--&lt;!&ndash;              <img :src="image1" class="img-fluid rounded" style="max-height: 400px; width: 100%;">&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </section>&ndash;&gt;-->
+
+<!--      <section id="history" class="py-4">-->
+<!--        <AboutUs/>-->
+<!--      </section>-->
+
+
 <!--      <section id="team-pics" class="mb-3">-->
+
 <!--        <div class="container-fluid">-->
-<!--          <div class="row justify-content-center align-content-center">-->
-<!--            <div class="col-12 col-lg-10">-->
-<!--              <img :src="image1" class="img-fluid rounded" style="max-height: 400px; width: 100%;">-->
+<!--          <div class="row py-4">-->
+<!--            <h4 class="gen-orange-title">Team Photos</h4>-->
+<!--          </div>-->
+<!--          <div class="row g-2">-->
+<!--            <div class="col-12 col-lg-4">-->
+<!--              <img :src="image1" class="img-fluid rounded">-->
+<!--            </div>-->
+<!--            <div class="col-12 col-lg-4">-->
+<!--              <img :src="image1" class="img-fluid rounded">-->
+<!--            </div>-->
+<!--            <div class="col-12 col-lg-4">-->
+<!--              <img :src="image1" class="img-fluid rounded">-->
 <!--            </div>-->
 <!--          </div>-->
 <!--        </div>-->
 <!--      </section>-->
 
-      <section id="history" class="py-4">
-        <AboutUs/>
-      </section>
 
 
-      <section id="team-pics" class="mb-3">
+<!--      <section id="team" class="py-3">-->
 
-        <div class="container-fluid">
-          <div class="row py-4">
-            <h4 class="gen-sm-title">Team Photos</h4>
-          </div>
-          <div class="row g-2">
-            <div class="col-12 col-lg-4">
-              <img :src="image1" class="img-fluid rounded">
-            </div>
-            <div class="col-12 col-lg-4">
-              <img :src="image1" class="img-fluid rounded">
-            </div>
-            <div class="col-12 col-lg-4">
-              <img :src="image1" class="img-fluid rounded">
-            </div>
-          </div>
-        </div>
-      </section>
+<!--      </section>-->
 
+<!--    </div>-->
 
-
-      <section id="team" class="py-3">
-
-      </section>
-
-    </div>
-
-  </div>
-
-</template>
-
-<style scoped>
-.company-card{
-  border-color: #faf6ed;
-  background-color: #faf6ed;
-  padding: 15px;
-}
-
-
-</style>
+<!--  </div>-->

@@ -26,7 +26,7 @@
                   <div class="card-body text-center">
                     <div class="d-flex justify-content-center align-items-center">
                       <div class="ms-2">
-                        <h6 class="gen-sm-title mb-0">Dr. Nadine Alameh</h6>
+                        <h6 class="gen-orange-title mb-0">Dr. Nadine Alameh</h6>
                         <p class="text-white mb-0 fs-6">CEO of OpenGeoSpatial Consortium</p>
                       </div>
                     </div>
@@ -56,7 +56,7 @@
                   <div class="card-body text-center">
                     <div class="d-flex justify-content-center align-items-center">
                       <div class="ms-2">
-                        <h6 class="gen-sm-title mb-0">Mike Grochol</h6>
+                        <h6 class="gen-orange-title mb-0">Mike Grochol</h6>
                         <p class="text-white mb-0 fs-6">CEO of Iron EagleX</p>
                       </div>
                     </div>
@@ -88,7 +88,7 @@
                   <div class="card-body text-center">
                     <div class="d-flex justify-content-center align-items-center">
                       <div class="ms-2">
-                        <h6 class="gen-sm-title mb-0">Abe Usher</h6>
+                        <h6 class="gen-orange-title mb-0">Abe Usher</h6>
                         <p class="text-white mb-0 fs-6">Co-Founder of Black Cape</p>
                       </div>
                     </div>

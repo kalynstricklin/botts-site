@@ -15,7 +15,7 @@ defineProps({
     <div class="row align-items-center" v-for="(item, index) in items" :key="index">
       <div class="col-md-12">
         <div class="py-4 px-5">
-          <h2 class="gen-sm-title">{{ item.header }}</h2>
+          <h2 class="gen-orange-title">{{ item.header }}</h2>
           <p class="about-text flex-wrap flex-grow-1">
             {{ item.text }}
           </p>
@@ -23,7 +23,7 @@ defineProps({
           <b-button
               v-if="item.link"
               :href="item.link"
-              class="btn-sm gen-btn"
+              class="btn-sm gen-orange-btn"
               target="_blank"
           >
             {{ item.button }}
