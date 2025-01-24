@@ -15,7 +15,7 @@ const positions = [
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div v-for="(item, index) in positions" :key="index" class="col-lg-6 mb-3 d-flex align-items-stretch">
         <div class="card border-0 w-100 card-glow hvr-glow">
@@ -123,7 +123,7 @@ const positions = [
 <!--              <b-button-->
 <!--                  href="/job"-->
 <!--                  target="_blank"-->
-<!--                  class="white-btn button"-->
+<!--                  class="orange-button button"-->
 <!--              >-->
 <!--                Send Resume-->
 <!--              </b-button>-->

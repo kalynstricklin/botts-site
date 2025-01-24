@@ -3,7 +3,7 @@ import HomeImage from "@/components/homepage/HomeImage.vue";
 // import ServicesCard from "@/components/homepage/ServiceCards.vue";
 // import GetInTouchForm from "@/components/homepage/GetInTouchForm.vue";
 import {onMounted} from "vue";
-import TestimonialScroller from "@/components/company/TestimonialScroller.vue";
+import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
 import ServicesCards from "@/components/homepage/ServicesCards.vue";
 // import ImageOverlay from "@/components/homepage/ImageOverlay.vue";
 

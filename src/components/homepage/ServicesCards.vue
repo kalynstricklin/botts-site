@@ -5,7 +5,7 @@
 
 
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-4 mb-3 d-flex align-items-stretch">
         <div class="card">

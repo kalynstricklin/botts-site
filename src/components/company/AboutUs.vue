@@ -5,14 +5,14 @@ import image from "@/assets/black.jpg"
 <template>
   <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-lg-6 col-md-8 text-center mb-4">
+      <div class="col-lg-6 col-md-4 text-center mb-4">
         <div class="card-img">
           <img :src="image" class="img-fluid rounded about-img" alt="Mike Botts'"/>
         </div>
       </div>
 
 
-      <div class="col-lg-6 col-md-6 col-sm-10">
+      <div class="col-lg-6 col-md-8 col-sm-10">
         <div class="py-4 px-5">
           <h3 class="section-title">Our History</h3>
           <p class="section-text flex-wrap flex-grow-1">

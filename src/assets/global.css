@@ -38,7 +38,7 @@ html {
 
 .dark-mode{
     background-color: #131824;
-    color: white;
+    color: #faf6ed;
 }
 
 .light-mode{
@@ -52,7 +52,7 @@ html {
 }
 
 .section-subtitle {
-    color: white;
+    color: #f3f2e0;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ html {
     margin-bottom: 1rem;
 }
 .section-text {
-    color: white;
+    color: #faf6ed;
     letter-spacing: 2px;
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -81,13 +81,13 @@ html {
 
 .gen-white-title {
     font-weight: bold;
-    color: #fff;
+    color: #faf6ed;
 }
 
 .gen-orange-btn {
     background-color: #d39f44;
     border-color: #d39f44;
-    color: #fff;
+    color: #faf6ed;;
     padding: 10px 15px;
     transition: all 0.3s ease-in-out;
     font-family: var(--font-primary);
@@ -99,7 +99,7 @@ button{
 }
 
 .gen-orange-btn:hover {
-    color: #fff;
+    color: #faf6ed;
     transform: translateY(-5px);
     font-family: var(--font-primary);
 }
@@ -112,20 +112,40 @@ button{
     padding: 10px;
 }
 
-.white-btn {
+.orange-button {
+    background-color: transparent;
+    border-color: #d39f44;
+    color: #d39f44;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: var(--font-primary);
+    display: inline-block;
+    text-align: center;
+}
+
+.orange-button:hover {
+    background-color: #d39f44;
+    border-color: #d39f44;
+    color: #faf6ed;
+}
+
+.white-button {
     background-color: transparent;
     border-color: #faf6ed;
     color: #faf6ed;
-    padding: 0.5rem 1rem;
-    font-family: var(--font-primary);
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: var(--font-primary);
+    display: inline-block;
+    text-align: center;
 }
 
-.white-btn:hover {
-    background-color: #faf6ed;
-    border-color: #faf6ed;
-    color: #d39f44;
+.white-button:hover {
+    background-color: #d39f44;
+    border-color: #d39f44;
+    color: #faf6ed;
 }
-
 
 

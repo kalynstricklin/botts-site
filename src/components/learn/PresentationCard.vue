@@ -20,7 +20,7 @@ import image from "@/assets/botts-diagram.webp"
           </p>
 
           <div class="">
-            <a href="/learn/presentations" class="btn mt-auto align-self-start white-btn">View More</a>
+            <a href="/learn/presentations" class="btn mt-auto align-self-start orange-button">View More</a>
           </div>
 
         </div>

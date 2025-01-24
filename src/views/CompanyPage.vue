@@ -1,8 +1,9 @@
 <script setup>
 import AboutUs from "@/components/company/AboutUs.vue";
 import image1 from "@/assets/team.webp";
-import TeamComp from "@/components/company/TeamComp.vue";
-import JoinTeam from "@/components/company/JoinTeam.vue";
+// import TeamComp from "@/components/company/TeamComp.vue";
+// import JoinTeam from "@/components/company/JoinTeam.vue";
+import TeamCard from "@/components/company/TeamCard.vue";
 
 
 </script>
@@ -20,14 +21,14 @@ import JoinTeam from "@/components/company/JoinTeam.vue";
         <div class="row py-4">
           <h4 class="gen-orange-title">Team Photos</h4>
         </div>
-        <div class="row g-2">
-          <div class="col-12 col-lg-4">
+        <div class="row g-2 justify-content-center">
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
             <img :src="image1" class="img-fluid rounded">
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
             <img :src="image1" class="img-fluid rounded">
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
             <img :src="image1" class="img-fluid rounded">
           </div>
         </div>
@@ -37,12 +38,13 @@ import JoinTeam from "@/components/company/JoinTeam.vue";
 
 
     <section id="team" class="py-5 bg-soft">
-      <TeamComp/>
+<!--      <TeamComp/>-->
+      <TeamCard/>
     </section>
 
-    <section id="join" class="py-3">
-      <JoinTeam/>
-    </section>
+<!--    <section id="join" class="py-3">-->
+<!--      <JoinTeam/>-->
+<!--    </section>-->
 
 
   </div>

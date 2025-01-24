@@ -24,12 +24,12 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
           <div class="mt-3">
             <div class="row d-flex justify-content-start align-items-center">
               <div class="col-auto">
-                <b-button class="white-btn">
+                <b-button class="white-button">
                   Contact Us
                 </b-button>
               </div>
               <div class="col-auto ms-3">
-                <router-link class="text-decoration-underline white-txt" to="/projects">
+                <router-link class="white-txt" to="/learn/">
                   Explore Projects
                 </router-link>
               </div>
@@ -59,7 +59,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  color: #fff;
+  color: #faf6ed;
   width: 80%;
   padding: 5px;
 }
@@ -75,7 +75,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   margin-top: 10px;
   text-align: left;
 }
-.white-btn {
+.white-button {
   font-size: 1rem;
 }
 .white-txt{
@@ -102,7 +102,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
     font-size: 1.4rem;
   }
 
-  .white-btn {
+  .orange-button {
     font-size: 1.2rem;
   }
 }
@@ -120,7 +120,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
     font-size: 1.25rem;
   }
 
-  .white-btn {
+  .orange-button {
     font-size: 1.1rem;
   }
 }
@@ -138,7 +138,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
     font-size: 1.2rem;
   }
 
-  .white-btn {
+  .orange-button {
     font-size: 1rem;
   }
 }
@@ -158,7 +158,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
     font-size: 1rem;
   }
 
-  .white-btn {
+  .orange-button {
     font-size: 0.85rem;
     padding: 8px 12px;
   }

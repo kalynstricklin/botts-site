@@ -5,7 +5,7 @@
 
 
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-4 mb-3 d-flex align-items-stretch">
           <div class="card">
@@ -14,7 +14,7 @@
             <hr>
             <p class="card-text mb-4">The showcase provides code examples designed to help developers build with the OSH.js toolkit, offering code snippets that you can easily integrate into your OSH projects.</p>
             <div class="text-center">
-              <a href="https://opensensorhub.github.io/osh-js/dev/showcase/" class="btn mt-auto align-self-start white-btn">Learn More</a>
+              <a href="https://opensensorhub.github.io/osh-js/dev/showcase/" class="btn mt-auto align-self-start orange-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
             <p class="card-text mb-4"> Find documentation of OpenSensorHub's APIs and get ready to dive into a community that is building a platform to support web-enabled sensors!</p>
 
             <div class="text-center">
-              <a href="https://opensensorhub.org/documentation/" class="btn mt-auto align-self-start white-btn">Learn More</a>
+              <a href="https://opensensorhub.org/documentation/" class="btn mt-auto align-self-start orange-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
             <hr>
             <p class="card-text mb-4">The showcase provides code examples designed to help developers build with the OSH.js toolkit, offering code snippets that you can easily integrate into your OSH projects.</p>
             <div class="text-center">
-              <a href="#" class="btn mt-auto align-self-start white-btn">Learn More</a>
+              <a href="#" class="btn mt-auto align-self-start orange-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
 </template>
 
 <style scoped>
-.card-body .white-btn {
+.card-body .orange-button {
   background-color: transparent;
   border-color: #faf6ed;
   color: #faf6ed;
@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-.card-body .white-btn:hover {
+.card-body .orange-button:hover {
   background-color: #d39f44;
   border-color: #d39f44;
   color: #faf6ed;
