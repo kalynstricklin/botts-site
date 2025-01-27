@@ -9,17 +9,12 @@ import SoftwareScroller from "@/components/software/SoftwareScroller.vue";
 </script>
 
 <template>
-  <div>
-
-      <div class="row mt-2">
+  <div class="py-5">
+      <div class="row mt-5">
         <div class="text-center justify-content-center align-content-center">
           <h2 class="text-white">Let's Build Something Together!</h2>
         </div>
       </div>
-
-<!--      <section id="cards" class="py-4">-->
-<!--        <LearnCards/>-->
-<!--      </section>-->
 
 
 

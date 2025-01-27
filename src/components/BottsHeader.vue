@@ -3,7 +3,7 @@
 
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
       <div class="container-fluid">
         <div class="navbar-brand">
           <router-link to="/">
@@ -11,11 +11,14 @@
           </router-link>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+<!--          <span class="navbar-toggler-icon"></span>-->
+          <span class="d-flex justify-content-start align-items-center">
+          <i class="fas fa-bars"></i>
+        </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarToggle">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navigation">
             <li class="nav-item">
               <router-link class="nav-link" to="/company" :class="{ active: $route.path === '/company' }">Company</router-link>
@@ -41,6 +44,19 @@
 </template>
 
 <style scoped>
+/***color of links before scroll*/
+.navbar-scroll .nav-link, .navbar-scroll .navbar-toggler .fa-bars{
+  color: #fff;
+}
+/***color of links after scroll*/
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+  color: #4f4f4f;
+}
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
 nav{
   background-color: #131824;
 }

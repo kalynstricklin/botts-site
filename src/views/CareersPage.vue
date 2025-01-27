@@ -12,9 +12,9 @@ import image3 from "@/assets/arch.webp"
 
 <template>
 <!--  <div class="container-fluid white-container">-->
-  <div class="container-fluid">
+  <div class="py-5">
 
-    <div class="row py-4">
+    <div class="row py-5">
       <div class="text-center justify-content-center align-content-center text-white">
         <h1>Careers at Botts</h1>
         <hr/>

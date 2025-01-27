@@ -1,19 +1,24 @@
 <script setup>
-import AboutUs from "@/components/company/AboutUs.vue";
-import image1 from "@/assets/team.webp";
+// import AboutUs from "@/components/company/AboutUs.vue";
+// import image1 from "@/assets/team.webp";
 // import TeamComp from "@/components/company/TeamComp.vue";
 // import JoinTeam from "@/components/company/JoinTeam.vue";
 import TeamCard from "@/components/company/TeamCard.vue";
+import OurStory from "@/components/company/OurStory.vue";
 
 
 </script>
 
 <template>
-  <div class="container-fluid">
-    <section id="history" class="py-4">
-      <AboutUs/>
-    </section>
+  <div class="py-5">
+<!--    <section id="history" class="py-5">-->
+<!--      <AboutUs/>-->
+<!--    </section>-->
 
+    <section id="story-timeline" class="py-5">
+      <OurStory/>
+
+    </section>
 
     <section id="team-pics" class="mb-3">
 
@@ -37,7 +42,7 @@ import TeamCard from "@/components/company/TeamCard.vue";
 
 
 
-    <section id="team" class="py-5 bg-soft">
+    <section id="team" class="py-5">
 <!--      <TeamComp/>-->
       <TeamCard/>
     </section>

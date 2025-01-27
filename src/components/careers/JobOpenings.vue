@@ -15,7 +15,7 @@ const positions = [
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div v-for="(item, index) in positions" :key="index" class="col-lg-6 mb-3 d-flex align-items-stretch">
         <div class="card border-0 w-100 card-glow hvr-glow">

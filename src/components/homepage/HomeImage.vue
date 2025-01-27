@@ -1,227 +1,124 @@
 <script setup>
 import headerImage from "@/assets/generic-cover-12-web.jpg";
+import {onMounted} from "vue";
+
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+        //loop over the entries
+        entries.forEach((entry, index) => {
+
+          //if element is visible
+          if (entry.isIntersecting) {
+
+            //add delay between cards
+            entry.target.style.animationDelay = `${index * 0.15}s`;
+            //add the animation class
+            entry.target.classList.add('card-animation');
+            return;
+
+          }
+        });
+      },
+      {
+        threshold: 0.25,
+      }
+  );
+
+  const sections = document.querySelectorAll('.scroll-appear');
+  sections.forEach((section) => observer.observe(section));
+});
+
 </script>
 
 <template>
-  <div>
-    <div class="container-fluid image-container">
-      <div class="position-relative">
-        <img
-            :src="headerImage"
-            alt="Header"
-            class="img rounded header-img"
-        />
-        <div class="text-overlay">
+  <div class="container-fluid scroll-appear">
+    <div style="position: relative;">
+      <img :src="headerImage" alt="header Image" class="overlay-img">
+      <div class="overlay-txt">
+        <h1 class="overlay-title">Designing and Deploying Open Standards for Sensor Systems</h1>
+        <p class="overlay-description">Across national security, public sector, private sector, and scientific communities</p>
 
-          <h2 class="mb-2">
-            <span>Designing and Deploying Open Standards</span>
-            <span class="text-uppercase" style="display: inline-block">for Sensor Systems</span>
-
-          </h2>
-
-          <p>Across national security, public sector, private sector, and scientific communities</p>
-
-          <div class="mt-3">
-            <div class="row d-flex justify-content-start align-items-center">
-              <div class="col-auto">
-                <b-button class="white-button">
-                  Contact Us
-                </b-button>
-              </div>
-              <div class="col-auto ms-3">
-                <router-link class="white-txt" to="/learn/">
-                  Explore Projects
-                </router-link>
-              </div>
+        <div class="overlay-btn-container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-auto">
+              <b-button class="white-button">
+                Contact Us
+              </b-button>
+            </div>
+            <div class="col-auto ms-3">
+              <router-link class="overlay-btn-txt" to="/learn/">
+                Explore Projects
+              </router-link>
             </div>
           </div>
-
         </div>
 
       </div>
+
     </div>
   </div>
+
 </template>
 
 <style scoped>
-.image-container {
-  position: relative;
-  display: inline-block
-}
-.header-img {
+
+.overlay-img{
   opacity: 50%;
-  max-height: 550px;
+  max-height: 425px;
   width: 100%;
-  object-fit: cover;
-}
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  color: #faf6ed;
-  width: 80%;
-  padding: 5px;
 }
 
-.text-overlay span {
-  margin: 0 auto;
-  font-size: 4.5rem;
-  text-align: left;
+.overlay-txt{
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-title{
+  color: #fff;
+  font-size: 3.75rem;
   text-transform: uppercase;
 }
-.text-overlay p {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  text-align: left;
+.overlay-description{
+  color: #fff;
+  font-size: 1.25rem;
 }
-.white-button {
-  font-size: 1rem;
+.overlay-btn-container{
+  margin-top: 25px;
 }
-.white-txt{
+.white-button{
+  font-size: 1.25rem;
+}
+
+.overlay-btn-txt{
   color: #faf6ed;
   line-height: 1.2;
   font-size: 1.3rem;
   text-decoration: none;
+  font-family: var(--font-primary);
 }
-.white-txt:hover {
+.overlay-btn-txt:hover {
   text-decoration: underline;
 }
 
+/**card animation appear on scroll**/
 
-@media only screen and (min-width: 1200px) {
-  .text-overlay span {
-    font-size: 4.5rem;
+@keyframes enter-animation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-
-  .text-overlay p {
-    font-size: 1.4rem;
-  }
-
-  .white-txt {
-    font-size: 1.4rem;
-  }
-
-  .orange-button {
-    font-size: 1.2rem;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .text-overlay span {
-    font-size: 2.75rem;
-  }
-
-  .text-overlay p {
-    font-size: 1.3rem;
-  }
-
-  .white-txt {
-    font-size: 1.25rem;
-  }
-
-  .orange-button {
-    font-size: 1.1rem;
-  }
+.card-animation {
+  animation: enter-animation 0.6s ease-out forwards;
 }
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .text-overlay span {
-    font-size: 2.2rem;
-  }
-
-  .text-overlay p {
-    font-size: 1.1rem;
-  }
-
-  .white-txt {
-    font-size: 1.2rem;
-  }
-
-  .orange-button {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-
-  .text-overlay span {
-    margin: 0 auto;
-    font-size: 1.25rem;
-  }
-
-  .text-overlay p {
-    font-size: 0.9rem;
-  }
-
-  .white-txt {
-    font-size: 1rem;
-  }
-
-  .orange-button {
-    font-size: 0.85rem;
-    padding: 8px 12px;
-  }
-}
-
-
-
 
 </style>
-
-<!--/* Mobile First / Smaller to Larger */-->
-
-<!--/* X-Small devices (portrait phones, less than 576px) */-->
-
-<!--/* Small devices (landscape phones, 576px and up) */-->
-<!--@media (min-width: 576px) {-->
-
-<!--}-->
-
-<!--/* Medium devices (tablets, 768px and up) */-->
-<!--@media (min-width: 768px) {-->
-
-<!--}-->
-
-<!--/* Large devices (desktops, 992px and up) */-->
-<!--@media (min-width: 992px) {-->
-
-<!--}-->
-
-<!--/* X-Large devices (large desktops, 1200px and up) */-->
-<!--@media (min-width: 1200px) {-->
-
-<!--}-->
-
-<!--/* XX-Large devices (larger desktops, 1400px and up) */-->
-<!--@media (min-width: 1400px) {-->
-
-<!--}-->
-
-
-<!--/* Desktop First / Larger to Smaller */-->
-
-<!--/* X-Small devices (portrait phones, less than 576px) */-->
-<!--@media (max-width: 575.98px) {-->
-
-<!--}-->
-
-<!--/* Small devices (landscape phones, less than 768px) */-->
-<!--@media (max-width: 767.98px) {-->
-
-<!--}-->
-
-<!--/* Medium devices (tablets, less than 992px) */-->
-<!--@media (max-width: 991.98px) {-->
-
-<!--}-->
-
-<!--/* Large devices (desktops, less than 1200px) */-->
-<!--@media (max-width: 1199.98px) {-->
-
-<!--}-->
-
-<!--/* X-Large devices (large desktops, less than 1400px) */-->
-<!--@media (max-width: 1399.98px) {-->
-
-<!--}-->

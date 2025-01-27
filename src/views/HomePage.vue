@@ -1,11 +1,8 @@
 <script setup>
 import HomeImage from "@/components/homepage/HomeImage.vue";
-// import ServicesCard from "@/components/homepage/ServiceCards.vue";
-// import GetInTouchForm from "@/components/homepage/GetInTouchForm.vue";
 import {onMounted} from "vue";
 import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
 import ServicesCards from "@/components/homepage/ServicesCards.vue";
-// import ImageOverlay from "@/components/homepage/ImageOverlay.vue";
 
 
 onMounted(() => {
@@ -17,7 +14,7 @@ onMounted(() => {
           if (entry.isIntersecting) {
 
             //add delay between cards
-            entry.target.style.animationDelay = `${index * 0.2}s`;
+            entry.target.style.animationDelay = `${index * 0.3}s`;
             //add the animation class
             entry.target.classList.add('card-animation');
             return;
@@ -26,7 +23,7 @@ onMounted(() => {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.25,
       }
   );
 
@@ -39,32 +36,23 @@ onMounted(() => {
 
 <template>
   <div>
-    <section id="header-section" class="py-2 homeSection">
+    <section id="header-section" class="mt-5 py-5">
       <HomeImage />
     </section>
 
-    <section id="service-section" class="py-2 homeSection">
-<!--      <ServicesCard />-->
+    <section id="service-section" class="py-2">
       <ServicesCards/>
     </section>
 
     <section id="test-scroller" class="py-3">
       <TestimonialScroller/>
-
-
     </section>
 
 
-    <!--    <section id="contact-section" class="py-4 homeSection">-->
-<!--      <GetInTouchForm />-->
-<!--    </section>-->
   </div>
 </template>
 
 <style scoped>
-.testimonial-container{
-  max-height: 600px;
-}
 
 @keyframes enter-animation {
   from {
@@ -76,7 +64,6 @@ onMounted(() => {
     opacity: 1;
   }
 }
-
 
 .card-animation {
   animation: enter-animation 0.6s ease-out forwards;
