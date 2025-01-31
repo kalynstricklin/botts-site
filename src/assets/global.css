@@ -1,6 +1,8 @@
 :root {
     --font-primary: "Electrolize", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-secondary: "Inter", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --primary-color: #d39f44;
+    --secondary-color: #faf6ed;
 }
 
 body {
@@ -42,17 +44,17 @@ html {
 }
 
 .light-mode{
-    background-color: #faf6ed;
-    color: #d39f44;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .white-container {
-    background-color: #faf6ed;
-    border-color: #faf6ed;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .section-subtitle {
-    color: #f3f2e0;
+    color: #fff;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -71,23 +73,23 @@ html {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #d39f44;
+    color:  var(--primary-color);
 }
 
 .gen-orange-title {
     font-weight: bold;
-    color: #d39f44;
+    color:  var(--primary-color);
 }
 
 .gen-white-title {
     font-weight: bold;
-    color: #faf6ed;
+    color: var(--secondary-color);
 }
 
 .gen-orange-btn {
-    background-color: #d39f44;
-    border-color: #d39f44;
-    color: #faf6ed;;
+    background-color:  var(--primary-color);
+    border-color:  var(--primary-color);
+    color: var(--secondary-color);
     padding: 10px 15px;
     transition: all 0.3s ease-in-out;
     font-family: var(--font-primary);
@@ -99,7 +101,7 @@ button{
 }
 
 .gen-orange-btn:hover {
-    color: #faf6ed;
+    color: var(--secondary-color);
     transform: translateY(-5px);
     font-family: var(--font-primary);
 }
@@ -114,8 +116,8 @@ button{
 
 .orange-button {
     background-color: transparent;
-    border-color: #d39f44;
-    color: #d39f44;
+    border-color:var(--primary-color);
+    color: var(--primary-color);
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -125,15 +127,15 @@ button{
 }
 
 .orange-button:hover {
-    background-color: #d39f44;
-    border-color: #d39f44;
-    color: #faf6ed;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .white-button {
     background-color: transparent;
     border-color: #faf6ed;
-    color: #faf6ed;
+    color: var(--secondary-color);
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -143,9 +145,12 @@ button{
 }
 
 .white-button:hover {
-    background-color: #d39f44;
-    border-color: #d39f44;
-    color: #faf6ed;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
+.container-fluid{
+    width: 80%;
+}

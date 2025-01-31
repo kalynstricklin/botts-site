@@ -22,16 +22,16 @@ import image3 from "@/assets/arch.webp"
     </div>
 
     <section id="team-pics" class="mb-3">
-     <div class="container-fluid">
+     <div class="container-fluid image-container">
        <div class="row g-2 justify-content-center align-content-center">
-         <div class="col-9 col-lg-3">
-           <img :src="image1" class="img-fluid rounded">
+         <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+           <img :src="image1" class="img-fluid rounded image">
          </div>
-         <div class="col-9 col-lg-3">
-           <img :src="image2" class="img-fluid rounded">
+         <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+           <img :src="image2" class="img-fluid rounded image">
          </div>
-         <div class="col-9 col-lg-3">
-           <img :src="image3" class="img-fluid rounded">
+         <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+           <img :src="image3" class="img-fluid rounded image">
          </div>
        </div>
      </div>
@@ -52,7 +52,9 @@ import image3 from "@/assets/arch.webp"
 
 <style scoped>
 hr{
-  border: 2px solid #d39f44;
+  border: 2px solid var(--primary-color);
 }
-
+.image{
+  filter: grayscale(100%);
+}
 </style>

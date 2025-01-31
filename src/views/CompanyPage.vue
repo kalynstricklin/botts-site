@@ -1,10 +1,11 @@
 <script setup>
 // import AboutUs from "@/components/company/AboutUs.vue";
-// import image1 from "@/assets/team.webp";
+import image1 from "@/assets/team.webp";
 // import TeamComp from "@/components/company/TeamComp.vue";
 // import JoinTeam from "@/components/company/JoinTeam.vue";
 import TeamCard from "@/components/company/TeamCard.vue";
 import OurStory from "@/components/company/OurStory.vue";
+// import ContactForm from "@/components/company/ContactForm.vue";
 
 
 </script>
@@ -17,13 +18,11 @@ import OurStory from "@/components/company/OurStory.vue";
 
     <section id="story-timeline" class="py-5">
       <OurStory/>
-
     </section>
 
     <section id="team-pics" class="mb-3">
-
       <div class="container-fluid">
-        <div class="row py-4">
+        <div class="row py-4 m-2">
           <h4 class="gen-orange-title">Team Photos</h4>
         </div>
         <div class="row g-2 justify-content-center">
@@ -51,6 +50,9 @@ import OurStory from "@/components/company/OurStory.vue";
 <!--      <JoinTeam/>-->
 <!--    </section>-->
 
+<!--    <section id="contact" class="py-5">-->
+<!--      <ContactForm/>-->
+<!--    </section>-->
 
   </div>
 </template>

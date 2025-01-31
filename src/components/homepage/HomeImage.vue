@@ -1,38 +1,39 @@
 <script setup>
 import headerImage from "@/assets/generic-cover-12-web.jpg";
-import {onMounted} from "vue";
+// import {onMounted} from "vue";
 
 
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-        //loop over the entries
-        entries.forEach((entry, index) => {
-
-          //if element is visible
-          if (entry.isIntersecting) {
-
-            //add delay between cards
-            entry.target.style.animationDelay = `${index * 0.15}s`;
-            //add the animation class
-            entry.target.classList.add('card-animation');
-            return;
-
-          }
-        });
-      },
-      {
-        threshold: 0.25,
-      }
-  );
-
-  const sections = document.querySelectorAll('.scroll-appear');
-  sections.forEach((section) => observer.observe(section));
-});
+// onMounted(() => {
+//   const observer = new IntersectionObserver((entries) => {
+//         //loop over the entries
+//         entries.forEach((entry, index) => {
+//
+//           //if element is visible
+//           if (entry.isIntersecting) {
+//
+//             //add delay between cards
+//             entry.target.style.animationDelay = `${index * 0.15}s`;
+//             //add the animation class
+//             entry.target.classList.add('card-animation');
+//             return;
+//
+//           }
+//         });
+//       },
+//       {
+//         threshold: 0.25,
+//       }
+//   );
+//
+//   const sections = document.querySelectorAll('.scroll-appear');
+//   sections.forEach((section) => observer.observe(section));
+// });
 
 </script>
 
 <template>
-  <div class="container-fluid scroll-appear">
+  <div class="container-fluid">
+<!--  <div class="container-fluid scroll-appear">-->
     <div style="position: relative;">
       <img :src="headerImage" alt="header Image" class="overlay-img">
       <div class="overlay-txt">
@@ -62,7 +63,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
+.container-fluid{
+  width: 100%;
+}
 .overlay-img{
   opacity: 50%;
   max-height: 425px;
@@ -121,4 +124,23 @@ onMounted(() => {
   animation: enter-animation 0.6s ease-out forwards;
 }
 
+@media only screen and (max-width: 767px) {
+  .overlay-txt{
+    width: 100%;
+    top: 55%;
+  }
+  .overlay-title{
+    font-size: 1.5rem;
+  }
+  .overlay-description{
+    font-size: 0.95rem;
+  }
+  .white-button{
+    font-size: 0.95rem;
+  }
+
+  .overlay-btn-txt{
+    font-size: 0.95rem;
+  }
+}
 </style>

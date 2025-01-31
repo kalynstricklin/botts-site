@@ -11,8 +11,7 @@
           </router-link>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-<!--          <span class="navbar-toggler-icon"></span>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="d-flex justify-content-start align-items-center">
           <i class="fas fa-bars"></i>
         </span>

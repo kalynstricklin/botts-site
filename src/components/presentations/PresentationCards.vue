@@ -10,13 +10,13 @@ const presentationsList = [
     link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
     image: processing2023,
     title: "SensorML and Processing (2024)",
-    desc: "Updated presentation on SensorML. Updated presentation on SensorML. Updated presentation on SensorML.",
+    desc: "Updated presentation on SensorML presented at the University of Alabama in Huntsville (UAH) Hackathon.",
   },
   {
     link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
     image: introOSHConSys2023,
     title: "Intro to OSH and Connected Systems (2023)",
-    desc: "Introduction to OSH. Updated presentation on SensorML. Updated presentation on SensorML. Updated presentation on SensorML.",
+    desc: "Introduction to OpenSensorHub presented at 'Security, Sensors, & Simulations: Pushing the Limits of Cloud Computing' event at UAH Invention to Innovation Center.",
   },
   {
     link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
@@ -41,6 +41,12 @@ const presentationsList = [
 
 <template>
   <div class="container-fluid">
+    <div class="row mb-5 justify-content-center text-center py-5">
+      <div class="col-lg-12">
+        <h2 class="section-title">Presentations</h2>
+        <p class="section-subtitle">All Presentations and Documents are available to use. Please reference appropriately.</p>
+      </div>
+    </div>
 
     <div class="row align-items-center justify-content-center align-content-end" v-for="(presentation, index) in presentationsList" :key="index">
       <div class="col-lg-4 col-md-6 text-center mb-4">
@@ -55,11 +61,11 @@ const presentationsList = [
       </div>
       <div class="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
         <div class="py-4 px-5">
-          <h4 class="gen-orange-title">{{ presentation.title }}</h4>
-          <p>{{ presentation.desc }}</p>
+          <h3 class="section-title" style=" font-size: 2.1rem;">{{ presentation.title }}</h3>
+          <p class="section-text">{{ presentation.desc }}</p>
 
           <div>
-            <b-button :href="presentation.link" class="gen-orange-btn" target="_blank">
+            <b-button :href="presentation.link" class="orange-button" target="_blank">
               View Slides
             </b-button>
           </div>
