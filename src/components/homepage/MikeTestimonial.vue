@@ -12,7 +12,7 @@ import mike from "@/assets/headshots/mike.png";
           <img :src="mike" alt="Mike image" class="img-fluid headshot" loading="lazy">
           <div class="text-content">
             <p>
-              "The Botts-Inc team has devf sorML editor that removes the need to edit XML, providing a more human-friendly means of integrating your sensors. There is also a SensorML definitions server that provides easy discovery of definitions that can accelerate the information integration tasks required for robust sensor integrations."
+              "The Botts-Inc team has........"
             </p>
             <span>--Dr. Mike Botts, Founder & CEO</span>
           </div>
