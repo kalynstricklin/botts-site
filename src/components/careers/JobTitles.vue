@@ -35,15 +35,15 @@ const positions = [
                     <i class="bi bi-arrow-down-right" style="color: white; font-size: 1.5rem"></i>
                   </button>
                 </p>
-                <div class="collapse" id="collapseJobDesc">
-                  <div class="card card-body collapse-text">
-                    Team player who takes initiative.  Interested in new challenges.  Customer focused.  Committed to operational excellence.  Technical skills required for success include:
-                    {{item.description}}
-
-                  </div>
-                </div>
               </div>
               <hr/>
+              <div class="collapse" id="collapseJobDesc">
+                <div class="card card-body collapse-text">
+                  Team player who takes initiative.  Interested in new challenges.  Customer focused.  Committed to operational excellence.  Technical skills required for success include:
+                  {{item.description}}
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
