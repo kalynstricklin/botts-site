@@ -7,37 +7,43 @@
     <div class="card p-4">
       <div class="row">
         <div class="col-12">
-          <div class="text-class">
-            <div class="row px-lg-5 px-3 py-4">
-              <div class="col-lg-10 col-12">
-                <div class="text-content">
-                  <b-card-title class="title text-white">Documentation</b-card-title>
-                  <p>Access in-depth technical documentation, user guides, and best practices to maximize the platform’s capabilities.</p>
+
+          <a href="https://opensensorhub.org/documentation/" class="text-decoration-none">
+            <div class="card card-content">
+              <div class="text-class">
+                <div class="row px-lg-5 px-3 py-4">
+                  <div class="col-lg-10 col-12">
+                    <div class="text-content">
+                      <b-card-title class="title text-white">Documentation</b-card-title>
+                      <p>Access technical documentation, user guides, and best practices to maximize OSH’s capabilities.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">
+                    <a href="https://opensensorhub.org/documentation/" class="text-white">
+                      <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
+                    </a>
+                  </div>
+                  <hr/>
                 </div>
               </div>
-
-              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">
-                <a href="https://opensensorhub.org/documentation/" class="text-white">
-                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
-                </a>
-              </div>
-              <hr/>
             </div>
-          </div>
+          </a>
+
         </div>
 
         <div class="col-12">
           <div class="text-class">
             <div class="row px-lg-5 px-3 py-4">
 
-              <div class="col-lg-10 col-12">
+              <div class="col-lg-9 col-12">
                 <div class="text-content">
-                  <b-card-title class="title text-white">Developer Center</b-card-title>
-                  <p>Explore API references, SDKs, and development tools to build and integrate custom solutions efficiently.</p>
+                  <h3 class="title text-white">Developer Center</h3>
+                  <p>Explore API references, SDKs, and development tools to build and integrate OSH solutions.</p>
                 </div>
               </div>
 
-              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">
+              <div class="col-lg-3 col-12 text-lg-end text-start mt-2 mt-lg-0">
                 <a href="https://docs.opensensorhub.org/" class="text-white">
                   <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
                 </a>
@@ -54,7 +60,7 @@
               <div class="col-lg-10 col-12">
                   <div class="text-content">
                     <b-card-title class="title text-white">Presentations</b-card-title>
-                    <p>View insightful presentations from conferences, industry events, and technical discussions about the latest innovations.</p>
+                    <p>View presentations from events, and technical discussions about the latest innovations from OSH.</p>
                   </div>
               </div>
 
@@ -74,7 +80,7 @@
               <div class="col-lg-10 col-12">
                 <div class="text-content">
                   <b-card-title class="title text-white">Community Forum</b-card-title>
-                  <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the community.</p>
+                  <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
                 </div>
               </div>
 
@@ -99,6 +105,13 @@
   border-color: rgba(112, 112, 112, 0.2);
   opacity: 100%;
 }
+.card-content{
+  background-color: transparent;
+  border-color: transparent;
+}
+.text-content:hover{
+  transform: translateY(-5px);
+}
 
 .text-content {
   text-align: left;
@@ -116,9 +129,9 @@ hr {
 }
 
 @media only screen and (max-width: 480px) {
-  .title {
+ /** .title {
     font-size: 1.35rem;
-  }
+  }**/
   p {
     font-size: 0.75rem;
   }
