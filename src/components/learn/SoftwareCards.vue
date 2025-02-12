@@ -17,7 +17,7 @@ import image3 from "@/assets/arch.webp"
     <div class="nav align-items-center justify-content-evenly py-3">
       <li class="nav-item">
         <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
-          OSH Web Client Toolkit
+          OSH Connect
         </a>
       </li>
 
@@ -31,11 +31,11 @@ import image3 from "@/assets/arch.webp"
           SensorML Process Engine
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
-          SensorML Web Tools
-        </a>
-      </li>
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">-->
+<!--          SensorML Web Tools-->
+<!--        </a>-->
+<!--      </li>-->
     </div>
 
 <!--    tab content-->
@@ -89,22 +89,22 @@ import image3 from "@/assets/arch.webp"
           </a>
         </div>
 
-        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
-          <a href="" class="text-decoration-none" target="_blank">
-            <div class="tab-content-wrapper">
-              <img :src="image3" alt="SensorML web tools" class="img-fluid tab-image" loading="lazy">
-              <div class="text-content">
+<!--        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">-->
+<!--          <a href="" class="text-decoration-none" target="_blank">-->
+<!--            <div class="tab-content-wrapper">-->
+<!--              <img :src="image3" alt="SensorML web tools" class="img-fluid tab-image" loading="lazy">-->
+<!--              <div class="text-content">-->
 
-                <b-card-title>SensorML Web Tools</b-card-title>
-                <p>
-                  The Botts-Inc team has developed and maintains a variety of open source web-based tools in support of SensorML. These include a SensorML document validator, schema browser, and SensorML Tableview (“PrettyView”) for human-readable presentation of a SensorML document, and a SensorML editor that removes the need to edit XML, providing a more human-friendly means of integrating your sensors. There is also a SensorML definitions server that provides easy discovery of definitions that can accelerate the information integration tasks required for robust sensor integrations.
-                </p>
-              </div>
+<!--                <b-card-title>SensorML Web Tools</b-card-title>-->
+<!--                <p>-->
+<!--                  The Botts-Inc team has developed and maintains a variety of open source web-based tools in support of SensorML. These include a SensorML document validator, schema browser, and SensorML Tableview (“PrettyView”) for human-readable presentation of a SensorML document, and a SensorML editor that removes the need to edit XML, providing a more human-friendly means of integrating your sensors. There is also a SensorML definitions server that provides easy discovery of definitions that can accelerate the information integration tasks required for robust sensor integrations.-->
+<!--                </p>-->
+<!--              </div>-->
 
-            </div>
-          </a>
+<!--            </div>-->
+<!--          </a>-->
 
-        </div>
+<!--        </div>-->
 
       </div>
     </div>

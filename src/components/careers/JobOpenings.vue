@@ -27,25 +27,26 @@ const positions = [
 <!--              <span class="text-white d-block"><i class="fa fa-map-marker" aria-hidden="true"></i>Remote</span>-->
             </div>
             <div class="mt-3">
-              <a href="mailto:work@botts-inc.com" target="_blank" class="btn mt-auto align-self-start btn-glow">Apply Here</a>
+              <a href="mailto:work@botts-inc.com" target="_blank" class="btn mt-auto align-self-end white-button">Apply Here</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
+<!--non job specific-->
     <div class="row g-2">
-      <div class="card card-glow hvr-glow">
+      <div class="card inverted-card-glow">
         <div class="card-body">
           <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-9">
               <p class="card-text justify-content-center align-items-center" style="font-size: 1.25rem">Not seeing the perfect fit? No worries! Send your resume to work@botts-inc.com and be considered for future opportunities.</p>
             </div>
             <div class="col-lg-2 justify-content-center align-content-center">
-              <a href="mailto:work@botts-inc.com" class="btn btn-glow align-content-end">Send Resume</a>
+              <a href="mailto:work@botts-inc.com" class="btn white-button align-content-end">Send Resume</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -54,6 +55,10 @@ const positions = [
 </template>
 
 <style scoped>
+.card-body{
+  text-align: start;
+}
+
 .badge{
   padding: 5px 8px;
   border-radius: 3px;
@@ -68,6 +73,19 @@ const positions = [
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+.inverted-card-glow{
+  background: transparent;
+  border-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.inverted-card-glow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
 .card-glow:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);

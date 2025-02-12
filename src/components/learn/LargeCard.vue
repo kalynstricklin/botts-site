@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-12">
 
-          <a href="https://opensensorhub.org/documentation/" class="text-decoration-none">
+          <a href="https://opensensorhub.org/documentation/" class="text-decoration-none" target="_blank">
             <div class="card card-content">
               <div class="text-class">
                 <div class="row px-lg-5 px-3 py-4">
@@ -19,11 +19,11 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">
-                    <a href="https://opensensorhub.org/documentation/" class="text-white">
-                      <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
-                    </a>
-                  </div>
+<!--                  <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
+<!--                    <a href="https://opensensorhub.org/documentation/" class="text-white" target="_blank">-->
+<!--                      <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
+<!--                    </a>-->
+<!--                  </div>-->
                   <hr/>
                 </div>
               </div>
@@ -33,66 +33,78 @@
         </div>
 
         <div class="col-12">
-          <div class="text-class">
-            <div class="row px-lg-5 px-3 py-4">
+          <a href="https://docs.opensensorhub.org/" class="text-decoration-none" target="_blank">
+            <div class="card card-content">
+              <div class="text-class">
+                <div class="row px-lg-5 px-3 py-4">
 
-              <div class="col-lg-9 col-12">
-                <div class="text-content">
-                  <h3 class="title text-white">Developer Center</h3>
-                  <p>Explore API references, SDKs, and development tools to build and integrate OSH solutions.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-12 text-lg-end text-start mt-2 mt-lg-0">
-                <a href="https://docs.opensensorhub.org/" class="text-white">
-                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
-                </a>
-              </div>
-
-              <hr/>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="text-class">
-            <div class="row px-lg-5 px-3 py-4">
-              <div class="col-lg-10 col-12">
-                  <div class="text-content">
-                    <b-card-title class="title text-white">Presentations</b-card-title>
-                    <p>View presentations from events, and technical discussions about the latest innovations from OSH.</p>
+                  <div class="col-lg-9 col-12">
+                    <div class="text-content">
+                      <h3 class="title text-white">Developer Center</h3>
+                      <p>Explore API references, SDKs, and development tools to build and integrate OSH solutions.</p>
+                    </div>
                   </div>
-              </div>
 
-              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">
-                <a href="/presentation" class="text-white">
-                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
-                </a>
+    <!--              <div class="col-lg-3 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
+    <!--                <a href="https://docs.opensensorhub.org/" class="text-white" target="_blank">-->
+    <!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
+    <!--                </a>-->
+    <!--              </div>-->
+
+                  <hr/>
+                </div>
               </div>
-              <hr/>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="col-12">
-          <div class="text-class">
-            <div class="row px-lg-5 px-3 py-4">
-              <div class="col-lg-10 col-12">
-                <div class="text-content">
-                  <b-card-title class="title text-white">Community Forum</b-card-title>
-                  <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
+          <a href="/learn/presentations" class="text-decoration-none" target="_blank">
+            <div class="card card-content">
+              <div class="text-class">
+                <div class="row px-lg-5 px-3 py-4">
+                  <div class="col-lg-10 col-12">
+                      <div class="text-content">
+                        <b-card-title class="title text-white">Presentations</b-card-title>
+                        <p>View presentations from events, and technical discussions about the latest innovations from OSH.</p>
+                      </div>
+                  </div>
+
+    <!--              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
+    <!--                <a href="/presentation" class="text-white" target="_blank">-->
+    <!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
+    <!--                </a>-->
+    <!--              </div>-->
+                  <hr/>
                 </div>
               </div>
-
-              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">
-                <a href="#" class="text-white">
-                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>
-                </a>
-              </div>
-
-              <hr/>
             </div>
-          </div>
+          </a>
+        </div>
+
+        <div class="col-12">
+          <a href="https://discord.gg/k4nYuyMF72" class="text-decoration-none" target="_blank">
+            <div class="card card-content">
+              <div class="text-class">
+                <div class="row px-lg-5 px-3 py-4">
+                  <div class="col-lg-10 col-12">
+                    <div class="text-content">
+                      <b-card-title class="title text-white">Community Forum</b-card-title>
+                      <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
+                    </div>
+                  </div>
+
+<!--              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
+<!--                <a href="#" class="text-white" target="_blank">-->
+<!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
+<!--                </a>-->
+<!--              </div>-->
+
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

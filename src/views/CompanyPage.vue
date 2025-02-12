@@ -1,9 +1,6 @@
 <script setup>
-// import image1 from "@/assets/team.webp";
 import OurStory from "@/components/company/OurStory.vue";
 import {onMounted} from "vue";
-// import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
-// import TeamComp from "@/components/unused/TeamComp.vue";
 
 onMounted(() => {
   function reveal() {

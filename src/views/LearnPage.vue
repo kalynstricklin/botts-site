@@ -3,7 +3,7 @@
 import {onMounted} from "vue";
 import LargeCard from "@/components/learn/LargeCard.vue";
 import OSHLaptop from "@/components/learn/OSHLaptop.vue";
-import ProjectComp from "@/components/learn/ProjectComp.vue";
+import ProjectComp from "@/components/learn/SoftwareCards.vue";
 
 onMounted(() => {
   function reveal() {
