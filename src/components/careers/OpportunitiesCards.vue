@@ -2,12 +2,9 @@
 const positions = [
   { position: "Full Stack Developer", type: "Full Time", location: "Remote" },
   { position: "Mobile Application Developer", type: "Full Time", location: "Remote" },
-  { position: "Frontend Developer - UI/UX Specialist", type: "Full Time", location: "Remote" },
+  { position: "Software Engineer - Frontend", type: "Full Time", location: "Remote" },
+  { position: "Software Engineer - Backend", type: "Full Time", location: "Remote" },
   { position: "Sensor Integration Engineer" , type: "Full Time", location: "Remote" },
-  // { position: "Metaverse Simulation Developer" },
-  // { position: "Cloud Native Engineer" },
-  // { position: "Field System Engineer" },
-  // { position: "Edge Deployment Engineer" },
   { position: "Emerging Technology Specialist" , type: "Full Time", location: "Remote" },
   { position: "Software Developer Intern" , type: "Part Time", location: "Remote" },
 
@@ -18,15 +15,20 @@ const positions = [
   <div class="container-fluid">
     <div class="row">
       <div v-for="(item, index) in positions" :key="index" class="col-lg-6 mb-3 d-flex align-items-stretch">
-        <div class="card  w-100">
+        <div class="card w-100">
           <div class="card-body p-4">
-              <span class="badge rounded-pill float-md-end mb-3 mb-sm-0" style="background-color: #d39f44; color: #fff; padding: 10px 15px">{{item.type}}</span>
-              <span> <i class="bi bi-geo-alt"></i> {{item.location}}</span>
-            <h2>{{ item.position }}</h2>
-
-            <div class="mt-3">
-              <a href="mailto:work@botts-inc.com" target="_blank" class="btn mt-auto align-self-end white-button">Apply Here</a>
+            <div class="row">
+              <div class="col-12">
+                <span class="badge rounded-pill float-md-end ms-2 mb-3 mb-sm-0" style="background-color: #d39f44; color: #fff; padding: 10px 15px">{{item.type}}</span>
+                <span class="badge rounded-pill float-md-end ms-2 mb-3 mb-sm-0" style="background-color: #d39f44; color: #fff; padding: 10px 15px"> <i class="bi bi-geo-alt"></i> {{item.location}}</span>
+                <h2 class="mt-4">{{ item.position }}</h2>
+              </div>
             </div>
+            <div class="mt-3 float-sm-start">
+              <a href="mailto:work@botts-inc.com" target="_blank" class="btn mt-auto white-button">Apply Here</a>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -38,11 +40,13 @@ const positions = [
       <div class="card">
         <div class="card-body">
           <div class="row">
-            <div class="col-lg-9">
-              <p class="card-text justify-content-center align-items-center" style="font-size: 1.25rem">Not seeing the perfect fit? No worries! Send your resume to work@botts-inc.com and be considered for future opportunities.</p>
-            </div>
-            <div class="col-lg-2 justify-content-center align-content-center">
-              <a href="mailto:work@botts-inc.com" class="btn white-button align-content-end">Send Resume</a>
+            <div class="col-12">
+
+              <div class=" float-sm-end">
+                <a href="mailto:work@botts-inc.com" class="btn white-button">Send Resume</a>
+              </div>
+              <p class="card-text">Not seeing the perfect fit? No worries! Send your resume to work@botts-inc.com and be considered for future opportunities.</p>
+
             </div>
           </div>
         </div>
@@ -55,6 +59,8 @@ const positions = [
 <style scoped>
 .card-body{
   text-align: start;
+  justify-content: center;
+  align-content: center;
 }
 
 .badge{
@@ -81,15 +87,9 @@ const positions = [
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
-
-
-.card .card-text {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 15px;
+p{
+  font-size: 1.25rem;
 }
-
-
 
 @media only screen and (max-width: 481px) {
  .badge{

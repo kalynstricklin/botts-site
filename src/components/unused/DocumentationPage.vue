@@ -1,6 +1,6 @@
 <script setup>
 
-import DocumentationList from "@/components/documentation/DocumentationList.vue";
+import DocumentationList from "@/components/unused/documentation/DocumentationList.vue";
 </script>
 
 <template>
