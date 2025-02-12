@@ -32,7 +32,7 @@ onMounted(() => {
     <div class="row py-5">
       <div class="text-center justify-content-center align-content-center text-white">
         <h1>Learn to Build with the OpenSensorHub Platform</h1>
-        <hr/>
+<!--        <hr/>-->
       </div>
     </div>
 
@@ -50,7 +50,7 @@ onMounted(() => {
 <!--    </section>-->
 
 
-    <section class="py-2 reveal">
+    <section class="reveal">
       <LargeCard/>
     </section>
 
