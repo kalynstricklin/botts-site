@@ -57,7 +57,7 @@
   background-color: #fff;
 }
 nav{
-  background-color: #131824;
+  background-color: #0D121C;
 }
 .logo {
   max-height: 65px;

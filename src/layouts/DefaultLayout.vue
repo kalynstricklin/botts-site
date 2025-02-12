@@ -7,6 +7,7 @@ export default {
     BottsFooter
   },
 };
+
 </script>
 
 <template>
@@ -14,6 +15,8 @@ export default {
   <BottsHeader/>
   <router-view/>
   <BottsFooter/>
+
+
 </div>
 </template>
 

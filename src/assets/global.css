@@ -12,8 +12,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    background-color: #131822;
+    background-color: #0D121C;
+
 }
+
 
 h1, h2, h3, h4, h5, h6, span {
     font-family: var(--font-primary);

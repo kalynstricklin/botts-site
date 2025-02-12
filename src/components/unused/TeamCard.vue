@@ -2,6 +2,8 @@
 import mikeBotts from "@/assets/headshots/MikeHS.jpg"
 import kalyn from "@/assets/headshots/kalyn.jpg"
 import teamPic from "@/assets/team.webp"
+import alexA from '@/assets/headshots/AlexA.jpg'
+import ashleyP from '@/assets/headshots/ashleyP.jpg'
 </script>
 
 <template>
@@ -141,7 +143,7 @@ import teamPic from "@/assets/team.webp"
       </div>
       <div class="col-lg-2 col-md-6">
         <div class="team-card h-100">
-        <img :src=mikeBotts alt="Mike headshot" class="headshot w-100" />
+        <img :src=ashleyP alt="Mike headshot" class="headshot w-100" />
         <div class="p-4">
           <h5>Ashley Poteau</h5>
           <p class="text-muted mb-4">Software Developer</p>
@@ -168,7 +170,7 @@ import teamPic from "@/assets/team.webp"
       </div>
       <div class="col-lg-2 col-md-6">
         <div class="team-card h-100">
-        <img :src=mikeBotts alt="Mike headshot" class="headshot w-100" />
+        <img :src=mikeBotts alt="Robin White headshot" class="headshot w-100" />
         <div class="p-4">
           <h5>Robin White</h5>
           <p class="text-muted mb-4">Software Developer</p>
@@ -180,7 +182,7 @@ import teamPic from "@/assets/team.webp"
     <div class="row g-4">
       <div class="col-lg-2 col-md-6">
         <div class="team-card h-100">
-          <img :src=kalyn alt="Kalyn headshot" class="headshot w-100" />
+          <img :src=alexA alt="Alex Almanza headshot" class="headshot w-100" />
           <div class="p-4">
             <h5>Alex Almanza</h5>
             <p class="text-muted mb-4">Software Developer Intern</p>
@@ -189,7 +191,7 @@ import teamPic from "@/assets/team.webp"
       </div>
       <div class="col-lg-2 col-md-6">
         <div class="team-card h-100">
-          <img :src=kalyn alt="Kalyn headshot" class="headshot w-100" />
+          <img :src=kalyn alt="Salwa Jeries headshot" class="headshot w-100" />
           <div class="p-4">
             <h5>Salwa Jeries</h5>
             <p class="text-muted mb-4">Software Developer Intern</p>
@@ -198,7 +200,7 @@ import teamPic from "@/assets/team.webp"
       </div>
       <div class="col-lg-2 col-md-6">
         <div class="team-card h-100">
-          <img :src=kalyn alt="Kalyn headshot" class="headshot w-100" />
+          <img :src=kalyn alt="Esther Shore headshot" class="headshot w-100" />
           <div class="p-4">
             <h5>Esther Shore</h5>
             <p class="text-muted mb-4">Software Developer Intern</p>
@@ -207,7 +209,7 @@ import teamPic from "@/assets/team.webp"
       </div>
       <div class="col-lg-2 col-md-6">
         <div class="team-card h-100">
-          <img :src=kalyn alt="Kalyn headshot" class="headshot w-100" />
+          <img :src=kalyn alt="Kalyn Stricklin headshot" class="headshot w-100" />
           <div class="p-4">
             <h5>Kalyn Stricklin</h5>
             <p class="text-muted mb-4">Software Developer Intern</p>

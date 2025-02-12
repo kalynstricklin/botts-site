@@ -1,125 +1,97 @@
 <script setup>
 
+
 </script>
 
 <template>
-  <section class="bsb-timeline-1 py-5 py-xl-8">
-    <div class="container-fluid">
+  <section class="bsb-timeline-1">
+    <div class="background-wrapper">
+      <div class="container-fluid">
 
-      <div class="row justify-content-center">
-<!--timeline-->
-        <div class="col-12 col-lg-10">
-          <h3 class="gen-orange-title mb-4">Our Story</h3>
-          <ul class="timeline">
-            <li class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-content">
-                  <p class="card-text m-0">
-                    Botts Innovative Research, Inc. (Botts Inc.) is a boutique R&D services firm, founded by Dr. Michael Botts, that has been in business for nearly two decades, with a diverse set of private and public sector clients.
-                  </p>
-                </div>
+        <div class="row justify-content-center">
+
+          <!--timeline-->
+          <div class="col-12 col-lg-10">
+            <div class="row mb-3">
+              <div class="justify-content-center align-content-center text-white">
+                <h2>Our Story</h2>
               </div>
-            </li>
-
-            <li class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-content">
-                  <p class="card-text m-0">
-                    Botts-Inc was built on Dr. Botts’ 20 years as a Principal Research Scientist within the National Space Science and Technology Center at the University of Alabama in Huntsville (UAH), where he ran the VisAnalysis and Systems Technology (VAST) Lab.  At UAH, his team was heavily involved in research and development in support of fusion and analysis of data from a wide variety of disparate sensors, resulting in Dr. Botts’ creation of Sensor Model Language (SensorML), and the Open Geospatial Consortium (OGC) SensorWebEnablement (SWE) architecture used all over the world.
-                  </p>
+            </div>
+            <ul class="timeline">
+              <li class="timeline-item ">
+                <div class="timeline-body">
+                  <div class="timeline-content">
+                    <p class="card-text m-0">
+                      Botts Innovative Research, Inc. (Botts Inc.) is a boutique R&D services firm, founded by Dr. Michael Botts, that has been in business for nearly two decades, with a diverse set of private and public sector clients.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-content">
-
-                  <p class="card-text m-0">
-                    Botts-Inc team then created the world leading, open source, open standards-based OpenSensorHub for integrating Sensors, Things, and Robots (all comprised of sensors, actuators and processes) as location-enabled and geographically-aware, web-accessible services – whether space-based, airborne, mobile, in situ, and terrestrial remote – of all phenomenologies in to a common 4D framework. Dr. Botts is now helping to lead the emerging OGC API – Connected Systems specification that is modernizing the OGC SWE legacy using OpenAPI/RESTful patterns.
-                  </p>
+              </li>
+              <li class="timeline-item ">
+                <div class="timeline-body">
+                  <div class="timeline-content">
+                    <p class="card-text m-0">
+                      Botts-Inc was built on Dr. Botts’ 20 years as a Principal Research Scientist within the National Space Science and Technology Center at the University of Alabama in Huntsville (UAH), where he ran the VisAnalysis and Systems Technology (VAST) Lab.  At UAH, his team was heavily involved in research and development in support of fusion and analysis of data from a wide variety of disparate sensors, resulting in Dr. Botts’ creation of Sensor Model Language (SensorML), and the Open Geospatial Consortium (OGC) SensorWebEnablement (SWE) architecture used all over the world.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-content">
-
-                  <p class="card-text m-0">
-                    Botts-Inc team then created the world leading, open source, open standards-based OpenSensorHub for integrating Sensors, Things, and Robots (all comprised of sensors, actuators and processes) as location-enabled and geographically-aware, web-accessible services – whether space-based, airborne, mobile, in situ, and terrestrial remote – of all phenomenologies in to a common 4D framework. Dr. Botts is now helping to lead the emerging OGC API – Connected Systems specification that is modernizing the OGC SWE legacy using OpenAPI/RESTful patterns.
-                  </p>
+              </li>
+              <li class="timeline-item ">
+                <div class="timeline-body">
+                  <div class="timeline-content">
+                    <p class="card-text m-0">
+                      Botts-Inc team then created the world leading, open source, open standards-based OpenSensorHub for integrating Sensors, Things, and Robots (all comprised of sensors, actuators and processes) as location-enabled and geographically-aware, web-accessible services – whether space-based, airborne, mobile, in situ, and terrestrial remote – of all phenomenologies in to a common 4D framework. Dr. Botts is now helping to lead the emerging OGC API – Connected Systems specification that is modernizing the OGC SWE legacy using OpenAPI/RESTful patterns.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
+              <li class="timeline-item ">
+                <div class="timeline-body">
+                  <div class="timeline-content">
+                    <p class="card-text m-0">
+                      Botts Innovative Research, Inc (Botts-Inc) specializes in the design and application of open standards and open source software for sensor systems within the national security, public sector, private sector, and scientific communities. Botts-Inc has been heavily involved in the design, development, and implementation of the Open Geospatial Consortium (OGC) Sensor Web Enablement (SWE) architecture, and the emerging OGC API – Connected Systems specification, discovering and tasking of sensors, publishing and subscribing to alerts, and streaming, parsing, processing, and portrayal of real-time and archived observations. Botts-Inc has extensive experience in processing and fusing a wide range of sensors, from those on satellite and airborne platforms, to those on mobile and static ground-based stations.                    </p>
+                  </div>
+                </div>
+              </li>
 
-          </ul>
-        </div>
-<!--        circle-->
-        <div class="col-12 col-lg-2">
-
-<!--          <div class="row mt-4">-->
-<!--            <div class="col-sm-6 col-md-12 col-lg-12">-->
-<!--              <button type="button" class="btn p-5 rounded-circle btn-lg timeline-circle" style="background-color: #d39f44;">-->
-
-<!--                <div class="text-white" style="font-size: 1.8rem">2005</div>-->
-<!--                <small class="text-white">BOTTS FOUNDED</small>-->
-<!--              </button>-->
-<!--            </div>-->
-<!--            <div class="col-sm-6 col-md-12 col-lg-12">-->
-<!--              <button type="button" class="btn p-5 rounded-circle btn-lg timeline-circle" style="background-color: #faf6ed;">-->
-<!--                <div class="text-uppercase">Open Source</div>-->
-<!--              </button>-->
-<!--            </div>-->
-<!--            <div class="col-sm-6 col-md-12 col-lg-12">-->
-<!--              <button type="button" class="btn p-5 rounded-circle btn-lg timeline-circle" style="background-color: #d39f44;">-->
-<!--                <div class="text-white" style="font-size: 1.8rem">30+</div>-->
-<!--                <small class="text-white">EMPLOYEES</small>-->
-<!--              </button>-->
-<!--            </div>-->
-<!--            <div class="col-sm-6 col-md-12 col-lg-12">-->
-<!--              <button type="button" class="btn p-5 rounded-circle btn-lg timeline-circle" style="background-color: #faf6ed;">-->
-<!--                <div class="text-uppercase"></div>-->
-<!--              </button>-->
-<!--            </div>-->
-
+            </ul>
           </div>
-
-<!--        </div>-->
+        </div>
       </div>
     </div>
+
 
   </section>
 </template>
 
 
 <style scoped>
-.timeline-circle{
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  font-size: 1.25rem;
+
+.background-wrapper {
+  position: relative;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 0px;
-  cursor: default;
-  opacity: 80%;
-}
-.timeline-circle div {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.timeline-circle small {
-  font-size: 0.9rem;
-  color: #444;
-}
-.right-circle{
-  margin-left: 100px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 5rem 0;
+  z-index: 1;
+  height: auto;
 }
 
-
+.background-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/lines.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  opacity: 0.65;
+  z-index: -1;
+}
 .bsb-timeline-1{
   --bsb-tl-color: #faf6ed;
   --bsb-tl-circle-color: #faf6ed;

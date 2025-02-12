@@ -1,8 +1,9 @@
 <script setup>
 import HomeImage from "@/components/homepage/HomeImage.vue";
 import {onMounted} from "vue";
-import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
+// import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
 import ServicesCards from "@/components/homepage/ServicesCards.vue";
+import MikeTestimonial from "@/components/homepage/MikeTestimonial.vue";
 
 
 // import teamImg from "@/assets/team.webp"
@@ -21,81 +22,31 @@ onMounted(() => {
       }
     }
   }
-
   window.addEventListener("scroll", reveal, {passive: true});
 
-// To check the scroll position on page load
   reveal();
-
-  // const observer = new IntersectionObserver((entries) => {
-  //       //loop over the entries
-  //       entries.forEach((entry, index) => {
-  //
-  //         //if element is visible
-  //         if (entry.isIntersecting) {
-  //
-  //           //add delay between cards
-  //           entry.target.style.animationDelay = `${index * 0.15}s`;
-  //           //add the animation class
-  //           entry.target.classList.add('card-animation');
-  //           return;
-  //
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.25,
-  //     }
-  // );
-  //
-  // const sections = document.querySelectorAll('.scroll-appear');
-  // sections.forEach((section) => observer.observe(section));
 });
-
-// onMounted(() => {
-//   const observer = new IntersectionObserver((entries) => {
-//         //loop over the entries
-//         entries.forEach((entry, index) => {
-//
-//           //if element is visible
-//           if (entry.isIntersecting) {
-//
-//             //add delay between cards
-//             entry.target.style.animationDelay = `${index * 0.3}s`;
-//             //add the animation class
-//             entry.target.classList.add('card-animation');
-//             return;
-//
-//           }
-//         });
-//       },
-//       {
-//         threshold: 0.25,
-//       }
-//   );
-//
-//   const sections = document.querySelectorAll('.homeSection');
-//   sections.forEach((section) => observer.observe(section));
-// });
-
 
 </script>
 
 <template>
   <div>
-    <section id="header-section" class="mt-5 py-5 scroll-appear reveal">
+    <section id="header-section" class="mt-5 py-5 reveal">
       <HomeImage />
     </section>
 
 
-    <section id="service-section" class="py-2 scroll-appear reveal">
+    <section id="service-section" class="py-2 reveal">
       <ServicesCards/>
     </section>
 
-    <section id="test-scroller" class="py-3 scroll-appear reveal">
-      <TestimonialScroller/>
-    </section>
+<!--    <section id="test-scroller" class="py-3 reveal">-->
+<!--      <TestimonialScroller/>-->
+<!--    </section>-->
 
+    <section id="mike-test" class="py-2">
+      <MikeTestimonial/>
+    </section>
 
 
 

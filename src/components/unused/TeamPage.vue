@@ -1,6 +1,6 @@
 <script setup>
 import JoinTeam from "@/components/team/JoinTeam.vue";
-import OurTeam from "@/components/team/OurTeam.vue";
+import OurTeam from "@/components/unused/OurTeam.vue";
 </script>
 
 <template>

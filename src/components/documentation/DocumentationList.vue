@@ -1,5 +1,5 @@
 <script setup>
-import ListComp from "@/components/ListComp.vue";
+import ListComp from "@/components/unused/ListComp.vue";
 
 const sweDoc = [
   {

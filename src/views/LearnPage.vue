@@ -1,56 +1,89 @@
 <script setup>
 
-// import LearnCards from "@/components/learn/LearnCards.vue";
-import PresentationCard from "@/components/learn/PresentationCard.vue";
-// import BlogPosts from "@/components/learn/BlogPosts.vue";
-import ProjectCarousels from "@/components/learn/ProjectCarousels.vue";
-import AdditionalResourceCards from "@/components/learn/AdditionalResourceCards.vue";
-import SoftwareScroller from "@/components/software/SoftwareScroller.vue";
+import {onMounted} from "vue";
+import LargeCard from "@/components/learn/LargeCard.vue";
+import OSHLaptop from "@/components/learn/OSHLaptop.vue";
+import ProjectComp from "@/components/learn/ProjectComp.vue";
+
+onMounted(() => {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal, {passive: true});
+
+  reveal();
+});
+
 </script>
 
 <template>
   <div class="py-5">
-      <div class="row mt-5">
-        <div class="text-center justify-content-center align-content-center">
-          <h2 class="text-white">Let's Build Something Together!</h2>
-        </div>
+
+    <div class="row py-5">
+      <div class="text-center justify-content-center align-content-center text-white">
+        <h1>Learn to Build with the OpenSensorHub Platform</h1>
+        <hr/>
       </div>
+    </div>
+
+
+<!--    <section id="software" class="py-3 reveal">-->
+<!--&lt;!&ndash;      <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="text-center justify-content-center align-content-center text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;          <h3>Discover our Software</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      <SoftwareScroller/> &ndash;&gt;-->
 
 
 
-    <section id="software" class="py-3">
-      <div class="row">
-        <div class="text-center justify-content-center align-content-center text-white">
-          <h3>Discover our Software</h3>
-        </div>
-      </div>
-      <SoftwareScroller/>
+<!--    </section>-->
+
+
+    <section class="py-2 reveal">
+      <LargeCard/>
     </section>
 
-
-    <section id="projects" class="py-3">
-      <div class="row mb-3">
-        <div class="text-center justify-content-center align-content-center text-white">
-          <h3>Current Projects</h3>
-        </div>
-      </div>
-      <ProjectCarousels/>
+    <section class="py-5 reveal">
+      <OSHLaptop/>
     </section>
 
-    <section id="presentations" class="py-3">
-      <PresentationCard/>
+<!--    <section id="projects" class="py-3 reveal">-->
+<!--      <div class="row mb-3">-->
+<!--        <div class="text-center justify-content-center align-content-center text-white">-->
+<!--          <h3>Current Projects</h3>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <ProjectCarousels/>-->
+<!--    </section>-->
+
+<!--    <section id="presentations" class="py-3 reveal">-->
+<!--      <PresentationCard/>-->
+<!--    </section>-->
+
+
+    <section class="py-3 reveal">
+      <ProjectComp/>
     </section>
 
-
-
-    <section id="additional-srcs" class="py-3">
-      <div class="row mb-3">
-        <div class="text-center justify-content-center align-content-center text-white">
-          <h3>Additional Resources</h3>
-        </div>
-      </div>
-      <AdditionalResourceCards/>
-    </section>
+<!--    <section id="additional-srcs" class="py-3 reveal">-->
+<!--      <div class="row mb-3">-->
+<!--        <div class="text-center justify-content-center align-content-center text-white">-->
+<!--          <h3>Additional Resources</h3>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <AdditionalResourceCards/>-->
+<!--    </section>-->
 
 
 
@@ -65,6 +98,23 @@ import SoftwareScroller from "@/components/software/SoftwareScroller.vue";
 </template>
 
 <style scoped>
+
+.reveal{
+  position: relative;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+hr{
+  border: 2px solid var(--primary-color);
+}
+
 h3{
   color: #d39f44;
 }

@@ -4,20 +4,9 @@ import mikeBotts from "@/assets/headshots/MikeHS.jpg"
 
 const coreTeam = [
   { name: "Dr. Mike Botts", job: "President", photo: mikeBotts },
-  { name: "Drew Botts", job: "Software Engineer", photo: mikeBotts },
-  { name: "Nicholas Garay", job: "Software Engineer", photo: mikeBotts },
+  { name: "Nicholas Garay", job: "Project Coordinator", photo: mikeBotts },
   { name: "Julianne Knox", job: "Project Coordinator", photo: mikeBotts },
   { name: "Chris Tucker", job: "Consultant", photo: mikeBotts },
-  { name: "Lee Butler", job: "Software Developer", photo: mikeBotts },
-  { name: "Kathryn Cardy", job: "Software Developer", photo: mikeBotts },
-  { name: "Tony Cook", job: "Software Developer", photo: mikeBotts },
-  { name: "Michael Elmore", job: "Software Developer", photo: mikeBotts },
-  { name: "Philip Khasiman", job: "Software Developer", photo: mikeBotts },
-  { name: "Bob McCaskey", job: "Software Developer", photo: mikeBotts },
-  { name: "Ian Patterson", job: "Software Engineer", photo: mikeBotts },
-  { name: "Ashley Poteau", job: "Software Developer", photo: mikeBotts },
-  { name: "Michael Stinson", job: "Software Developer", photo: mikeBotts },
-  { name: "Robin White", job: "Software Developer", photo: mikeBotts },
 ];
 
 </script>
@@ -25,12 +14,17 @@ const coreTeam = [
 <template>
   <div class="container py-5">
 
-    <div class="row mb-5 justify-content-center text-center">
-      <div class="col-lg-6">
-        <h2 class="section-title">Meet the Team</h2>
-        <p class="section-subtitle">Meet our team of innovative problem solvers</p>
+    <div class="row mb-3">
+      <div class="align-content-start justify-content-start text-white">
+        <h2>Leadership</h2>
       </div>
     </div>
+<!--    <div class="row mb-5 justify-content-center text-center">-->
+<!--      <div class="col-lg-6">-->
+<!--        <h2 class="section-title">Meet the Team</h2>-->
+<!--        <p class="section-subtitle">Meet our team of innovative problem solvers</p>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div class="row g-4">
     <div v-for="(member, index) in coreTeam" :key="index" class="col-lg-3 col-md-6">
@@ -51,6 +45,10 @@ const coreTeam = [
 </template>
 
 <style scoped>
+.text-white{
+  text-align: left;
+}
+
 .headshot {
   height: 320px;
   object-fit: cover;
