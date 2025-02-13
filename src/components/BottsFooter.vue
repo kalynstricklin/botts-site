@@ -8,18 +8,23 @@
       <div class="card rounded footer-card">
         <div class="container-fluid">
         <div class="row p-2">
-          <div class="col-12 col-lg-3">
-            <!--logo -->
-            <div class="align-content-start justify-content-start p-4">
+
+          <!--logo -->
+          <div class="col-12 col-lg-4 col-md-12 text-center text-lg-start">
+            <div class="p-4">
               <img class="footer-logo" alt="Botts Logo" src="../assets/logos/Botts-logo.svg" />
             </div>
           </div>
 
-          <div class="col-12 col-lg-9 p-4 mt-2">
-            <div class="row justify-content-end align-content-end">
-              <!--Company-->
-              <div class="col-md-4 col-lg-4 col-xl-2">
+          <!--footer-->
+          <div class="col-12 col-lg-8 col-md-12 mt-4">
+            <div class="row justify-content-lg-end align-content-lg-end text-md-start">
+
+
+              <!--Inside Botts-->
+              <div class="col-12 col-md-6 col-lg-3">
                 <h6 class="text-uppercase">Inside Botts</h6>
+
                 <p>
                   <a href="/company" class="" target="_self">
                     About Us
@@ -37,16 +42,19 @@
                     Careers
                   </a>
                 </p>
+
                 <p>
                   <a href="https://www.youtube.com/@OpenSensorHubOrg2015" class="" target="_self">
                     Contact Us
                   </a>
                 </p>
+
               </div>
 
               <!--connect with us-->
-              <div class="col-md-4 col-lg-4 col-xl-2">
+              <div class="col-12 col-md-12 col-lg-3">
                 <h6 class="text-uppercase">Connect with Us</h6>
+
                 <p>
                   <a href="https://github.com/Botts-Innovative-Research" class="me-4 text-reset" target="_blank">
                     <b-icon icon="github"></b-icon> Github
@@ -64,16 +72,18 @@
                     <b-icon icon="youtube"></b-icon> YouTube
                   </a>
                 </p>
+
                 <p>
                   <a href="mailto:work@botts-inc.com" class="me-4 text-reset" target="_blank">
                     <b-icon icon="envelope-fill"></b-icon> Email
                   </a>
                 </p>
+
               </div>
 
 
               <!--featured blog posts-->
-              <div class="col-md-6 col-lg-4 col-xl-2">
+              <div class="col-12 col-md-12 col-lg-6">
                 <h6 class="text-uppercase">Featured blog posts</h6>
 
                 <p>
@@ -93,11 +103,13 @@
                     New Releases
                   </a>
                 </p>
+
                 <p>
                   <a href="https://opensensorhub.org/blog/" class="" target="_blank">
                     Visit the OSH Blog
                   </a>
                 </p>
+
               </div>
             </div>
           </div>
@@ -137,10 +149,11 @@ hr{
 }
 
 .footer h6 {
-  font-size: 16px;
+  font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 12px;
   color: #171b24;
+  text-align: left;
 }
 
 .footer a {
@@ -151,11 +164,16 @@ hr{
   text-align: left;
   color: #000;
   justify-content: left;
+  text-align: left;
 }
 
-
+p{
+  text-align: left;
+}
 .footer a:hover {
   text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1.5px;
 }
 
 

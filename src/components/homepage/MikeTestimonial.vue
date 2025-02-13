@@ -20,8 +20,6 @@ import mike from "@/assets/headshots/mike.png";
         </div>
       </div>
     </div>
-
-
   </section>
 </template>
 

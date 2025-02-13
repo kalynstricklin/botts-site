@@ -10,6 +10,7 @@ import PresentationPage from "@/views/PresentationPage.vue";
 // import SoftwarePage from "@/views/SoftwarePage.vue";
 // import TeamPage from "@/components/unused/TeamPage.vue";
 import LearnPage from "@/views/LearnPage.vue";
+import JobApplicationPage from "@/views/JobApplicationPage.vue";
 // import ServicesPage from "@/views/ServicesPage.vue";
 // import ProjectPage from "@/unsued/projects/ProjectPage.vue";
 
@@ -23,6 +24,7 @@ export default new Router({
         { path: "/", name: "Home", component: HomePage },
         { path: "/company", name: "Company", component: CompanyPage },
         // { path: "/team", name: "Team", component: TeamPage },
+        { path: "/jobs/apply", name: "", component: JobApplicationPage },
         { path: "/careers/", name: "Careers", component: CareersPage },
         // { path: "/learn/documentation", name: "Documentation", component: DocumentationPage },
         { path: "/learn/presentations", name: "Presentations", component: PresentationPage },

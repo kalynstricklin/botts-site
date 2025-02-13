@@ -14,7 +14,7 @@
                 <div class="row px-lg-5 px-3 py-4">
                   <div class="col-lg-10 col-12">
                     <div class="text-content">
-                      <b-card-title class="title text-white">Documentation</b-card-title>
+                      <h3 class="title text-white">Documentation</h3>
                       <p>Access technical documentation, user guides, and best practices to maximize OSH’s capabilities.</p>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                 <div class="row px-lg-5 px-3 py-4">
                   <div class="col-lg-10 col-12">
                       <div class="text-content">
-                        <b-card-title class="title text-white">Presentations</b-card-title>
+                        <h3 class="title text-white">Presentations</h3>
                         <p>View presentations from events, and technical discussions about the latest innovations from OSH.</p>
                       </div>
                   </div>
@@ -89,7 +89,7 @@
                 <div class="row px-lg-5 px-3 py-4">
                   <div class="col-lg-10 col-12">
                     <div class="text-content">
-                      <b-card-title class="title text-white">Community Forum</b-card-title>
+                      <h3 class="title text-white">Community Forum</h3>
                       <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
                     </div>
                   </div>

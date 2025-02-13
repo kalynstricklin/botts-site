@@ -36,20 +36,6 @@ onMounted(() => {
       </div>
     </div>
 
-
-<!--    <section id="software" class="py-3 reveal">-->
-<!--&lt;!&ndash;      <div class="row">&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="text-center justify-content-center align-content-center text-white">&ndash;&gt;-->
-<!--&lt;!&ndash;          <h3>Discover our Software</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;      </div>&ndash;&gt;-->
-<!--&lt;!&ndash;      <SoftwareScroller/> &ndash;&gt;-->
-
-
-
-<!--    </section>-->
-
-
     <section class="reveal">
       <LargeCard/>
     </section>
@@ -58,41 +44,9 @@ onMounted(() => {
       <OSHLaptop/>
     </section>
 
-<!--    <section id="projects" class="py-3 reveal">-->
-<!--      <div class="row mb-3">-->
-<!--        <div class="text-center justify-content-center align-content-center text-white">-->
-<!--          <h3>Current Projects</h3>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <ProjectCarousels/>-->
-<!--    </section>-->
-
-<!--    <section id="presentations" class="py-3 reveal">-->
-<!--      <PresentationCard/>-->
-<!--    </section>-->
-
-
     <section class="py-3 reveal">
       <ProjectComp/>
     </section>
-
-<!--    <section id="additional-srcs" class="py-3 reveal">-->
-<!--      <div class="row mb-3">-->
-<!--        <div class="text-center justify-content-center align-content-center text-white">-->
-<!--          <h3>Additional Resources</h3>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <AdditionalResourceCards/>-->
-<!--    </section>-->
-
-
-
-
-<!--      <section id="blog">-->
-<!--        <BlogPosts/>-->
-<!--      </section>-->
-
-
 
   </div>
 </template>
