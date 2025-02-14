@@ -2,11 +2,12 @@
     --font-primary: "Electrolize", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-secondary: "Inter", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --primary-color: #d39f44;
-    --secondary-color: #faf6ed;
+    --secondary-color: #fcf9f6;
 
     --success-color: #059669;
     --background-color: #f8fafc;
     --border-radius: 16px;
+    --letterSpacingWide: 0.04em;
 }
 
 body {

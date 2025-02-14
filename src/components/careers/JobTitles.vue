@@ -1,14 +1,53 @@
 <script setup>
 const positions = [
-  { position: "Software Developer - Full Stack", type: "Full Time", description: "Kubernetes, Docker, Linux, Java, Javascript, XML, JSON, Protobuf, Vue.js, 3JS, MQTT/MQTT.js, WebSockets, OpenAPI/REST, OSGI, JavaScript mapping viewers (e.g, CesiumJS, OpenLayers, Leaflet, ESRI, Mapbox, DeckGL, etc.), glTF, WebGL shaders, Android, ATAK/TAK, OGC API, OGC SWE, OGC API-Connected System, TCP/IP, UDP, ZeroConf, communication interfaces (e.g,  serial, Ethernet, USB, Bluetooth/BLE, RTP, RTSP, Zigbee, Z-Wave, mesh networks, LoRa, WiFi, LTE, etc.). DevSecOps and CI/CD experience required.  If you are not proficient in all, you are not disqualified.  Years of experience are less important than technical proficiency. " },
-  { position: "Software Developer - Frontend", type: "Full Time", description: "Javascript, XML, JSON, Protobuf, Vue.js, 3JS, multi-window applications, JavaScript mapping viewers (e.g, CesiumJS, OpenLayers, Leaflet, ESRI, Mapbox, DeckGL, etc.), glTF, WebGL shaders, OpenAPI/REST, MQTT.js, WebSockets, WebWorkers.  If you are not proficient in all, you are not disqualified.  Clearances are a bonus.  Years of experience are less important than technical proficiency." },
-  { position: "Software Developer - Backend", type: "Full Time", description: "" },
-  { position: "Mobile Application Developer", type: "Full Time", description: "We already have OSH integration with all sensors on the Android platform, or those accessible through Bluetooth, LTE, USB. IPC, etc.  Similar skills on iPhone platform, including iPhone LiDAR are of interest.  Deploying OSH on Android and iPhone with CesiumNative, CesiumJS WebKit, or other approaches will be of interest.  Working knowledge of Cordova, ReactNative, Flutter, NativeScript, etc. are essential." },
-  { position: "Sensor Integration Engineer" , type: "Full Time", description: "Java, Python, OpenAPI/REST, TCP/IP, UDP, ZeroConf, MQTT, WebSockets, communication interfaces (e.g,  serial, Ethernet, USB, Bluetooth/BLE, RTP, RTSP, Zigbee, Z-Wave, mesh networks, LoRa, WiFi, LTE, etc.), Python.  Working knowledge of existing domain specific sensor feeds and APIs is a bonus.  Working knowledge of OGC API, OGC SWE or OGC API – Connected Systems is a bonus.  If you are not proficient in all, you are not disqualified.  Clearances are a bonus.  Years of experience are less important than technical proficiency." },
-  { position: "Emerging Technology Specialist" , type: "Full Time", description: "It's your kung fu strong? Botts-Inc is always open to meeting smart people interested in our work.  Are you an autodidact?  Regardless of age or seniority, we are looking for technical team members who are self-starters, who take initiative, self-teach, and are excited to solve complicated mission challenges with our preferred stack of technologies.  Bonus points for being a tinkerer who likes working with equipment, and is interested in deploying and exercising new technologies in the field.  Must enjoy working with a talented team, and be committed to our customers’ operational excellence.  Clearances are a bonus." },
-  { position: "Software Developer Intern" , type: "Part Time", description: "" },
+  {
+    position: "Software Engineer - Full Stack",
+    type: "Full Time",
+    required: "DevSecOps and CI/CD",
+    preferredQual: "Kubernetes, Docker, Linux, Java, Javascript, XML, JSON, Protobuf, Vue.js, 3JS, MQTT/MQTT.js, WebSockets, OpenAPI/REST, OSGI, JavaScript mapping viewers (e.g, CesiumJS, OpenLayers, Leaflet, ESRI, Mapbox, DeckGL, etc.), glTF, WebGL shaders, Android, ATAK/TAK, OGC API, OGC SWE, OGC API-Connected System, TCP/IP, UDP, ZeroConf, communication interfaces (e.g,  serial, Ethernet, USB, Bluetooth/BLE, RTP, RTSP, Zigbee, Z-Wave, mesh networks, LoRa, WiFi, LTE, etc.)."
+  },
+  { position: "Software Engineer - Frontend",
+    type: "Full Time",
+    preferredQual: "Javascript, XML, JSON, Protobuf, Vue.js, 3JS, multi-window applications, JavaScript mapping viewers (e.g, CesiumJS, OpenLayers, Leaflet, ESRI, Mapbox, DeckGL, etc.), glTF, WebGL shaders, OpenAPI/REST, MQTT.js, WebSockets, WebWorkers. Clearances are a bonus." },
+  // {
+  //   position: "Software Developer - Backend",
+  //   type: "Full Time",
+  //   description: "",
+  //   required: "",
+  //   preferredQual: ""
+  // },
+  {
+    position: "Mobile Application Developer",
+    type: "Full Time",
+    description: "We already have OSH integration with all sensors on the Android platform, or those accessible through Bluetooth, LTE, USB. IPC, etc.  Similar skills on iPhone platform, including iPhone LiDAR are of interest.  Deploying OSH on Android and iPhone with CesiumNative, CesiumJS WebKit, or other approaches will be of interest.",
+    required: "Working knowledge of Cordova, ReactNative, Flutter, NativeScript, etc. are essential.",
+    preferredQual: ""
+  },
+  {
+    position: "Sensor Integration Engineer" ,
+    type: "Full Time",
+    require: "",
+    preferredQual: "Java, Python, OpenAPI/REST, TCP/IP, UDP, ZeroConf, MQTT, WebSockets, communication interfaces (e.g,  serial, Ethernet, USB, Bluetooth/BLE, RTP, RTSP, Zigbee, Z-Wave, mesh networks, LoRa, WiFi, LTE, etc.), Python.  Working knowledge of existing domain specific sensor feeds and APIs is a bonus.  Working knowledge of OGC API, OGC SWE or OGC API – Connected Systems is a bonus." },
+  {
+    position: "Software Engineer - General (early career)",
+    type: "Full Time",
+    require: "",
+    preferredQual: "1+ year of professional software development experience (this does not have to be from a full-time role",
+    description: "As a software Engineer at Bott's, you will be"
+  },
+  {
+    position: "Software Developer Intern" ,
+    type: "Part Time",
+    description: ""
+  },
 ];
 </script>
+
+<!--    <p>
+                    Team player who takes initiative. Interested in new challenges. Customer-focused. Committed to
+                    operational excellence.
+                  </p>
+                  -->
 
 <template>
   <div class="container-fluid">
@@ -20,8 +59,9 @@ const positions = [
               <hr />
 
               <div class="col-md-8 col-lg-10 col-12 p-4">
-                <a href="/jobs/apply" class="text-decoration-none" target="_self">
-<!--                <a href="mailto:work@botts-inc.com" class="text-decoration-none" target="_blank">-->
+                <a href='/jobs/apply/' class="text-decoration-none" target="_self">
+<!--                <a :href="'/jobs/apply/' + encodeURIComponent(item.position)" class="text-decoration-none" target="_self">-->
+<!--                <a href="mailto:work@botts-inc.com" class="text-decoration-none">-->
                   <div class="text-content">
                     <h2 class="title text-white">{{ item.position }}</h2>
                     <div class="caption">Madison, AL, United States</div>
@@ -46,11 +86,16 @@ const positions = [
 
               <div class="collapse" :id="'collapseJobDesc' + index">
                 <div class="card card-body collapse-text">
-                  <p>
-                    Team player who takes initiative. Interested in new challenges. Customer-focused. Committed to
-                    operational excellence. Technical skills required for success include:
+
+
+                  <p class="caption text-white">
+                    Preferred Skills:
                   </p>
-                  {{ item.description }}
+                  <div class="caption">
+                    {{ item.preferredQual }}
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -100,12 +145,4 @@ hr {
   color: #fff;
 }
 
-@media only screen and (max-width: 480px) {
-  h2{
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.75rem;
-  }
-}
 </style>

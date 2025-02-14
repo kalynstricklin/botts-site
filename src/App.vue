@@ -27,7 +27,6 @@ export default {
       document.documentElement.style.setProperty("--x", x);
       document.documentElement.style.setProperty("--y", y);
 
-      console.log("Updated --x and --y:", x, y);
     },
   },
 };
