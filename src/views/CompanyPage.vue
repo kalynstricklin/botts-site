@@ -2,7 +2,8 @@
 import OurStory from "@/components/company/OurStory.vue";
 import {onMounted} from "vue";
 import WorkAtBotts from "@/components/company/WorkAtBotts.vue";
-import team from "@/assets/team.webp";
+// import team from "@/assets/team.webp";
+import teamTaiwan from "@/assets/team-taiwan.jpg";
 
 onMounted(() => {
   function reveal() {
@@ -42,13 +43,13 @@ onMounted(() => {
         </div>
         <div class="row g-2 justify-content-center">
           <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-            <img :src="team" alt="Team" class="img-fluid rounded">
+            <img :src="teamTaiwan" alt="Team Taiwan" class="img-fluid rounded">
           </div>
           <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-            <img :src="team" alt="Team" class="img-fluid rounded">
+            <img :src="teamTaiwan" alt="Team" class="img-fluid rounded">
           </div>
           <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-            <img :src="team" alt="Team" class="img-fluid rounded">
+            <img :src="teamTaiwan" alt="Team" class="img-fluid rounded">
           </div>
         </div>
       </div>
