@@ -56,17 +56,21 @@ const positions = [
       <div class="row">
         <div v-for="(item, index) in positions" :key="index" class="col-12">
           <div class="text-class">
-            <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">
 
+<!--            <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">-->
             <div class="row px-lg-5 px-3 py-2 justify-content-center align-items-center">
+
               <hr />
 
               <div class="col-md-8 col-lg-10 col-12 p-4">
+                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">
                   <div class="text-content">
                     <h2 class="title text-white">{{ item.position }}</h2>
                     <div class="caption">Madison, AL, United States</div>
                   </div>
+                </router-link>
               </div>
+
 
               <div class="col-md-4 col-lg-2 col-12 p-4">
                 <p class="d-inline-flex gap-3">
@@ -98,7 +102,7 @@ const positions = [
                 </div>
               </div>
             </div>
-            </router-link>
+<!--            </router-link>-->
           </div>
         </div>
       </div>

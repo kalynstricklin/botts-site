@@ -38,8 +38,8 @@ onMounted(() => {
 
     <section id="team-pics" class="mb-3 reveal">
       <div class="container-fluid">
-        <div class="row py-4 m-2">
-          <span class="text-uppercase" style="color: lightgray">Team Photos</span>
+        <div class="row py-4 m-2 text-start">
+          <span class="text-uppercase" style="color: lightgray">Gallery</span>
         </div>
         <div class="row g-2 justify-content-center">
           <div class="col-12 col-lg-4 col-md-6 col-sm-12">
