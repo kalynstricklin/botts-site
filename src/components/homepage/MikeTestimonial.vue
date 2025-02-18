@@ -1,6 +1,4 @@
 <script setup>
-
-
 import mike from "@/assets/headshots/img.png";
 </script>
 
@@ -11,23 +9,18 @@ import mike from "@/assets/headshots/img.png";
         <div class="test-content-wrapper">
           <img :src="mike" alt="Mike" class="img-fluid headshot" loading="lazy">
           <div class="text-content">
-
             <p class="mb-4">
-<!--              "The Botts-Inc team has........"-->
               Dr. Botts is the creator and chief architect of Sensor Model Language (SensorML), an Open Geospatial Consortium (OGC) technical standard for describing the measurement and processing of observations from any sensor system. He is the chair of the OGC Connected Systems Specification Working Group and has been instrumental in the development and implementation of the OGC SWE architecture.
             </p>
-            <span style="font-size: 1.25rem">Dr. Mike Botts, Founder & CEO</span>
+            <span>Dr. Mike Botts, Founder & CEO</span>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 </template>
 
-
 <style scoped>
-
 .headshot {
   height: 400px;
   max-width: 100%;
@@ -67,12 +60,12 @@ import mike from "@/assets/headshots/img.png";
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  gap: 2rem;
 }
-
 
 .text-content {
   text-align: left;
-  width: 65%;
+  width: 60%;
   color: #fff;
 }
 
@@ -81,20 +74,35 @@ p {
   margin-bottom: 1rem;
   font-size: 1.8rem;
   font-family: var(--font-primary);
-
 }
 
 @media (max-width: 768px) {
+  .test-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .text-content {
+    width: 90%;
+  }
+  .headshot {
+    height: auto;
+    width: 80%;
+  }
   p {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 430px) {
+  .text-content {
+    width: 100%;
+  }
+  .headshot {
+    width: 100%;
+  }
   p {
     font-size: 1rem;
   }
-
 }
-
 </style>
