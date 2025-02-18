@@ -14,7 +14,7 @@
                 <div class="row px-lg-5 px-3 py-4">
                   <div class="col-lg-10 col-12">
                     <div class="text-content">
-                      <h3 class="title text-white">Documentation</h3>
+                      <h2 class="title text-white">Documentation</h2>
                       <p>Access technical documentation, user guides, and best practices to maximize OSH’s capabilities.</p>
                     </div>
                   </div>
@@ -40,7 +40,7 @@
 
                   <div class="col-lg-9 col-12">
                     <div class="text-content">
-                      <h3 class="title text-white">Developer Center</h3>
+                      <h2 class="title text-white">Developer Center</h2>
                       <p>Explore API references, SDKs, and development tools to build and integrate OSH solutions.</p>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                 <div class="row px-lg-5 px-3 py-4">
                   <div class="col-lg-10 col-12">
                       <div class="text-content">
-                        <h3 class="title text-white">Presentations</h3>
+                        <h2 class="title text-white">Presentations</h2>
                         <p>View presentations from events, and technical discussions about the latest innovations from OSH.</p>
                       </div>
                   </div>
@@ -89,7 +89,7 @@
                 <div class="row px-lg-5 px-3 py-4">
                   <div class="col-lg-10 col-12">
                     <div class="text-content">
-                      <h3 class="title text-white">Community Forum</h3>
+                      <h2 class="title text-white">Community Forum</h2>
                       <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
                     </div>
                   </div>
@@ -134,6 +134,7 @@ p {
   color: #fff;
   font-family: var(--font-secondary);
   text-align: left;
+  font-size: 1.25rem;
 }
 
 hr {

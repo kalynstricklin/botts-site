@@ -12,7 +12,7 @@ import oshlaptop from "@/assets/OSH-laptop.png"
             OpenSensorHub
           </h2>
 
-          <p class="flex-wrap flex-grow-1 text-white">
+          <p class="flex-wrap flex-grow-1 text-white mt-3">
             OpenSensorHub (OSH) is an open standards based, open source software platform that supports all manner of Sensors, Things, and Robots, and is built around the concepts of modular, reconfigurable, plug-and-play components. OSH offers a node based architecture, where each node can support one or more sensor/actuator systems and can be deployed anywhere from the Cloud to the Edge (e.g. Android device, sensor or platform, or Raspberry PI).
           </p>
 
@@ -35,7 +35,9 @@ import oshlaptop from "@/assets/OSH-laptop.png"
   max-width: 100%;
   height: auto;
 }
-
+p{
+  font-size: 1.25rem;
+}
 @media only screen and (max-width: 480px) {
 
 }

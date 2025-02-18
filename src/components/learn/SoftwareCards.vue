@@ -137,10 +137,6 @@ import image3 from "@/assets/arch.webp"
   transform: translateY(-5px);
 }
 
-
-a{
-  font-size: 1.25rem;
-}
 .nav-link{
   color: #c5c5c5;
 }
@@ -174,6 +170,7 @@ p{
 }
 a{
   font-family: var(--font-primary);
+  font-size: 1.25rem;
 }
 @media only screen and (max-width: 768px) {
   .tab-content-wrapper {
