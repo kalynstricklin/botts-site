@@ -19,9 +19,9 @@ const positions = [
   {
     position: "Mobile Application Developer",
     type: "Full Time",
-    description: "We already have OSH integration with all sensors on the Android platform, or those accessible through Bluetooth, LTE, USB. IPC, etc.  Similar skills on iPhone platform, including iPhone LiDAR are of interest.  Deploying OSH on Android and iPhone with CesiumNative, CesiumJS WebKit, or other approaches will be of interest.",
+    preferredQual: "We already have OSH integration with all sensors on the Android platform, or those accessible through Bluetooth, LTE, USB. IPC, etc.  Similar skills on iPhone platform, including iPhone LiDAR are of interest.  Deploying OSH on Android and iPhone with CesiumNative, CesiumJS WebKit, or other approaches will be of interest.",
     required: "Working knowledge of Cordova, ReactNative, Flutter, NativeScript, etc. are essential.",
-    preferredQual: ""
+    description: ""
   },
   {
     position: "Sensor Integration Engineer" ,
@@ -99,8 +99,17 @@ const positions = [
                   </div>
 
 
+
                 </div>
               </div>
+
+              <div class="button-apply text-start">
+                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="btn text-decoration-none white-button">
+                  Apply Here!
+                </router-link>
+              </div>
+
+
             </div>
 <!--            </router-link>-->
           </div>
@@ -111,6 +120,10 @@ const positions = [
 </template>
 
 <style scoped>
+.button-apply{
+  padding-left: 25px;
+
+}
 .collapse-text{
   font-family: var(--font-primary);
   font-size: 1.15rem;
