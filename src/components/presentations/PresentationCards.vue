@@ -2,26 +2,26 @@
 import sweIntro2010 from "@/assets/presentationImg/swe-intro2010.png";
 import sweSemantics from "@/assets/presentationImg/sweSemantics.png";
 import sensorMl2009 from "@/assets/presentationImg/sensorml2009.png";
-import introOSHConSys2023 from "@/assets/presentationImg/introOSHConSys2023.png";
-import processing2023 from "@/assets/presentationImg/processing2023.png";
+// import introOSHConSys2023 from "@/assets/presentationImg/introOSHConSys2023.png";
+// import processing2023 from "@/assets/presentationImg/processing2023.png";
 
 const presentationsList = [
-  {
-    link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
-    image: processing2023,
-    title: "SensorML and Processing (2024)",
-    desc: "Updated presentation on SensorML presented at the University of Alabama in Huntsville (UAH) Hackathon.",
-  },
-  {
-    link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
-    image: introOSHConSys2023,
-    title: "Intro to OSH and Connected Systems (2023)",
-    desc: "Introduction to OpenSensorHub presented at 'Security, Sensors, & Simulations: Pushing the Limits of Cloud Computing' event at UAH Invention to Innovation Center.",
-  },
+  // {
+  //   link: "",
+  //   image: processing2023,
+  //   title: "SensorML and Processing (2024)",
+  //   desc: "Updated presentation on SensorML presented at the University of Alabama in Huntsville (UAH) Hackathon.",
+  // },
+  // {
+  //   link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
+  //   image: introOSHConSys2023,
+  //   title: "Intro to OSH and Connected Systems (2023)",
+  //   desc: "Introduction to OpenSensorHub presented at 'Security, Sensors, & Simulations: Pushing the Limits of Cloud Computing' event at UAH Invention to Innovation Center.",
+  // },
   {
     link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
     image: sweIntro2010,
-    title: "Sensor Web Enablement Introduction (2010)",
+    title: "Sensor Web Enablement Introduction and V2.0 Directions (2010)",
     desc: "Provides an introduction to the purpose, design goals, and application of the OGC SWE open standards.",
   },
   {
@@ -41,62 +41,65 @@ const presentationsList = [
 
 <template>
   <div class="container-fluid">
-    <div class="row mb-5 justify-content-center text-center py-5">
-      <div class="col-lg-12">
-        <h2 class="section-title">Presentations</h2>
-        <p class="section-subtitle">All Presentations and Documents are available to use. Please reference appropriately.</p>
+
+
+    <div class="row align-items-center justify-content-center align-content-end gap-2" v-for="(presentation, index) in presentationsList" :key="index">
+
+      <div class="card orange-card p-4 mt-3">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+          <a :href="presentation.link" class="text-decoration-none" target="_blank">
+            <div class="tab-content-wrapper">
+              <img :src="presentation.image"  :alt="presentation.title" class="img-fluid tab-image" loading="lazy">
+              <div class="text-content">
+                <b-card-title>{{ presentation.title }}</b-card-title>
+                <p>
+                  {{presentation.desc}}
+                </p>
+              </div>
+            </div>
+
+          </a>
+        </div>
       </div>
     </div>
-
-    <div class="row align-items-center justify-content-center align-content-end" v-for="(presentation, index) in presentationsList" :key="index">
-      <div class="col-lg-4 col-md-6 text-center mb-4">
-        <div class="card-img">
-          <img
-              :src="presentation.image"
-              class="img-fluid rounded about-img"
-              :alt="presentation.title"
-          />
-        </div>
-
-      </div>
-      <div class="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
-        <div class="py-4 px-5">
-          <h3 class="section-title" style=" font-size: 2.1rem;">{{ presentation.title }}</h3>
-          <p class="section-text">{{ presentation.desc }}</p>
-
-          <div>
-            <b-button :href="presentation.link" class="orange-button" target="_blank">
-              View Slides
-            </b-button>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
-
   </div>
 </template>
 
 <style scoped>
+.tab-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-image {
+  max-width: 40%;
+  height: auto;
+}
+
+.text-content {
+  text-align: left;
+  width: 55%;
+  color: #fff;
+}
+
+
 p{
   color: white;
 }
+.orange-card{
+  background-color: rgba(112, 112, 112, 0.2);
+  border-color: rgba(112, 112, 112, 0.2);
+  opacity: 100%;
+}
 
-.about-img {
-  width: 80%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
+.orange-card:hover{
+  transform: translateY(-5px);
 }
 
 
 @media (max-width: 768px) {
-  .about-img {
-    max-width: 300px;
-  }
 }
 
 @media screen and (max-width: 480px) {

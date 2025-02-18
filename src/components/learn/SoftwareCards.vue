@@ -47,7 +47,7 @@ import image3 from "@/assets/arch.webp"
             <div class="tab-content-wrapper">
               <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
-                <b-card-title>OpenSensorHub Toolkit</b-card-title>
+                <h2>OpenSensorHub Toolkit</h2>
                 <p>
                   OpenSensorHub Web Client toolkit allows you to visualize data from OSH. It provides the necessary tools to build your own web application for monitoring your sensors. It is pure javascript framework and does not require third party libraries. A set of external libraries is also available to easily build some part of your views such as Leaflet, OpenLayer, Cesium, Chart.js etc..
                 </p>
@@ -58,19 +58,24 @@ import image3 from "@/assets/arch.webp"
 
 
         <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-          <a href="https://docs.opensensorhub.org/dev/android/" class="text-decoration-none" target="_blank">
+<!--          <a href="https://docs.opensensorhub.org/dev/android/" class="text-decoration-none" target="_blank">-->
           <div class="tab-content-wrapper">
             <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
             <div class="text-content">
-              <b-card-title>OSH Android</b-card-title>
+              <h2>OSH Android</h2>
               <p>
                 OSH is capable of running on the lightest Arduino or Raspberry Pi platforms, all the way to massive Cloud based clusters.
                 There is also an OSH Android Node application that deploys an entire OSH node on your Android device, with native integration
                 that exposes all sensors within your Android device, or tethered to your device, via OGC sensor services.
               </p>
+              <div class="d-flex gap-2 mt-3">
+                <a href="https://docs.opensensorhub.org/dev/android/" class="btn white-button me-2" target="_blank">View Docs</a>
+                <a href="https://github.com/opensensorhub/osh-android" class="btn white-button" target="_blank">View on GitHub</a>
+              </div>
             </div>
           </div>
-          </a>
+<!--          </a>-->
+
         </div>
 
         <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
@@ -79,7 +84,7 @@ import image3 from "@/assets/arch.webp"
               <img :src="image3" alt="SensorML Process Execution Engine" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
 
-                <b-card-title>SensorML Process Execution Engine</b-card-title>
+                <h2>SensorML Process Execution Engine</h2>
                 <p>
                   In addition to describing sensor systems, SensorML provides a means of describing processes and process chains that can be executed on-demand using one or more execution engines. This enables the integration of AI/ML/CV and advanced geoprocessing libraries as atomic processes, and as orchestratable processing chains. This is what Botts-Inc built the SensorML Process Execution Engine for. This engine can be configured to operate within a given OSH node in the field, or to process across a distributed across a network of OSH nodes (from the Edge to the Fog to the Cloud) to ensure that computationally intensive processes are executed in the most advantageous location for mission critical applications.
                 </p>
@@ -122,6 +127,8 @@ import image3 from "@/assets/arch.webp"
   transform: translateY(-5px);
 }
 
+
+
 .nav-link{
   color: #c5c5c5;
 }
@@ -151,6 +158,7 @@ import image3 from "@/assets/arch.webp"
 }
 p{
   text-align: left;
+  font-size: 1.25rem;
 }
 a{
   font-family: var(--font-primary);
@@ -168,6 +176,9 @@ a{
   }
   .text-content {
     width: 100%;
+  }
+  p{
+    font-size: 1rem;
   }
 }
 

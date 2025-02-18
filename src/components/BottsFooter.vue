@@ -27,27 +27,23 @@
 
                 <p>
                   <a href="/company" class="" target="_self">
-                    About Us
+                    Company
                   </a>
                 </p>
 
-                <p>
-                  <a href="/team" class="" target="_self">
-                    Our Team
-                  </a>
-                </p>
 
                 <p>
-                  <a href="mailto:work@botts-inc.com" class="" target="_self">
+                  <a href="/jobs" class="" target="_self">
                     Careers
                   </a>
                 </p>
 
                 <p>
-                  <a href="https://www.youtube.com/@OpenSensorHubOrg2015" class="" target="_self">
-                    Contact Us
+                  <a href="/learn" class="" target="_self">
+                    Learn
                   </a>
                 </p>
+
 
               </div>
 
@@ -74,7 +70,7 @@
                 </p>
 
                 <p>
-                  <a href="mailto:work@botts-inc.com" class="me-4 text-reset" target="_blank">
+                  <a href="mailto:info@botts-inc.com" class="me-4 text-reset" target="_blank">
                     <b-icon icon="envelope-fill"></b-icon> Email
                   </a>
                 </p>

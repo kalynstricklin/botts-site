@@ -27,14 +27,15 @@ const positions = [
     position: "Sensor Integration Engineer" ,
     type: "Full Time",
     require: "",
-    preferredQual: "Java, Python, OpenAPI/REST, TCP/IP, UDP, ZeroConf, MQTT, WebSockets, communication interfaces (e.g,  serial, Ethernet, USB, Bluetooth/BLE, RTP, RTSP, Zigbee, Z-Wave, mesh networks, LoRa, WiFi, LTE, etc.), Python.  Working knowledge of existing domain specific sensor feeds and APIs is a bonus.  Working knowledge of OGC API, OGC SWE or OGC API – Connected Systems is a bonus." },
-  {
-    position: "Software Engineer - General (early career)",
-    type: "Full Time",
-    require: "",
-    preferredQual: "1+ year of professional software development experience (this does not have to be from a full-time role",
-    description: "As a software Engineer at Bott's, you will be"
+    preferredQual: "Java, Python, OpenAPI/REST, TCP/IP, UDP, ZeroConf, MQTT, WebSockets, communication interfaces (e.g,  serial, Ethernet, USB, Bluetooth/BLE, RTP, RTSP, Zigbee, Z-Wave, mesh networks, LoRa, WiFi, LTE, etc.), Python.  Working knowledge of existing domain specific sensor feeds and APIs is a bonus.  Working knowledge of OGC API, OGC SWE or OGC API – Connected Systems is a bonus."
   },
+  // {
+  //   position: "Software Engineer - General (early career)",
+  //   type: "Full Time",
+  //   require: "",
+  //   preferredQual: "1+ year of professional software development experience (this does not have to be from a full-time role",
+  //   description: "As a software Engineer at Bott's, you will be"
+  // },
   {
     position: "Software Developer Intern" ,
     type: "Part Time",
@@ -55,18 +56,16 @@ const positions = [
       <div class="row">
         <div v-for="(item, index) in positions" :key="index" class="col-12">
           <div class="text-class">
+            <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">
+
             <div class="row px-lg-5 px-3 py-2 justify-content-center align-items-center">
               <hr />
 
               <div class="col-md-8 col-lg-10 col-12 p-4">
-                <a href='/jobs/apply/' class="text-decoration-none" target="_self">
-<!--                <a :href="'/jobs/apply/' + encodeURIComponent(item.position)" class="text-decoration-none" target="_self">-->
-<!--                <a href="mailto:work@botts-inc.com" class="text-decoration-none">-->
                   <div class="text-content">
                     <h2 class="title text-white">{{ item.position }}</h2>
                     <div class="caption">Madison, AL, United States</div>
                   </div>
-                </a>
               </div>
 
               <div class="col-md-4 col-lg-2 col-12 p-4">
@@ -99,6 +98,7 @@ const positions = [
                 </div>
               </div>
             </div>
+            </router-link>
           </div>
         </div>
       </div>

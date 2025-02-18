@@ -1,9 +1,10 @@
 <script setup>
-import { ref } from "vue";
-// import { useRouter } from "vue-router";
+import { ref, defineProps } from "vue";
 
-// const router = useRouter();
-// const jobPosition = ref(router.currentRoute.value.params.position || "Apply for a Position");
+const props = defineProps(["position"]); // Receive props
+const position = ref(props.position || "Apply for a Position"); // Use props safely
+
+
 
 const experienceOptions = [
   { text: "Select One", value: "" },
@@ -14,6 +15,7 @@ const experienceOptions = [
 ];
 
 const formDetails = ref({
+  position: "",
   legalName: "",
   preferredName: "",
   phoneNumber: "",
@@ -23,7 +25,8 @@ const formDetails = ref({
   portfolioUrl: "",
   linkedInProfile: "",
   skills: [],
-  resume: null
+  resume: null,
+  message: ""
 });
 
 const selectedSkills = ref([]);
@@ -50,26 +53,29 @@ const dragFile = (event) => {
 
 
 const sendMail = async () => {
-  const formData = new FormData();
-  formData.append("legalName", formDetails.value.legalName);
-  formData.append("preferredName", formDetails.value.preferredName);
-  formData.append("email", formDetails.value.email);
-  formData.append("phoneNumber", formDetails.value.phoneNumber);
-  formData.append("role", formDetails.value.role);
-  formData.append("yrsExperience", formDetails.value.yrsExperience);
-  formData.append("portfolioUrl", formDetails.value.portfolioUrl);
-  formData.append("linkedInProfile", formDetails.value.linkedInProfile);
-  formData.append("skills", selectedSkills.value.join(","));
-  if (formDetails.value.resume) {
-    formData.append("resume", formDetails.value.resume);
-  }
+  const applicationData = {
+    position: position.value,
+    legalName: formDetails.value.legalName,
+    preferredName: formDetails.value.preferredName,
+    email: formDetails.value.email,
+    phoneNumber: formDetails.value.phoneNumber,
+    role: formDetails.value.role,
+    yrsExperience: formDetails.value.yrsExperience,
+    portfolioUrl: formDetails.value.portfolioUrl,
+    linkedInProfile: formDetails.value.linkedInProfile,
+    skills: selectedSkills.value.join(","),
+    message: formDetails.value.message,
+  };
 
-  const url = 'https://us-central1-your-project-id.cloudfunctions.net/sendEmail';
+  const url = "https://us-central1-stock-track499.cloudfunctions.net/sendEmail";
 
   try {
     const response = await fetch(url, {
       method: "POST",
-      body: formData
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(applicationData),
     });
 
     if (response.ok) {
@@ -84,8 +90,10 @@ const sendMail = async () => {
   }
 };
 
+
 const resetForm = () => {
   formDetails.value = {
+    position: "",
     legalName: "",
     preferredName: "",
     phoneNumber: "",
@@ -95,7 +103,8 @@ const resetForm = () => {
     portfolioUrl: "",
     linkedInProfile: "",
     skills: [],
-    resume: null
+    resume: null,
+    message: ""
   };
   selectedSkills.value = [];
 };
@@ -104,8 +113,12 @@ const resetForm = () => {
 <template>
   <div class="container">
     <div class="form-container">
-      <div class="desc">
 
+      <div class="form-header">
+        <h2>{{ position }}</h2>
+      </div>
+
+      <div class="desc">
         <p class="about-title">About Botts</p>
         <p>Botts mission statement here...</p>
       </div>
@@ -160,7 +173,7 @@ const resetForm = () => {
 
           <div class="col-md-12">
             <div class="form-group">
-              <label class="form-label">Key Skills</label>
+              <label class="form-label">Technical Skills</label>
               <div class="skill-tags">
                 <div v-for="skill in ['Java', 'JavaScript', 'Gradle', 'Vue']" :key="skill" class="skill-tag" :class="{ selected: selectedSkills.includes(skill) }" @click="toggleSkill(skill)">
                   {{ skill }}
@@ -191,6 +204,13 @@ const resetForm = () => {
             <div class="form-group">
               <label for="linkedInProfile" class="form-label">LinkedIn Profile</label>
               <input v-model="formDetails.linkedInProfile" type="url" class="form-control" id="linkedInProfile" placeholder="Type here..." />
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="additionalInfo" class="form-label">Additional Information</label>
+              <textarea v-model=formDetails.message class="form-control" id="additionalInfo" rows="4" placeholder="Tell us anything else you'd like us to know..."></textarea>
             </div>
           </div>
 
@@ -226,7 +246,6 @@ const resetForm = () => {
   max-width: 900px;
   margin: 3rem auto;
   padding: 2.5rem;
-  background-color: white;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   text-align: left;

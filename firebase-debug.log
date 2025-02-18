@@ -1,0 +1,79 @@
+[debug] [2025-02-18T14:21:46.784Z] ----------------------------------------------------------------------
+[debug] [2025-02-18T14:21:46.786Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-02-18T14:21:46.786Z] CLI Version:   13.31.1
+[debug] [2025-02-18T14:21:46.787Z] Platform:      win32
+[debug] [2025-02-18T14:21:46.787Z] Node Version:  v22.2.0
+[debug] [2025-02-18T14:21:46.787Z] Time:          Tue Feb 18 2025 08:21:46 GMT-0600 (Central Standard Time)
+[debug] [2025-02-18T14:21:46.787Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-18T14:21:46.805Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-18T14:21:47.000Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-18T14:21:47.001Z] > authorizing via signed-in user (ka7yns@gmail.com)
+[debug] [2025-02-18T14:21:47.001Z] [iam] checking project stock-track499 for permissions ["firebase.projects.get"]
+[debug] [2025-02-18T14:21:47.001Z] Checked if tokens are valid: false, expires at: 1739844837518
+[debug] [2025-02-18T14:21:47.001Z] Checked if tokens are valid: false, expires at: 1739844837518
+[debug] [2025-02-18T14:21:47.001Z] > refreshing access token with scopes: []
+[debug] [2025-02-18T14:21:47.002Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-18T14:21:47.002Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-18T14:21:47.091Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-18T14:21:47.091Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-02-18T14:21:47.105Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-18T14:21:47.105Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-18T14:21:47.122Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499:testIamPermissions [none]
+[debug] [2025-02-18T14:21:47.122Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499:testIamPermissions x-goog-quota-user=projects/stock-track499
+[debug] [2025-02-18T14:21:47.122Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-18T14:21:47.223Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499:testIamPermissions 200
+[debug] [2025-02-18T14:21:47.223Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-18T14:21:47.223Z] Checked if tokens are valid: true, expires at: 1739892106105
+[debug] [2025-02-18T14:21:47.223Z] Checked if tokens are valid: true, expires at: 1739892106105
+[debug] [2025-02-18T14:21:47.223Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499 [none]
+[debug] [2025-02-18T14:21:47.317Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499 200
+[debug] [2025-02-18T14:21:47.317Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/stock-track499 {"projectNumber":"1087349742937","projectId":"stock-track499","lifecycleState":"ACTIVE","name":"botts website","labels":{"firebase":"enabled"},"createTime":"2024-10-02T14:40:09.716099Z"}
+[info] 
+[info] === Serving from 'C:\Users\kalyn\Desktop\botts-inc\botts-site'...
+[info] 
+[debug] [2025-02-18T14:21:47.320Z] defaultcredentials: writing to file C:\Users\kalyn\AppData\Roaming\firebase\ka7yns_gmail_com_application_default_credentials.json
+[debug] [2025-02-18T14:21:47.321Z] Setting GAC to C:\Users\kalyn\AppData\Roaming\firebase\ka7yns_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\kalyn\\AppData\\Roaming\\firebase\\ka7yns_gmail_com_application_default_credentials.json"}}
+[debug] [2025-02-18T14:21:47.322Z] Checked if tokens are valid: true, expires at: 1739892106105
+[debug] [2025-02-18T14:21:47.322Z] Checked if tokens are valid: true, expires at: 1739892106105
+[debug] [2025-02-18T14:21:47.322Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stock-track499/adminSdkConfig [none]
+[debug] [2025-02-18T14:21:47.582Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stock-track499/adminSdkConfig 200
+[debug] [2025-02-18T14:21:47.582Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stock-track499/adminSdkConfig {"projectId":"stock-track499","storageBucket":"stock-track499.firebasestorage.app"}
+[info] i  functions: Watching "C:\Users\kalyn\Desktop\botts-inc\botts-site\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\kalyn\\Desktop\\botts-inc\\botts-site\\functions\" for Cloud Functions..."}}
+[debug] [2025-02-18T14:21:47.595Z] Validating nodejs source
+[debug] [2025-02-18T14:21:56.385Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.3.2",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-02-18T14:21:56.385Z] Building nodejs source
+[debug] [2025-02-18T14:21:56.386Z] Failed to find version of module node: reached end of search path C:\Users\kalyn\Desktop\botts-inc\botts-site\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "22". Using node@22 from host. 
+[debug] [2025-02-18T14:21:56.392Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-02-18T14:21:56.415Z] Found firebase-functions binary at 'C:\Users\kalyn\Desktop\botts-inc\botts-site\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8653
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}

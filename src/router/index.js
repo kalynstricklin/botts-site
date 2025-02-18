@@ -10,17 +10,14 @@ import JobApplicationPage from "@/views/JobApplicationPage.vue";
 
 Vue.use(Router);
 
-
 export default new Router({
     mode: "history",
     routes: [
         { path: "/", name: "Home", component: HomePage },
         { path: "/company", name: "Company", component: CompanyPage },
-        { path: "/jobs/apply/", component: JobApplicationPage, props: true },
+        { path: "/jobs/apply/:position", name: "JobApplication", component: JobApplicationPage, props: true },
         { path: "/jobs/", name: "Careers", component: CareersPage },
         { path: "/learn/presentations", name: "Presentations", component: PresentationPage },
         { path: "/learn/", name: "Learn", component: LearnPage },
-
     ],
 });
-

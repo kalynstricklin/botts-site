@@ -4,6 +4,7 @@ import {onMounted} from "vue";
 import LargeCard from "@/components/learn/LargeCard.vue";
 import OSHLaptop from "@/components/learn/OSHLaptop.vue";
 import ProjectComp from "@/components/learn/SoftwareCards.vue";
+import GeoRobotix from "@/components/learn/GeoRobotix.vue";
 
 onMounted(() => {
   function reveal() {
@@ -48,6 +49,9 @@ onMounted(() => {
       <ProjectComp/>
     </section>
 
+    <section class="py-3 reveal">
+      <GeoRobotix/>
+    </section>
   </div>
 </template>
 

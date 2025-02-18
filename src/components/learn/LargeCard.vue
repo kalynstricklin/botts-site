@@ -59,7 +59,7 @@
         </div>
 
         <div class="col-12">
-          <a href="/learn/presentations" class="text-decoration-none" target="_blank">
+          <a href="/learn/presentations" class="text-decoration-none" target="_self">
             <div class="card card-content">
               <div class="text-class">
                 <div class="row px-lg-5 px-3 py-4">

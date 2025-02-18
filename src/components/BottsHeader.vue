@@ -23,7 +23,7 @@
               <router-link class="nav-link" to="/company" :class="{ active: $route.path === '/company' }">Company</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/jobs" :class="{ active: $route.path === '/careers' }">Careers</router-link>
+              <router-link class="nav-link" to="/jobs" :class="{ active: $route.path === '/jobs' }">Careers</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/learn" :class="{ active: $route.path === '/learn' }">Learn</router-link>
