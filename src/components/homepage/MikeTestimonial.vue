@@ -84,4 +84,17 @@ p {
 
 }
 
+@media (max-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  p {
+    font-size: 1rem;
+  }
+
+}
+
 </style>
