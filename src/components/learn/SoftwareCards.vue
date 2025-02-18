@@ -43,7 +43,7 @@ import image3 from "@/assets/arch.webp"
       <div class="tab-content" id="myTabContent">
 
           <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-            <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="text-decoration-none" target="_blank">
+<!--            <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="text-decoration-none" target="_blank">-->
             <div class="tab-content-wrapper">
               <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
@@ -51,9 +51,14 @@ import image3 from "@/assets/arch.webp"
                 <p>
                   OpenSensorHub Web Client toolkit allows you to visualize data from OSH. It provides the necessary tools to build your own web application for monitoring your sensors. It is pure javascript framework and does not require third party libraries. A set of external libraries is also available to easily build some part of your views such as Leaflet, OpenLayer, Cesium, Chart.js etc..
                 </p>
+
+                <div class="d-flex gap-2 mt-5">
+                  <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="btn white-button me-2" target="_blank">View Docs</a>
+<!--                  <a href="https://github.com/opensensorhub/osh-android" class="btn-lg white-button" target="_blank">View on GitHub</a>-->
+                </div>
               </div>
             </div>
-            </a>
+<!--            </a>-->
           </div>
 
 
@@ -68,7 +73,7 @@ import image3 from "@/assets/arch.webp"
                 There is also an OSH Android Node application that deploys an entire OSH node on your Android device, with native integration
                 that exposes all sensors within your Android device, or tethered to your device, via OGC sensor services.
               </p>
-              <div class="d-flex gap-2 mt-3">
+              <div class="d-flex gap-2 mt-5">
                 <a href="https://docs.opensensorhub.org/dev/android/" class="btn white-button me-2" target="_blank">View Docs</a>
                 <a href="https://github.com/opensensorhub/osh-android" class="btn white-button" target="_blank">View on GitHub</a>
               </div>
@@ -79,7 +84,7 @@ import image3 from "@/assets/arch.webp"
         </div>
 
         <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-          <a href="https://docs.opensensorhub.org/dev/core-apis/sensorml-api/" class="text-decoration-none" target="_blank">
+<!--          <a href="https://docs.opensensorhub.org/dev/core-apis/sensorml-api/" class="text-decoration-none" target="_blank">-->
             <div class="tab-content-wrapper">
               <img :src="image3" alt="SensorML Process Execution Engine" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
@@ -88,10 +93,15 @@ import image3 from "@/assets/arch.webp"
                 <p>
                   In addition to describing sensor systems, SensorML provides a means of describing processes and process chains that can be executed on-demand using one or more execution engines. This enables the integration of AI/ML/CV and advanced geoprocessing libraries as atomic processes, and as orchestratable processing chains. This is what Botts-Inc built the SensorML Process Execution Engine for. This engine can be configured to operate within a given OSH node in the field, or to process across a distributed across a network of OSH nodes (from the Edge to the Fog to the Cloud) to ensure that computationally intensive processes are executed in the most advantageous location for mission critical applications.
                 </p>
+
+                <div class="d-flex gap-2 mt-5">
+                  <a href="https://docs.opensensorhub.org/dev/core-apis/sensorml-api/" class="btn white-button me-2" target="_blank">View Docs</a>
+<!--                  <a href="https://github.com/opensensorhub/osh-android" class="btn white-button" target="_blank">View on GitHub</a>-->
+                </div>
               </div>
 
             </div>
-          </a>
+<!--          </a>-->
         </div>
 
 <!--        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">-->
@@ -128,7 +138,9 @@ import image3 from "@/assets/arch.webp"
 }
 
 
-
+a{
+  font-size: 1.25rem;
+}
 .nav-link{
   color: #c5c5c5;
 }
