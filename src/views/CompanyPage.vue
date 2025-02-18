@@ -1,6 +1,8 @@
 <script setup>
 import OurStory from "@/components/company/OurStory.vue";
 import {onMounted} from "vue";
+import WorkAtBotts from "@/components/company/WorkAtBotts.vue";
+import team from "@/assets/team.webp";
 
 onMounted(() => {
   function reveal() {
@@ -27,6 +29,29 @@ onMounted(() => {
   <div>
     <section id="story-timeline" class="reveal">
       <OurStory/>
+    </section>
+
+    <section id="work-at-botts" class="reveal">
+      <WorkAtBotts/>
+    </section>
+
+    <section id="team-pics" class="mb-3 reveal">
+      <div class="container-fluid">
+        <div class="row py-4 m-2">
+          <span class="text-uppercase" style="color: lightgray">Team Photos</span>
+        </div>
+        <div class="row g-2 justify-content-center">
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+            <img :src="team" alt="Team" class="img-fluid rounded">
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+            <img :src="team" alt="Team" class="img-fluid rounded">
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+            <img :src="team" alt="Team" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
     </section>
 
 <!--    <section id="leadership" class="reveal">-->

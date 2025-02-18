@@ -14,7 +14,7 @@
           <div class="col-12 col-lg-10">
             <div class="row mb-3">
               <div class="justify-content-center align-content-center text-white">
-                <h2>Our Story</h2>
+                <h1>Our Story</h1>
               </div>
             </div>
             <ul class="timeline">
@@ -147,5 +147,6 @@
 }
 p {
   color: #faf6ed;
+  font-size: 1.25rem;
 }
 </style>

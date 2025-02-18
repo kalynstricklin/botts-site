@@ -12,9 +12,10 @@ import mike from "@/assets/headshots/mike.png";
           <img :src="mike" alt="Mike image" class="img-fluid headshot" loading="lazy">
           <div class="text-content">
             <p>
-              "The Botts-Inc team has........"
+<!--              "The Botts-Inc team has........"-->
+              Dr. Botts is the creator and chief architect of Sensor Model Language (SensorML), an Open Geospatial Consortium (OGC) technical standard for describing the measurement and processing of observations from any sensor system. He is the chair of the OGC Connected Systems Specification Working Group and has been instrumental in the development and implementation of the OGC SWE architecture.
             </p>
-            <span>--Dr. Mike Botts, Founder & CEO</span>
+            <span>Dr. Mike Botts, Founder & CEO</span>
           </div>
 
         </div>

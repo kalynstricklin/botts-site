@@ -8,15 +8,15 @@ import GeoRobotix from "@/components/learn/GeoRobotix.vue";
 
 onMounted(() => {
   function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+    let reveals = document.querySelectorAll(".reveal");
+    for (const element of reveals) {
+      let windowHeight = window.innerHeight;
+      let elementTop = element.getBoundingClientRect().top;
+      let elementVisible = 150;
       if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
+        element.classList.add("active");
       } else {
-        reveals[i].classList.remove("active");
+        element.classList.remove("active");
       }
     }
   }
@@ -33,7 +33,6 @@ onMounted(() => {
     <div class="row py-5">
       <div class="text-center justify-content-center align-content-center text-white">
         <h1>Learn to Build with the OpenSensorHub Platform</h1>
-<!--        <hr/>-->
       </div>
     </div>
 

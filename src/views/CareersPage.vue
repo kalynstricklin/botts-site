@@ -12,6 +12,7 @@ import JobTitles from "@/components/careers/JobTitles.vue";
       </div>
       <JobTitles/>
     </div>
+
   </div>
 </template>
 
