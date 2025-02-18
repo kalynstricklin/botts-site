@@ -1,7 +1,7 @@
 <script setup>
 
 
-import mike from "@/assets/headshots/mike.png";
+import mike from "@/assets/headshots/img.png";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import mike from "@/assets/headshots/mike.png";
     <div class="background-wrapper">
       <div class="container-fluid">
         <div class="test-content-wrapper">
-          <img :src="mike" alt="Mike image" class="img-fluid headshot" loading="lazy">
+          <img :src="mike" alt="Mike" class="img-fluid headshot" loading="lazy">
           <div class="text-content">
             <p>
 <!--              "The Botts-Inc team has........"-->
@@ -28,8 +28,8 @@ import mike from "@/assets/headshots/mike.png";
 <style scoped>
 
 .headshot {
-  height: 320px;
-  max-width: 80%;
+  height: 400px;
+  max-width: 100%;
   filter: grayscale(50%);
   transition: all 0.5s ease;
 }
