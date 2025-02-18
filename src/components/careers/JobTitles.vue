@@ -82,7 +82,7 @@ const positions = [
                       aria-expanded="false"
                       :aria-controls="'collapseJobDesc' + index"
                   >
-                    <i class="bi bi-arrow-down-right" style="color: white; font-size: 1.5rem"></i>
+                    <i class="bi bi-arrow-down" style="color: white; font-size: 1.5rem"></i>
                   </button>
                 </p>
               </div>
