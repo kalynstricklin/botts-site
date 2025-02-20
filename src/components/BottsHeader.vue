@@ -26,6 +26,7 @@
         <b-navbar-nav class="ml-auto">
           <b-button class="my-2 my-sm-0 white-button" href="mailto:info@botts-inc.com">Get in Touch</b-button>
         </b-navbar-nav>
+
       </b-collapse>
     </b-navbar>
   </header>
