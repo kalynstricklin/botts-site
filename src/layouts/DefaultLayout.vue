@@ -11,13 +11,12 @@ export default {
 </script>
 
 <template>
-<div>
-  <BottsHeader/>
-  <router-view/>
-  <BottsFooter/>
+  <div>
+    <BottsHeader/>
+    <router-view/>
+    <BottsFooter/>
 
-
-</div>
+  </div>
 </template>
 
 <style scoped>

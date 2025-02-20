@@ -91,6 +91,7 @@ hr{
   color: #fff;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  text-align: start;
 }
 
 .card:hover {

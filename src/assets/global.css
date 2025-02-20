@@ -10,17 +10,23 @@
     --letterSpacingWide: 0.04em;
 }
 
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+
+}
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    height: 100%;
     background-color: #0D121C;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 h1, h2, h3, h4, h5, h6, span {
     font-family: var(--font-primary);
@@ -33,17 +39,14 @@ p, a, li {
     font-weight: 400;
 }
 
-html {
-    height: 100%;
-    margin: 0;
-    scroll-behavior: smooth;
-}
-
 #app {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
+
 
 .dark-mode{
     background-color: #131824;
@@ -159,5 +162,14 @@ button{
 
 
 .container-fluid{
-    width: 80%;
+    width: 85%;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:#FFF;
+    height: 1px;
 }

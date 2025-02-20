@@ -31,12 +31,12 @@ onMounted(() => {
 
 <template>
   <div>
-    <section id="header-section" class="mt-5 py-5 reveal">
+    <section id="header-section" class="mt-5 reveal">
       <HomeImage />
     </section>
 
 
-    <section id="service-section" class="py-2 reveal">
+    <section id="service-section" class="py-4 reveal">
       <ServicesCards/>
     </section>
 
@@ -44,11 +44,9 @@ onMounted(() => {
 <!--      <TestimonialScroller/>-->
 <!--    </section>-->
 
-    <section id="mike-test" class="py-2">
+    <section id="mike-test" class="">
       <MikeTestimonial/>
     </section>
-
-
 
   </div>
 </template>

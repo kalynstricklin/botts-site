@@ -60,7 +60,7 @@ const positions = [
 <!--            <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">-->
             <div class="row px-lg-5 px-3 py-2 justify-content-center align-items-center">
 
-              <hr />
+              <hr/>
 
               <div class="col-md-8 col-lg-10 col-12 p-4">
                 <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">
@@ -158,8 +158,5 @@ p {
   text-align: left;
 }
 
-hr {
-  color: #fff;
-}
 
 </style>

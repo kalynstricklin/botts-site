@@ -28,8 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="py-5">
-
+  <div class="">
     <div class="row py-5">
       <div class="text-center justify-content-center align-content-center text-white">
         <h1>Learn to Build with the OpenSensorHub Platform</h1>
@@ -68,9 +67,6 @@ onMounted(() => {
   opacity: 1;
 }
 
-hr{
-  border: 2px solid var(--primary-color);
-}
 
 h3{
   color: #d39f44;

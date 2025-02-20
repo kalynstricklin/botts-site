@@ -3,82 +3,49 @@
 
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-      <div class="container-fluid">
-        <div class="navbar-brand">
-          <router-link to="/">
-            <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />
-          </router-link>
-        </div>
+    <b-navbar toggleable="lg" type="dark" fixed="top" class="sticky-top">
+      <b-navbar-brand href="/">
+        <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />
+      </b-navbar-brand>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="d-flex justify-content-start align-items-center">
-          <i class="fas fa-bars"></i>
-        </span>
-        </button>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-        <div class="collapse navbar-collapse" id="navbarToggle">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navigation">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/company" :class="{ active: $route.path === '/company' }">Company</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/jobs" :class="{ active: $route.path === '/jobs' }">Careers</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/learn" :class="{ active: $route.path === '/learn' }">Learn</router-link>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://OpenSensorHub.org/">OpenSensorHub</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <a class="btn btn-outline-light" href="mailto:info@botts-inc.com" role="button">Get in Touch</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav id="navigation">
+          <b-nav-item href="/company" :class="{ 'active': $route.path === '/company' }">Company</b-nav-item>
+          <b-nav-item href="/jobs" :class="{ 'active': $route.path === '/jobs' }">Careers</b-nav-item>
+          <b-nav-item href="/learn" :class="{ 'active': $route.path === '/learn' }">Learn</b-nav-item>
 
+
+          <!--          <b-nav-item href="/company" :class="{active: $route.path === '/company'}">Company</b-nav-item>-->
+<!--          <b-nav-item href="/jobs" :class="{active: $route.path === '/jobs'}">Careers</b-nav-item>-->
+<!--          <b-nav-item href="/learn" :class="{active: $route.path === '/learn'}">Learn</b-nav-item>-->
+          <b-nav-item href="http://OpenSensorHub.org/">OpenSensorHub</b-nav-item>
+        </b-navbar-nav>
+
+        <b-navbar-nav class="ml-auto">
+          <b-button class="my-2 my-sm-0 white-button" href="mailto:info@botts-inc.com">Get in Touch</b-button>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </header>
 </template>
 
 <style scoped>
-/***color of links before scroll*/
-.navbar-scroll .nav-link, .navbar-scroll .navbar-toggler .fa-bars{
-  color: #fff;
-}
-/***color of links after scroll*/
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler .fa-bars {
-  color: #4f4f4f;
-}
-/* Color of the navbar AFTER scroll */
-.navbar-scrolled {
-  background-color: #fff;
-}
-nav{
-  background-color: #0D121C;
-}
 .logo {
   max-height: 65px;
   height: auto;
   width: 100%;
 }
 
-/* Mobile styling */
-@media (max-width: 768px) {
-  .logo {
-    max-height: 45px;
-  }
+#navigation .active {
+  color: #d39f44 !important;
 }
 
 @media (max-width: 430px) {
   .logo {
-    max-height: 40px;
+    width: 75%;
   }
 
-}
-ul#navigation .active{
-  color: #d39f44;
 }
 </style>
