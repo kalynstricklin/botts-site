@@ -103,10 +103,15 @@ const positions = [
                 </div>
               </div>
 
+<!--              <div class="button-apply text-start">-->
+<!--                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="btn text-decoration-none white-button">-->
+<!--                  Apply Here!-->
+<!--                </router-link>-->
+<!--              </div>-->
               <div class="button-apply text-start">
-                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="btn text-decoration-none white-button">
+                <a href="mailto:work@botts-inc.com" class="btn white-button">
                   Apply Here!
-                </router-link>
+                </a>
               </div>
 
 
