@@ -1,38 +1,9 @@
 <script setup>
 import headerImage from "@/assets/generic-cover-12-web.jpg";
-// import {onMounted} from "vue";
-
-
-// onMounted(() => {
-//   const observer = new IntersectionObserver((entries) => {
-//         //loop over the entries
-//         entries.forEach((entry, index) => {
-//
-//           //if element is visible
-//           if (entry.isIntersecting) {
-//
-//             //add delay between cards
-//             entry.target.style.animationDelay = `${index * 0.15}s`;
-//             //add the animation class
-//             entry.target.classList.add('card-animation');
-//             return;
-//
-//           }
-//         });
-//       },
-//       {
-//         threshold: 0.25,
-//       }
-//   );
-//
-//   const sections = document.querySelectorAll('.scroll-appear');
-//   sections.forEach((section) => observer.observe(section));
-// });
-
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="">
 <!--  <div class="container-fluid scroll-appear">-->
     <div style="position: relative;">
       <img :src="headerImage" alt="header Image" class="overlay-img">
@@ -43,8 +14,8 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
         <div class="overlay-btn-container">
           <div class="row d-flex justify-content-center align-items-center">
             <div class="col-auto">
-              <b-button class="white-button">
-                Contact Us
+              <b-button class="white-button" href="/company">
+                About Us
               </b-button>
             </div>
             <div class="col-auto ms-3">
@@ -63,9 +34,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
 </template>
 
 <style scoped>
-.container-fluid{
-  width: 100%;
-}
+
 .overlay-img{
   opacity: 50%;
   max-height: 425px;
@@ -74,7 +43,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
 
 .overlay-txt{
   position: absolute;
-  width: 80%;
+  width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -129,8 +98,8 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
     width: 100%;
     top: 55%;
   }
-  .overlay-title{
-    font-size: 1.5rem;
+  .overlay-title h1{
+    font-size: 1.35rem;
   }
   .overlay-description{
     font-size: 0.95rem;

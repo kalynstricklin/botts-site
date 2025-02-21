@@ -2,9 +2,9 @@
 </script>
 
 <template>
-  <header>
-    <b-navbar toggleable="lg" type="dark" fixed="top" class="sticky-top">
-      <b-navbar-brand href="/">
+<!--  <header>-->
+    <b-navbar toggleable="lg" type="dark" fixed="top" class="sticky-header">
+    <b-navbar-brand href="/">
         <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />
       </b-navbar-brand>
 
@@ -24,22 +24,42 @@
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
-          <b-button class="my-2 my-sm-0 white-button" href="mailto:info@botts-inc.com">Get in Touch</b-button>
+          <b-button class="my-2 my-sm-0 white-button" href="mailto:info@botts-inc.com">Contact Us</b-button>
         </b-navbar-nav>
 
       </b-collapse>
     </b-navbar>
-  </header>
+<!--  </header>-->
 </template>
 
 <style scoped>
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: var(--background-color);
+  padding: 5px 15px;
+  min-height: 60px;
+  transition: background-color 0.3s ease-in-out;
+}
+
 .logo {
-  max-height: 65px;
+  max-height: 75px;
   height: auto;
   width: 100%;
 }
 
-#navigation .active {
+#navigation .nav-link {
+  color: white !important;
+  font-family: var(--font-primary);
+}
+
+#navigation .nav-link:hover {
+  color: #d39f44 !important;
+}
+
+#navigation .nav-link.active {
   color: #d39f44 !important;
 }
 

@@ -8,26 +8,38 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-4 mb-3 d-flex align-items-stretch">
-          <div class="card">
+        <div class="card">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title section-title text-white text-center">OSH Showcase</h5>
+            <h5 class="card-title section-title text-white text-center">Documentation</h5>
             <hr>
-            <p class="card-text mb-4">The showcase provides code examples designed to help developers build with the OSH.js toolkit, offering code snippets that you can easily integrate into your OSH projects.</p>
+            <p class="card-text mb-4">Access technical documentation, user guides, and best practices to maximize OSH’s capabilities.</p>
             <div class="text-center">
               <a href="https://opensensorhub.github.io/osh-js/dev/showcase/" class="btn mt-auto align-self-start orange-button">Learn More</a>
             </div>
           </div>
         </div>
       </div>
+<!--      <div class="col-lg-4 mb-3 d-flex align-items-stretch">-->
+<!--          <div class="card">-->
+<!--          <div class="card-body d-flex flex-column">-->
+<!--            <h5 class="card-title section-title text-white text-center">OSH Showcase</h5>-->
+<!--            <hr>-->
+<!--            <p class="card-text mb-4">The showcase provides code examples designed to help developers build with the OSH.js toolkit, offering code snippets that you can easily integrate into your OSH projects.</p>-->
+<!--            <div class="text-center">-->
+<!--              <a href="https://opensensorhub.github.io/osh-js/dev/showcase/" class="btn mt-auto align-self-start orange-button">Learn More</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
       <div class="col-lg-4 mb-3 d-flex align-items-stretch">
         <div class="card">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title section-title text-white text-center">APIs</h5>
+            <h5 class="card-title section-title text-white text-center">Presentations</h5>
             <hr>
-            <p class="card-text mb-4"> Find documentation of OpenSensorHub's APIs and get ready to dive into a community that is building a platform to support web-enabled sensors!</p>
+            <p class="card-text mb-4">View presentations from events, and technical discussions about the latest innovations from OSH.</p>
 
             <div class="text-center">
-              <a href="https://opensensorhub.org/documentation/" class="btn mt-auto align-self-start orange-button">Learn More</a>
+              <a href="/learn/presentations" class="btn mt-auto align-self-start orange-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -37,7 +49,7 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title section-title text-white text-center">OSH Community</h5>
             <hr>
-            <p class="card-text mb-4">The showcase provides code examples designed to help developers build with the OSH.js toolkit, offering code snippets that you can easily integrate into your OSH projects.</p>
+            <p class="card-text mb-4">Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
             <div class="text-center">
               <a href="#" class="btn mt-auto align-self-start orange-button">Learn More</a>
             </div>

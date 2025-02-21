@@ -1,5 +1,7 @@
 <script setup>
-import image3 from "@/assets/arch.webp"
+import arch from "@/assets/arch.webp"
+
+import pexels from "@/assets/pexels-photo.jpg"
 </script>
 
 <template>
@@ -17,13 +19,13 @@ import image3 from "@/assets/arch.webp"
     <div class="nav align-items-center justify-content-evenly py-3">
       <li class="nav-item">
         <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
-          OSH Connect
+          OSH-Connect
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
-        OSH Android
+        OSH-Android
         </a>
       </li>
       <li class="nav-item">
@@ -31,11 +33,16 @@ import image3 from "@/assets/arch.webp"
           SensorML Process Engine
         </a>
       </li>
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">-->
-<!--          SensorML Web Tools-->
-<!--        </a>-->
-<!--      </li>-->
+      <li class="nav-item">
+        <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+          OSH Web Client Toolkit
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab5-tab" data-bs-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+          OSH-Viewer
+        </a>
+      </li>
     </div>
 
 <!--    tab content-->
@@ -45,16 +52,16 @@ import image3 from "@/assets/arch.webp"
           <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
 <!--            <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="text-decoration-none" target="_blank">-->
             <div class="tab-content-wrapper">
-              <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
+              <img :src="pexels" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
-                <h2>OpenSensorHub Toolkit</h2>
+                <h2>OSH-Connect</h2>
                 <p>
-                  OpenSensorHub Web Client toolkit allows you to visualize data from OSH. It provides the necessary tools to build your own web application for monitoring your sensors. It is pure javascript framework and does not require third party libraries. A set of external libraries is also available to easily build some part of your views such as Leaflet, OpenLayer, Cesium, Chart.js etc..
+                  A library that interacts with OpenSensorHub using OGC API Connected Systems.
                 </p>
 
                 <div class="d-flex gap-2 mt-5">
-                  <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="btn white-button me-2" target="_blank">View Docs</a>
-<!--                  <a href="https://github.com/opensensorhub/osh-android" class="btn-lg white-button" target="_blank">View on GitHub</a>-->
+                  <a href="" class="btn white-button me-2" target="_blank">View Docs</a>
+                  <a href="https://github.com/Botts-Innovative-Research/OSHConnect-Java" class="btn-lg white-button text-decoration-none" target="_blank">View on GitHub</a>
                 </div>
               </div>
             </div>
@@ -65,17 +72,15 @@ import image3 from "@/assets/arch.webp"
         <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
 <!--          <a href="https://docs.opensensorhub.org/dev/android/" class="text-decoration-none" target="_blank">-->
           <div class="tab-content-wrapper">
-            <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
+            <img :src="arch" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
             <div class="text-content">
-              <h2>OSH Android</h2>
+              <h2>OSH-Android</h2>
               <p>
-                OSH is capable of running on the lightest Arduino or Raspberry Pi platforms, all the way to massive Cloud based clusters.
-                There is also an OSH Android Node application that deploys an entire OSH node on your Android device, with native integration
-                that exposes all sensors within your Android device, or tethered to your device, via OGC sensor services.
+                An open-source Android application that deploys a OSH node on your Android device.
               </p>
               <div class="d-flex gap-2 mt-5">
                 <a href="https://docs.opensensorhub.org/dev/android/" class="btn white-button me-2" target="_blank">View Docs</a>
-                <a href="https://github.com/opensensorhub/osh-android" class="btn white-button" target="_blank">View on GitHub</a>
+                <a href="https://github.com/opensensorhub/osh-android" class=" text-decoration-none btn white-button" target="_blank">View on GitHub</a>
               </div>
             </div>
           </div>
@@ -86,17 +91,17 @@ import image3 from "@/assets/arch.webp"
         <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
 <!--          <a href="https://docs.opensensorhub.org/dev/core-apis/sensorml-api/" class="text-decoration-none" target="_blank">-->
             <div class="tab-content-wrapper">
-              <img :src="image3" alt="SensorML Process Execution Engine" class="img-fluid tab-image" loading="lazy">
+              <img :src="arch" alt="SensorML Process Execution Engine" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
 
                 <h2>SensorML Process Execution Engine</h2>
                 <p>
-                  In addition to describing sensor systems, SensorML provides a means of describing processes and process chains that can be executed on-demand using one or more execution engines. This enables the integration of AI/ML/CV and advanced geoprocessing libraries as atomic processes, and as orchestratable processing chains. This is what Botts-Inc built the SensorML Process Execution Engine for. This engine can be configured to operate within a given OSH node in the field, or to process across a distributed across a network of OSH nodes (from the Edge to the Fog to the Cloud) to ensure that computationally intensive processes are executed in the most advantageous location for mission critical applications.
+                 SensorML provides a means of describing processes and process chains that can be executed on-demand using one or more execution engines. This is what Botts-Inc built the SensorML Process Execution Engine for. This engine can be configured to operate within a given OSH node in the field, or to process across a distributed across a network of OSH nodes (from the Edge to the Fog to the Cloud) to ensure that computationally intensive processes are executed in the most advantageous location for mission critical applications.
                 </p>
 
                 <div class="d-flex gap-2 mt-5">
                   <a href="https://docs.opensensorhub.org/dev/core-apis/sensorml-api/" class="btn white-button me-2" target="_blank">View Docs</a>
-<!--                  <a href="https://github.com/opensensorhub/osh-android" class="btn white-button" target="_blank">View on GitHub</a>-->
+                  <a href="" class="btn white-button text-decoration-none" target="_blank">View on GitHub</a>
                 </div>
               </div>
 
@@ -104,22 +109,49 @@ import image3 from "@/assets/arch.webp"
 <!--          </a>-->
         </div>
 
-<!--        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">-->
-<!--          <a href="" class="text-decoration-none" target="_blank">-->
-<!--            <div class="tab-content-wrapper">-->
-<!--              <img :src="image3" alt="SensorML web tools" class="img-fluid tab-image" loading="lazy">-->
-<!--              <div class="text-content">-->
+        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+          <a href="" class="text-decoration-none" target="_blank">
+            <div class="tab-content-wrapper">
+              <img :src="arch" alt="SensorML web tools" class="img-fluid tab-image" loading="lazy">
+              <div class="text-content">
 
-<!--                <b-card-title>SensorML Web Tools</b-card-title>-->
-<!--                <p>-->
-<!--                  The Botts-Inc team has developed and maintains a variety of open source web-based tools in support of SensorML. These include a SensorML document validator, schema browser, and SensorML Tableview (“PrettyView”) for human-readable presentation of a SensorML document, and a SensorML editor that removes the need to edit XML, providing a more human-friendly means of integrating your sensors. There is also a SensorML definitions server that provides easy discovery of definitions that can accelerate the information integration tasks required for robust sensor integrations.-->
-<!--                </p>-->
-<!--              </div>-->
+                <b-card-title>OSH Web Client Toolkit</b-card-title>
+                <p>
+                  An open-source JavaScript library for visualizing sensor data from OpenSensorHub.
+                </p>
 
-<!--            </div>-->
-<!--          </a>-->
+                <div class="d-flex gap-2 mt-5">
+                  <a href="https://github.com/opensensorhub/osh-js" class="btn white-button me-2" target="_blank">View Docs</a>
+                  <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="btn white-button text-decoration-none" target="_blank">View on GitHub</a>
+                </div>
+              </div>
 
-<!--        </div>-->
+            </div>
+          </a>
+
+        </div>
+
+        <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+          <a href="" class="text-decoration-none" target="_blank">
+            <div class="tab-content-wrapper">
+              <img :src="arch" alt="SensorML web tools" class="img-fluid tab-image" loading="lazy">
+              <div class="text-content">
+
+                <b-card-title>OSH-Viewer</b-card-title>
+                <p>
+                  OpenSensorViewer is a web app for OpenSensorHub that enables interaction and visualization of sensor data using OGC standards like SensorML and Sensor Web API.
+                </p>
+
+                <div class="d-flex gap-2 mt-5">
+                  <a href="https://github.com/opensensorhub/osh-viewer" class="btn white-button me-2" target="_blank">View Docs</a>
+                  <a href="" class="btn white-button text-decoration-none" target="_blank">View on GitHub</a>
+                </div>
+              </div>
+
+            </div>
+          </a>
+
+        </div>
 
       </div>
     </div>
@@ -158,6 +190,8 @@ import image3 from "@/assets/arch.webp"
   max-width: 40%;
   height: auto;
 }
+
+
 
 .text-content {
   text-align: left;

@@ -33,32 +33,6 @@
         </div>
 
         <div class="col-12">
-          <a href="https://docs.opensensorhub.org/" class="text-decoration-none" target="_blank">
-            <div class="card card-content">
-              <div class="text-class">
-                <div class="row px-lg-5 px-3 py-4">
-
-                  <div class="col-lg-9 col-12">
-                    <div class="text-content">
-                      <h2 class="title text-white">Developer Center</h2>
-                      <p>Explore API references, SDKs, and development tools to build and integrate OSH solutions.</p>
-                    </div>
-                  </div>
-
-    <!--              <div class="col-lg-3 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
-    <!--                <a href="https://docs.opensensorhub.org/" class="text-white" target="_blank">-->
-    <!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
-    <!--                </a>-->
-    <!--              </div>-->
-
-                  <hr/>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12">
           <a href="/learn/presentations" class="text-decoration-none" target="_self">
             <div class="card card-content">
               <div class="text-class">

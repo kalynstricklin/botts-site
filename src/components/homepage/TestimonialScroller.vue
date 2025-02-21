@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="">
     <div id="testScroller" class="carousel slide justify-content-center align-content-center" data-bs-ride="carousel" data-bs-interval="8000" data-bs-pause="hover">
 
       <div class="carousel-indicators mt-5">
@@ -119,9 +119,9 @@
 <style scoped>
 span{
   text-align: left;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.85rem;
 }
 .testimonial-arrows {
   display: flex;
@@ -137,8 +137,7 @@ span{
 }
 
 .carousel {
-  max-height: 600px;
-  width: auto;
+  width: 100%;
 }
 
 .test-card {

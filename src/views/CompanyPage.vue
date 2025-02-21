@@ -32,28 +32,33 @@ onMounted(() => {
       <OurStory/>
     </section>
 
-    <section id="work-at-botts" class="reveal">
-      <WorkAtBotts/>
-    </section>
-
     <section id="team-pics" class="mb-3 reveal">
-      <div class="container-fluid">
-        <div class="row py-4 m-2 text-start">
-          <span class="text-uppercase" style="color: lightgray">Gallery</span>
-        </div>
-        <div class="row g-2 justify-content-center">
-          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-            <img :src="teamTaiwan" alt="Team Taiwan" class="img-fluid rounded">
+      <div class="background-wrapper">
+        <div class="container-fluid">
+          <div class="row py-4 m-2 text-start">
+            <span class="text-uppercase" style="color: lightgray">Gallery</span>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-            <img :src="teamTaiwan" alt="Team" class="img-fluid rounded">
-          </div>
-          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-            <img :src="teamTaiwan" alt="Team" class="img-fluid rounded">
+          <div class="row g-2 justify-content-center">
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+              <img :src="teamTaiwan" alt="Team Taiwan" class="img-fluid rounded">
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+              <img :src="teamTaiwan" alt="Team" class="img-fluid rounded">
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+              <img :src="teamTaiwan" alt="Team" class="img-fluid rounded">
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    <section id="work-at-botts" class="reveal">
+      <WorkAtBotts/>
+    </section>
+
+
 
 <!--    <section id="leadership" class="reveal">-->
 <!--      <TeamComp/>-->
@@ -99,5 +104,29 @@ onMounted(() => {
   opacity: 1;
 }
 
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  padding: 5rem 0;
+  z-index: 1;
+  height: auto;
+}
 
+.background-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/lines-long.png');
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  opacity: 0.85;
+  z-index: -1;
+}
 </style>

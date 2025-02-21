@@ -7,7 +7,7 @@
 
       <div class="card orange-card p-4 mt-3">
         <div class="row mt-5">
-          <div class="text-center justify-content-center align-content-center">
+          <div class="text-start">
             <h2 class="text-white">GeoRobotix</h2>
           </div>
         </div>

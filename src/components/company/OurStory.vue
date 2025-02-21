@@ -7,10 +7,7 @@
   <section class="bsb-timeline-1">
     <div class="background-wrapper">
       <div class="container-fluid">
-
         <div class="row justify-content-center">
-
-          <!--timeline-->
           <div class="col-12 col-lg-10">
             <div class="row mb-3">
               <div class="justify-content-center align-content-center text-white">
@@ -18,49 +15,47 @@
               </div>
             </div>
             <ul class="timeline">
-              <li class="timeline-item ">
+              <li class="timeline-item">
                 <div class="timeline-body">
                   <div class="timeline-content">
                     <p class="card-text m-0">
-                      Botts Innovative Research, Inc. (Botts Inc.) is a boutique R&D services firm, founded by Dr. Michael Botts, that has been in business for nearly two decades, with a diverse set of private and public sector clients.
+                      <strong>2005:</strong> Dr. Michael Botts founds Botts Innovative Research, Inc. after two decades in R&D, serving public and private sectors.
                     </p>
                   </div>
                 </div>
               </li>
-              <li class="timeline-item ">
+              <li class="timeline-item">
                 <div class="timeline-body">
                   <div class="timeline-content">
                     <p class="card-text m-0">
-                      Botts-Inc was built on Dr. Botts’ 20 years as a Principal Research Scientist within the National Space Science and Technology Center at the University of Alabama in Huntsville (UAH), where he ran the VisAnalysis and Systems Technology (VAST) Lab.  At UAH, his team was heavily involved in research and development in support of fusion and analysis of data from a wide variety of disparate sensors, resulting in Dr. Botts’ creation of Sensor Model Language (SensorML), and the Open Geospatial Consortium (OGC) SensorWebEnablement (SWE) architecture used all over the world.
+                      <strong>UAH Research:</strong> Led VisAnalysis and Systems Technology (VAST) Lab, pioneering Sensor Model Language (SensorML) and Open Geospatial Consortium (OGC) Sensor Web Enablement (SWE).
                     </p>
                   </div>
                 </div>
               </li>
-              <li class="timeline-item ">
+              <li class="timeline-item">
                 <div class="timeline-body">
                   <div class="timeline-content">
                     <p class="card-text m-0">
-                      Botts-Inc team then created the world leading, open source, open standards-based OpenSensorHub for integrating Sensors, Things, and Robots (all comprised of sensors, actuators and processes) as location-enabled and geographically-aware, web-accessible services – whether space-based, airborne, mobile, in situ, and terrestrial remote – of all phenomenologies in to a common 4D framework. Dr. Botts is now helping to lead the emerging OGC API – Connected Systems specification that is modernizing the OGC SWE legacy using OpenAPI/RESTful patterns.
+                      <strong>Innovation:</strong> Developed OpenSensorHub, an open-source platform integrating sensors, robots, and IoT into a unified 4D framework.
                     </p>
                   </div>
                 </div>
               </li>
-              <li class="timeline-item ">
+              <li class="timeline-item">
                 <div class="timeline-body">
                   <div class="timeline-content">
                     <p class="card-text m-0">
-                      Botts Innovative Research, Inc (Botts-Inc) specializes in the design and application of open standards and open source software for sensor systems within the national security, public sector, private sector, and scientific communities. Botts-Inc has been heavily involved in the design, development, and implementation of the Open Geospatial Consortium (OGC) Sensor Web Enablement (SWE) architecture, and the emerging OGC API – Connected Systems specification, discovering and tasking of sensors, publishing and subscribing to alerts, and streaming, parsing, processing, and portrayal of real-time and archived observations. Botts-Inc has extensive experience in processing and fusing a wide range of sensors, from those on satellite and airborne platforms, to those on mobile and static ground-based stations.                    </p>
+                      <strong>Today:</strong> Botts-Inc specializes in open standards for sensor systems, national security, and scientific research, advancing OGC API – Connected Systems.
+                    </p>
                   </div>
                 </div>
               </li>
-
             </ul>
           </div>
         </div>
       </div>
     </div>
-
-
   </section>
 </template>
 
@@ -85,16 +80,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/lines.png');
-  background-size: contain;
+  background-image: url('@/assets/lines-long.png');
+  background-size: cover;
   background-repeat: repeat-x;
   background-position: center;
-  opacity: 0.65;
+  opacity: 0.85;
   z-index: -1;
 }
 .bsb-timeline-1{
-  --bsb-tl-color: #faf6ed;
-  --bsb-tl-circle-color: #faf6ed;
+  --bsb-tl-color:var(--primary-color);
+  --bsb-tl-circle-color: var(--primary-color);
   --bsb-tl-circle-size:18px;
   --bsb-tl-circle-offset:9px;
 }

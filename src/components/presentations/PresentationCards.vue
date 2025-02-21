@@ -47,18 +47,23 @@ const presentationsList = [
 
       <div class="card orange-card p-4 mt-3">
         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-          <a :href="presentation.link" class="text-decoration-none" target="_blank">
+<!--          <a :href="presentation.link" class="text-decoration-none" target="_blank">-->
             <div class="tab-content-wrapper">
-              <img :src="presentation.image"  :alt="presentation.title" class="img-fluid tab-image" loading="lazy">
+              <img :src="presentation.image" :alt="presentation.title" class="img-fluid tab-image" loading="lazy">
               <div class="text-content">
                 <b-card-title>{{ presentation.title }}</b-card-title>
                 <p>
                   {{presentation.desc}}
                 </p>
+
+                <div class="d-flex gap-2 mt-5">
+                  <a :href="presentation.link" class="btn white-button me-2" target="_blank">View Slides</a>
+                  <a href="" class="btn-lg white-button text-decoration-none" target="_blank">View Video</a>
+                </div>
               </div>
             </div>
 
-          </a>
+<!--          </a>-->
         </div>
       </div>
     </div>
@@ -71,13 +76,22 @@ const presentationsList = [
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .tab-image {
   max-width: 40%;
   height: auto;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 20px;
 }
-
+/**
+ .tab-image:hover {
+  transform: scale(1.1);
+}
+**/
 .text-content {
   text-align: left;
   width: 55%;
@@ -92,9 +106,13 @@ p{
   background-color: rgba(112, 112, 112, 0.2);
   border-color: rgba(112, 112, 112, 0.2);
   opacity: 100%;
+  transition: transform 0.3s ease-in-out;
+
 }
 
-.orange-card:hover{
+.orange-card:hover {
+  background-image: linear-gradient(to bottom, #d39f44, #000);
+  border-color: #f4e9d4;
   transform: translateY(-5px);
 }
 

@@ -39,6 +39,12 @@ const positions = [
 
 <template>
   <div class="container-fluid">
+    <div class="row">
+      <div class="text-center justify-content-center align-content-center text-white">
+        <h1>Careers at Botts</h1>
+      </div>
+    </div>
+
     <div class="card p-4 card-content">
       <div class="row">
         <div v-for="(item, index) in positions" :key="index" class="col-12">
@@ -84,21 +90,23 @@ const positions = [
                     {{ item.preferredQual }}
                   </div>
 
+                  <div class="text-start mt-4">
+                    <a href="mailto:work@botts-inc.com" class="btn white-button">
+                      Apply Here!
+                    </a>
+                  </div>
+
+                  <!--              <div class="button-apply text-start">-->
+                  <!--                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="btn text-decoration-none white-button">-->
+                  <!--                  Apply Here!-->
+                  <!--                </router-link>-->
+                  <!--              </div>-->
 
 
                 </div>
               </div>
 
-<!--              <div class="button-apply text-start">-->
-<!--                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="btn text-decoration-none white-button">-->
-<!--                  Apply Here!-->
-<!--                </router-link>-->
-<!--              </div>-->
-              <div class="button-apply text-start">
-                <a href="mailto:work@botts-inc.com" class="btn white-button">
-                  Apply Here!
-                </a>
-              </div>
+
 
 
             </div>
@@ -110,10 +118,7 @@ const positions = [
 </template>
 
 <style scoped>
-.button-apply{
-  padding-left: 25px;
 
-}
 .collapse-text{
   font-family: var(--font-primary);
   font-size: 1.15rem;

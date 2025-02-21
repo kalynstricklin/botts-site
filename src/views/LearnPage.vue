@@ -1,10 +1,12 @@
 <script setup>
 
 import {onMounted} from "vue";
-import LargeCard from "@/components/learn/LargeCard.vue";
+// import LargeCard from "@/components/learn/LargeCard.vue";
 import OSHLaptop from "@/components/learn/OSHLaptop.vue";
-import ProjectComp from "@/components/learn/SoftwareCards.vue";
-import GeoRobotix from "@/components/learn/GeoRobotix.vue";
+import SoftwareCards from "@/components/learn/SoftwareCards.vue";
+import AdditionalResourceCards from "@/components/learn/AdditionalResourceCards.vue";
+// import GeoRobotix from "@/components/learn/GeoRobotix.vue";
+// import SoftwareSimple from "@/components/homepage/SoftwareSimple.vue";
 
 onMounted(() => {
   function reveal() {
@@ -35,21 +37,29 @@ onMounted(() => {
       </div>
     </div>
 
-    <section class="reveal">
-      <LargeCard/>
-    </section>
+<!--    <SoftwareSimple/>-->
+
 
     <section class="py-5 reveal">
       <OSHLaptop/>
     </section>
 
     <section class="py-3 reveal">
-      <ProjectComp/>
+      <SoftwareCards/>
     </section>
 
-    <section class="py-3 reveal">
-      <GeoRobotix/>
+<!--    <section class="reveal">-->
+<!--      <LargeCard/>-->
+<!--    </section>-->
+
+    <section id="additional-rsc" class="reveal py-3">
+      <AdditionalResourceCards/>
     </section>
+
+
+<!--    <section class="py-3 reveal">-->
+<!--      <GeoRobotix/>-->
+<!--    </section>-->
   </div>
 </template>
 

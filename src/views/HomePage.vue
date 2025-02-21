@@ -1,9 +1,8 @@
 <script setup>
 import HomeImage from "@/components/homepage/HomeImage.vue";
 import {onMounted} from "vue";
-// import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
 import ServicesCards from "@/components/homepage/ServicesCards.vue";
-import MikeTestimonial from "@/components/homepage/MikeTestimonial.vue";
+import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
 
 
 // import teamImg from "@/assets/team.webp"
@@ -31,7 +30,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <section id="header-section" class="mt-5 reveal">
+    <section id="header-section" class="reveal">
       <HomeImage />
     </section>
 
@@ -40,13 +39,10 @@ onMounted(() => {
       <ServicesCards/>
     </section>
 
-<!--    <section id="test-scroller" class="py-3 reveal">-->
-<!--      <TestimonialScroller/>-->
-<!--    </section>-->
-
-    <section id="mike-test" class="">
-      <MikeTestimonial/>
+    <section id="test-scroller" class="py-3 scroll-appear reveal">
+      <TestimonialScroller/>
     </section>
+
 
   </div>
 </template>
