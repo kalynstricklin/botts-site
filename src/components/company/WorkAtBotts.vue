@@ -4,7 +4,7 @@
 
 <template>
   <div class="background-wrapper">
-    <div class="container-fluid mb-5">
+    <div class="container-fluid">
         <div class="row">
           <div class="text-center justify-content-center align-content-center text-white">
             <span class="" style="color: #d39f44">WORK AT BOTTS</span>
@@ -36,8 +36,8 @@ p{
   display: flex;
   align-items: flex-start;
   text-align: left;
-  padding: 5rem 0;
   z-index: 1;
+  padding: 1rem 0;
   height: auto;
 }
 

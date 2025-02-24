@@ -82,7 +82,6 @@ p, a, li {
 
 .section-title {
     font-size: 2.5rem;
-    font-weight: 600;
     margin-bottom: 1rem;
     color:  var(--primary-color);
 }

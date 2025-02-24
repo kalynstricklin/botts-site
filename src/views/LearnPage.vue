@@ -1,12 +1,9 @@
 <script setup>
 
 import {onMounted} from "vue";
-// import LargeCard from "@/components/learn/LargeCard.vue";
 import OSHLaptop from "@/components/learn/OSHLaptop.vue";
 import SoftwareCards from "@/components/learn/SoftwareCards.vue";
-import AdditionalResourceCards from "@/components/learn/AdditionalResourceCards.vue";
-// import GeoRobotix from "@/components/learn/GeoRobotix.vue";
-// import SoftwareSimple from "@/components/homepage/SoftwareSimple.vue";
+import ClickableCards from "@/components/cards/ClickableCards.vue";
 
 onMounted(() => {
   function reveal() {
@@ -27,6 +24,32 @@ onMounted(() => {
   reveal();
 });
 
+
+
+const addResources = [
+  {
+    title: "Documentation",
+    description: "Access technical documentation, user guides, and best practices to maximize OSH’s capabilities.",
+    links: "https://opensensorhub.org/documentation/"
+  },
+  {
+    title: "Presentations",
+    description: "View presentations from events, and technical discussions about the latest innovations from OSH",
+    links: "/learn/presentations"
+  },
+  {
+    title: "OSH Community",
+    description: "Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.",
+    links: ""
+  },
+  {
+    title: "OSH Showcase",
+    description: "Provides ready to use examples designed to help developers build with the OSH.js toolkit, offering code snippets that you can easily integrate into using Connected Systems.",
+    links: "https://opensensorhub.github.io/osh-js/dev/showcase/"
+  },
+];
+
+
 </script>
 
 <template>
@@ -40,6 +63,7 @@ onMounted(() => {
 <!--    <SoftwareSimple/>-->
 
 
+
     <section class="py-5 reveal">
       <OSHLaptop/>
     </section>
@@ -48,13 +72,29 @@ onMounted(() => {
       <SoftwareCards/>
     </section>
 
-<!--    <section class="reveal">-->
-<!--      <LargeCard/>-->
-<!--    </section>-->
+
 
     <section id="additional-rsc" class="reveal py-3">
-      <AdditionalResourceCards/>
+      <div class="row py-5">
+        <div class="text-center justify-content-center align-content-center text-white">
+          <h2>Additional Resources</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div v-for="(item, index) in addResources" :key="index" class="col-lg-4 mb-3 d-flex align-items-stretch">
+            <ClickableCards
+                :title="item.title"
+                :description="item.description"
+                :links="item.links"
+            />
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
 
 
 <!--    <section class="py-3 reveal">-->

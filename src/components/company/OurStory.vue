@@ -68,7 +68,7 @@
   display: flex;
   align-items: flex-start;
   text-align: left;
-  padding: 5rem 0;
+  padding: 1rem 0;
   z-index: 1;
   height: auto;
 }

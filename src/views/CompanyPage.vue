@@ -33,7 +33,7 @@ onMounted(() => {
       <OurStory/>
     </section>
 
-    <section id="team-pics" class="mb-3 reveal">
+    <section id="team-pics" class="reveal">
       <div class="background-wrapper">
         <div class="container-fluid">
           <div class="row py-4 m-2 text-start">
@@ -59,7 +59,10 @@ onMounted(() => {
       <WorkAtBotts/>
     </section>
 
-    <GeoRobotix/>
+    <section id="georobotix" class="reveal">
+      <GeoRobotix/>
+    </section>
+
 
 
 <!--    <section id="leadership" class="reveal">-->

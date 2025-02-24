@@ -1,8 +1,8 @@
 <script setup>
 import { ref, defineProps } from "vue";
 
-const props = defineProps(["position"]); // Receive props
-const position = ref(props.position || "Apply for a Position"); // Use props safely
+const props = defineProps(["position"]);
+const position = ref(props.position || "Apply for a Position");
 
 
 

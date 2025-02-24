@@ -31,17 +31,13 @@ const positions = [
 ];
 </script>
 
-<!--    <p>
-                    Team player who takes initiative. Interested in new challenges. Customer-focused. Committed to
-                    operational excellence.
-                  </p>
-                  -->
 
 <template>
   <div class="container-fluid">
     <div class="row">
       <div class="text-center justify-content-center align-content-center text-white">
         <h1>Careers at Botts</h1>
+        <span>At Bott’s, we recognize experience comes in many forms. Even if you do not meet all qualifications for a role, we encourage you still to apply!</span>
       </div>
     </div>
 

@@ -54,7 +54,9 @@ p {
   font-size: 1.25rem;
   text-align: left;
 }
-
+.white-button{
+  font-size: 1rem;
+}
 .orange-card {
   background-color: rgba(112, 112, 112, 0.2);
   border-color: rgba(112, 112, 112, 0.2);
