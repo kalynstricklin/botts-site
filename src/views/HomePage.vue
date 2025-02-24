@@ -42,8 +42,6 @@ onMounted(() => {
     <section id="test-scroller" class="py-3 scroll-appear reveal">
       <TestimonialScroller/>
     </section>
-
-
   </div>
 </template>
 

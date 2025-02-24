@@ -63,8 +63,8 @@
 <style scoped>
 .card-body .orange-button {
   background-color: transparent;
-  border-color: #faf6ed;
-  color: #faf6ed;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -81,29 +81,47 @@
 
 .card {
   background-color: transparent;
-  border-color: #f4e9d4;
+  border-color: var(--secondary-color);
   border-radius: 20px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  height: 100%;
+  transition: 0.5s ease-in-out;
 }
 .card-body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
-hr{
+
+.card-title {
+  margin: 0;
+  text-align: center;
+  font-size: 1.75rem;
   color: #fff;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0.5rem 0;
 }
 
 .card-text {
   color: #fff;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
+  text-align: start;
+  margin: 0;
 }
 
 .card:hover {
-  background-image: linear-gradient(to bottom, #d39f44, #000);
-  border-color: #f4e9d4;
+  background-image: linear-gradient(to bottom, var(--primary-color), var(--background-color));
+  border-color: var(--secondary-color);
+  transform: translateY(-10px);
 }
 
 .card a {
@@ -115,9 +133,8 @@ hr{
 }
 
 .card a:hover {
-  color: #f4e9d4;
+  color: var(--secondary-color);
 }
-
 @media only screen and (max-width: 481px) {
   .section-title{
     font-size: 1.75rem;

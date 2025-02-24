@@ -5,7 +5,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
 <template>
   <div class="">
 <!--  <div class="container-fluid scroll-appear">-->
-    <div style="position: relative;">
+    <div style="background-color: #0D121C; position: relative;">
       <img :src="headerImage" alt="header Image" class="overlay-img">
       <div class="overlay-txt">
         <h1 class="overlay-title">Designing and Deploying Open Standards for Sensor Systems</h1>
@@ -20,7 +20,7 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
             </div>
             <div class="col-auto ms-3">
               <router-link class="overlay-btn-txt" to="/learn/">
-                Explore Projects
+                Learn More
               </router-link>
             </div>
           </div>
@@ -93,23 +93,24 @@ import headerImage from "@/assets/generic-cover-12-web.jpg";
   animation: enter-animation 0.6s ease-out forwards;
 }
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-device-width: 767px) {
   .overlay-txt{
     width: 100%;
     top: 55%;
   }
-  .overlay-title h1{
-    font-size: 1.35rem;
+  .overlay-title{
+    font-size: 1.5rem;
   }
   .overlay-description{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   .white-button{
-    font-size: 0.95rem;
+    font-size: 0.75rem;
   }
 
   .overlay-btn-txt{
-    font-size: 0.95rem;
+    font-size: 0.75rem;
   }
 }
 </style>

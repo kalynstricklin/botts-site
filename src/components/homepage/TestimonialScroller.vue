@@ -120,7 +120,6 @@
 span{
   text-align: left;
   font-family: var(--font-primary);
-  font-weight: bold;
   font-size: 1.85rem;
 }
 .testimonial-arrows {

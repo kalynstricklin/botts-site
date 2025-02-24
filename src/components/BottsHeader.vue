@@ -2,8 +2,8 @@
 </script>
 
 <template>
-<!--  <header>-->
-    <b-navbar toggleable="lg" type="dark" fixed="top" class="sticky-header">
+  <header>
+    <b-navbar toggleable="lg" type="dark" fixed="top" class="sticky-header shadow">
     <b-navbar-brand href="/">
         <img class="logo" alt="Botts Logo" src="../assets/logos/Botts-logo-orange.svg" />
       </b-navbar-brand>
@@ -29,7 +29,7 @@
 
       </b-collapse>
     </b-navbar>
-<!--  </header>-->
+  </header>
 </template>
 
 <style scoped>
@@ -38,7 +38,8 @@
   top: 0;
   width: 100%;
   z-index: 1050;
-  background-color: var(--background-color);
+  background-color: #0D121C;
+  /**background-color: var(--background-color);**/
   padding: 5px 15px;
   min-height: 60px;
   transition: background-color 0.3s ease-in-out;
@@ -47,7 +48,8 @@
 .logo {
   max-height: 75px;
   height: auto;
-  width: 100%;
+  width: 200px;
+  max-width: 200px; 
 }
 
 #navigation .nav-link {
@@ -65,8 +67,7 @@
 
 @media (max-width: 430px) {
   .logo {
-    width: 75%;
+    max-width: 150px; 
   }
-
 }
 </style>

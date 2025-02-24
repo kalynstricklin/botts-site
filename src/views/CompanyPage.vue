@@ -4,6 +4,7 @@ import {onMounted} from "vue";
 import WorkAtBotts from "@/components/company/WorkAtBotts.vue";
 // import team from "@/assets/team.webp";
 import teamTaiwan from "@/assets/team-taiwan.jpg";
+import GeoRobotix from "@/components/company/GeoRobotix.vue";
 
 onMounted(() => {
   function reveal() {
@@ -58,6 +59,7 @@ onMounted(() => {
       <WorkAtBotts/>
     </section>
 
+    <GeoRobotix/>
 
 
 <!--    <section id="leadership" class="reveal">-->
@@ -81,11 +83,6 @@ onMounted(() => {
 <!--          </div>-->
 <!--        </div>-->
 <!--      </div>-->
-<!--    </section>-->
-
-
-<!--    <section id="test-scroller" class="py-3 reveal">-->
-<!--      <TestimonialScroller/>-->
 <!--    </section>-->
 
   </div>

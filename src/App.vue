@@ -53,7 +53,7 @@ export default {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(450px at var(--x) var(--y), rgba(216, 221, 232, 0.1) 10%, transparent 80%);
+  background: radial-gradient(450px at var(--x) var(--y), rgba(211, 206, 206, 0.1) 10%, transparent 80%);
   transition: background 0.05s ease-out;
 }
 </style>

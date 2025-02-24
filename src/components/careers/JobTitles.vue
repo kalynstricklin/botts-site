@@ -55,12 +55,12 @@ const positions = [
               <hr/>
 
               <div class="col-md-8 col-lg-10 col-12 p-4">
-                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">
+<!--                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="text-decoration-none">-->
                   <div class="text-content">
                     <h2 class="title text-white">{{ item.position }}</h2>
                     <div class="caption">Madison, AL, United States</div>
                   </div>
-                </router-link>
+<!--                </router-link>-->
               </div>
 
 
