@@ -1,5 +1,33 @@
 <script setup>
 import image3 from "@/assets/arch.webp"
+
+const software = [
+  {
+    title: 'OSH Connect',
+    heading: 'OpenSensorHub Toolkit',
+    description: 'A pure JavaScript toolkit for visualizing OSH data and building custom sensor monitoring applications. Integrates with Leaflet, OpenLayers, Cesium, Chart.js, and more.',
+    links: [
+      { text: 'View Docs', url: 'https://opensensorhub.github.io/osh-js/latest/site/guide/' }
+    ]
+  },
+  {
+    title: 'OSH Android',
+    heading: 'OSH Android',
+    description: 'Deploy a complete OSH node on your Android device with native sensor integration. Exposes all device sensors via OGC services, whether built-in or tethered.',
+    links: [
+      { text: 'View Docs', url: 'https://docs.opensensorhub.org/docs/category/android-unfinished' },
+      // { text: 'View on GitHub', url: 'https://github.com/opensensorhub/osh-android' }
+    ]
+  },
+  {
+    title: 'SensorML Process Engine',
+    heading: 'SensorML Process Execution Engine',
+    description: 'Execute SensorML process chains on-demand, integrating AI/ML/CV and geoprocessing as orchestratable workflows. Runs locally or distributed across Edge, Fog, and Cloud nodes.',
+    links: [
+      { text: 'View Docs', url: 'https://docs.opensensorhub.org/dev/core-apis/sensorml-api/' }
+    ]
+  }
+]
 </script>
 
 <template>
@@ -13,49 +41,27 @@ import image3 from "@/assets/arch.webp"
 
     <div class="card main-card p-4 mt-4">
       <b-tabs content-class="mt-3" nav-class="tab-nav" justified>
-        <b-tab title="OSH Connect" active>
+        <b-tab
+          v-for="(item, index) in software"
+          :key="item.title"
+          :title="item.title"
+          :active="index === 0"
+        >
           <div class="tab-content-wrapper">
-            <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
+            <img :src="image3" :alt="item.heading" class="img-fluid tab-image" loading="lazy">
             <div class="text-content">
-              <h2>OpenSensorHub Toolkit</h2>
-              <p>
-                OpenSensorHub Web Client toolkit allows you to visualize data from OSH. It provides the necessary tools to build your own web application for monitoring your sensors. It is pure javascript framework and does not require third party libraries. A set of external libraries is also available to easily build some part of your views such as Leaflet, OpenLayer, Cesium, Chart.js etc..
-              </p>
+              <h2>{{ item.heading }}</h2>
+              <p>{{ item.description }}</p>
               <div class="d-flex gap-2 mt-5">
-                <a href="https://opensensorhub.github.io/osh-js/latest/site/guide/" class="btn white-button me-2" target="_blank">View Docs</a>
-              </div>
-            </div>
-          </div>
-        </b-tab>
-
-        <b-tab title="OSH Android">
-          <div class="tab-content-wrapper">
-            <img :src="image3" alt="OSH Web Client Toolkit" class="img-fluid tab-image" loading="lazy">
-            <div class="text-content">
-              <h2>OSH Android</h2>
-              <p>
-                OSH is capable of running on the lightest Arduino or Raspberry Pi platforms, all the way to massive Cloud based clusters.
-                There is also an OSH Android Node application that deploys an entire OSH node on your Android device, with native integration
-                that exposes all sensors within your Android device, or tethered to your device, via OGC sensor services.
-              </p>
-              <div class="d-flex gap-2 mt-5">
-                <a href="https://docs.opensensorhub.org/dev/android/" class="btn white-button me-2" target="_blank">View Docs</a>
-                <a href="https://github.com/opensensorhub/osh-android" class="btn white-button" target="_blank">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </b-tab>
-
-        <b-tab title="SensorML Process Engine">
-          <div class="tab-content-wrapper">
-            <img :src="image3" alt="SensorML Process Execution Engine" class="img-fluid tab-image" loading="lazy">
-            <div class="text-content">
-              <h2>SensorML Process Execution Engine</h2>
-              <p>
-                In addition to describing sensor systems, SensorML provides a means of describing processes and process chains that can be executed on-demand using one or more execution engines. This enables the integration of AI/ML/CV and advanced geoprocessing libraries as atomic processes, and as orchestratable processing chains. This is what Botts-Inc built the SensorML Process Execution Engine for. This engine can be configured to operate within a given OSH node in the field, or to process across a distributed across a network of OSH nodes (from the Edge to the Fog to the Cloud) to ensure that computationally intensive processes are executed in the most advantageous location for mission critical applications.
-              </p>
-              <div class="d-flex gap-2 mt-5">
-                <a href="https://docs.opensensorhub.org/dev/core-apis/sensorml-api/" class="btn white-button me-2" target="_blank">View Docs</a>
+                <a
+                  v-for="link in item.links"
+                  :key="link.url"
+                  :href="link.url"
+                  class="btn white-button me-2"
+                  target="_blank"
+                >
+                  {{ link.text }}
+                </a>
               </div>
             </div>
           </div>
@@ -66,20 +72,17 @@ import image3 from "@/assets/arch.webp"
 </template>
 
 <style scoped>
-.main-card{
+.main-card {
   background-color: rgba(169, 9, 9, 0.16);
-  border-color:  rgba(169, 9, 9, 0.16);
-  opacity: 100%;
+  border-color: rgba(169, 9, 9, 0.16);
 }
 
-.main-card:hover{
+.main-card:hover {
   transform: translateY(-5px);
 }
 
-
 .tab-content-wrapper {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -94,18 +97,20 @@ import image3 from "@/assets/arch.webp"
   width: 55%;
   color: #fff;
 }
-p{
+
+p {
   text-align: left;
   font-size: 1.25rem;
 }
-a{
+
+a {
   font-family: var(--font-primary);
   font-size: 1.25rem;
 }
-@media only screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
   .tab-content-wrapper {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
@@ -113,10 +118,12 @@ a{
     max-width: 100%;
     margin-bottom: 15px;
   }
+
   .text-content {
     width: 100%;
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
 }
@@ -138,7 +145,6 @@ a{
 
 .main-card .nav-tabs .nav-link:hover {
   color: #fff;
-  border: none;
 }
 
 .main-card .nav-tabs .nav-link.active {
