@@ -1,20 +1,22 @@
 <script setup>
-import JobTitles from "@/components/careers/JobTitles.vue";
+import JobTitles from "@/_components/careers/JobTitles.vue";
 </script>
 
 <template>
-  <div>
-
-    <div class="row py-5">
-      <div class="text-center justify-content-center align-content-center text-white">
-        <h1>Careers at Botts</h1>
+  <div class="page-content">
+    <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col-12 text-center text-white">
+          <h1>Careers at GeoRobotix</h1>
+        </div>
       </div>
-      <JobTitles/>
     </div>
-
+    <JobTitles/>
   </div>
 </template>
 
 <style scoped>
-
+.page-content {
+  padding-top: 80px;
+}
 </style>

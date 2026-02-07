@@ -31,12 +31,6 @@ const positions = [
 ];
 </script>
 
-<!--    <p>
-                    Team player who takes initiative. Interested in new challenges. Customer-focused. Committed to
-                    operational excellence.
-                  </p>
-                  -->
-
 <template>
   <div class="container-fluid">
     <div class="card p-4 card-content">
@@ -60,20 +54,16 @@ const positions = [
 
               <div class="col-md-4 col-lg-2 col-12 p-4">
                 <p class="d-inline-block gap-3">
-                  <button
-                      class="btn white-button"
-                      type="button"
-                      :data-bs-toggle="'collapse'"
-                      :data-bs-target="'#collapseJobDesc' + index"
-                      aria-expanded="false"
-                      :aria-controls="'collapseJobDesc' + index"
+                  <b-button
+                      class="white-button"
+                      v-b-toggle="'collapseJobDesc' + index"
                   >
                     <i class="bi bi-arrow-down" style="color: white; font-size: 1.5rem"></i>
-                  </button>
+                  </b-button>
                 </p>
               </div>
 
-              <div class="collapse" :id="'collapseJobDesc' + index">
+              <b-collapse :id="'collapseJobDesc' + index">
                 <div class="card card-body collapse-text">
 
 
@@ -87,15 +77,10 @@ const positions = [
 
 
                 </div>
-              </div>
+              </b-collapse>
 
-<!--              <div class="button-apply text-start">-->
-<!--                <router-link :to="{ name: 'JobApplication', params: { position: item.position } }" class="btn text-decoration-none white-button">-->
-<!--                  Apply Here!-->
-<!--                </router-link>-->
-<!--              </div>-->
               <div class="button-apply text-start">
-                <a href="mailto:work@botts-inc.com" class="btn white-button">
+                <a href="mailto:work@georobotix.us" class="btn white-button">
                   Apply Here!
                 </a>
               </div>

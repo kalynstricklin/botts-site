@@ -1,5 +1,5 @@
 <script setup>
-import headerImage from "@/assets/generic-cover-12-web.jpg";
+import headerImage from "@/assets/home2.jpg";
 // import {onMounted} from "vue";
 
 

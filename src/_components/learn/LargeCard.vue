@@ -7,50 +7,16 @@
     <div class="card p-4">
       <div class="row">
         <div class="col-12">
-
-          <a href="https://opensensorhub.org/documentation/" class="text-decoration-none" target="_blank">
-            <div class="card card-content">
-              <div class="text-class">
-                <div class="row px-lg-5 px-3 py-4">
-                  <div class="col-lg-10 col-12">
-                    <div class="text-content">
-                      <h2 class="title text-white">Documentation</h2>
-                      <p>Access technical documentation, user guides, and best practices to maximize OSH’s capabilities.</p>
-                    </div>
-                  </div>
-
-<!--                  <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
-<!--                    <a href="https://opensensorhub.org/documentation/" class="text-white" target="_blank">-->
-<!--                      <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
-<!--                    </a>-->
-<!--                  </div>-->
-                  <hr/>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-
-        <div class="col-12">
           <a href="https://docs.opensensorhub.org/" class="text-decoration-none" target="_blank">
             <div class="card card-content">
               <div class="text-class">
                 <div class="row px-lg-5 px-3 py-4">
-
                   <div class="col-lg-9 col-12">
                     <div class="text-content">
                       <h2 class="title text-white">Developer Center</h2>
                       <p>Explore API references, SDKs, and development tools to build and integrate OSH solutions.</p>
                     </div>
                   </div>
-
-    <!--              <div class="col-lg-3 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
-    <!--                <a href="https://docs.opensensorhub.org/" class="text-white" target="_blank">-->
-    <!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
-    <!--                </a>-->
-    <!--              </div>-->
-
                   <hr/>
                 </div>
               </div>
@@ -69,12 +35,6 @@
                         <p>View presentations from events, and technical discussions about the latest innovations from OSH.</p>
                       </div>
                   </div>
-
-    <!--              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
-    <!--                <a href="/presentation" class="text-white" target="_blank">-->
-    <!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
-    <!--                </a>-->
-    <!--              </div>-->
                   <hr/>
                 </div>
               </div>
@@ -93,13 +53,6 @@
                       <p>Join discussions, ask questions, and collaborate with other users, developers, and experts in the OSH community.</p>
                     </div>
                   </div>
-
-<!--              <div class="col-lg-2 col-12 text-lg-end text-start mt-2 mt-lg-0">-->
-<!--                <a href="#" class="text-white" target="_blank">-->
-<!--                  <i class="bi bi-arrow-down-right" style="font-size: 2rem"></i>-->
-<!--                </a>-->
-<!--              </div>-->
-
                   <hr/>
                 </div>
               </div>
@@ -113,8 +66,8 @@
 
 <style scoped>
 .card {
-  background-color: rgba(112, 112, 112, 0.2);
-  border-color: rgba(112, 112, 112, 0.2);
+  background-color: rgba(169, 9, 9, 0.16);
+  border-color:  rgba(169, 9, 9, 0.16);
   opacity: 100%;
 }
 .card-content{
@@ -142,9 +95,6 @@ hr {
 }
 
 @media only screen and (max-width: 480px) {
- /** .title {
-    font-size: 1.35rem;
-  }**/
   p {
     font-size: 0.75rem;
   }

@@ -1,8 +1,7 @@
 <script setup>
-import OurStory from "@/components/company/OurStory.vue";
+import OurStory from "@/_components/company/OurStory.vue";
 import {onMounted} from "vue";
-import WorkAtBotts from "@/components/company/WorkAtBotts.vue";
-// import team from "@/assets/team.webp";
+import WorkHere from "@/_components/company/WorkHere.vue";
 import teamTaiwan from "@/assets/team-taiwan.jpg";
 
 onMounted(() => {
@@ -27,13 +26,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="page-content">
     <section id="story-timeline" class="reveal">
       <OurStory/>
     </section>
 
     <section id="work-at-botts" class="reveal">
-      <WorkAtBotts/>
+      <WorkHere/>
     </section>
 
     <section id="team-pics" class="mb-3 reveal">
@@ -54,39 +53,14 @@ onMounted(() => {
         </div>
       </div>
     </section>
-
-<!--    <section id="leadership" class="reveal">-->
-<!--      <TeamComp/>-->
-<!--    </section>-->
-
-<!--    <section id="team-pics" class="mb-3 reveal">-->
-<!--      <div class="container-fluid">-->
-<!--        <div class="row py-4 m-2">-->
-<!--          <h4 class="gen-orange-title">Team Photos</h4>-->
-<!--        </div>-->
-<!--        <div class="row g-2 justify-content-center">-->
-<!--          <div class="col-12 col-lg-4 col-md-6 col-sm-12">-->
-<!--            <img :src="image1" class="img-fluid rounded">-->
-<!--          </div>-->
-<!--          <div class="col-12 col-lg-4 col-md-6 col-sm-12">-->
-<!--            <img :src="image1" class="img-fluid rounded">-->
-<!--          </div>-->
-<!--          <div class="col-12 col-lg-4 col-md-6 col-sm-12">-->
-<!--            <img :src="image1" class="img-fluid rounded">-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-
-
-<!--    <section id="test-scroller" class="py-3 reveal">-->
-<!--      <TestimonialScroller/>-->
-<!--    </section>-->
-
   </div>
 </template>
 
 <style scoped>
+.page-content {
+  padding-top: 80px;
+}
+
 .reveal{
   position: relative;
   transform: translateY(10px);
