@@ -3,20 +3,42 @@ import JobTitles from "@/_components/careers/JobTitles.vue";
 </script>
 
 <template>
-  <div class="page-content">
+  <div class="careers-page">
     <div class="container-fluid">
-      <div class="row py-5">
-        <div class="col-12 text-center text-white">
+      <div class="page-header text-center mb-5 text-white">
           <h1>Careers at GeoRobotix</h1>
-        </div>
       </div>
+      <JobTitles />
     </div>
-    <JobTitles/>
   </div>
 </template>
 
 <style scoped>
-.page-content {
-  padding-top: 80px;
+.careers-page {
+  min-height: 100vh;
+  padding: 20px 20px;
+}
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+}
+@media (max-width: 480px) {
+  .careers-page {
+    padding: 40px 15px;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
 }
 </style>
