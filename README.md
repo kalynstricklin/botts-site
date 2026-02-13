@@ -1,4 +1,4 @@
-# botts-site
+# georobotix-site
 
 ## Project setup
 ```

@@ -6,7 +6,7 @@
 <div class="container-fluid">
   <div class="row py-5">
     <div class="text-center justify-content-center align-content-center text-white">
-      <span class="" style="color: lightgray">WORK AT BOTTS</span>
+      <span class="" style="color: lightgray">WORK AT GEOROBOTIX</span>
 
       <h1 class="mt-3">Your next challenge awaits!</h1>
 

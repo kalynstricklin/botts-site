@@ -2,22 +2,8 @@
 import sweIntro2010 from "@/assets/presentationImg/swe-intro2010.png";
 import sweSemantics from "@/assets/presentationImg/sweSemantics.png";
 import sensorMl2009 from "@/assets/presentationImg/sensorml2009.png";
-// import introOSHConSys2023 from "@/assets/presentationImg/introOSHConSys2023.png";
-// import processing2023 from "@/assets/presentationImg/processing2023.png";
 
 const presentationsList = [
-  // {
-  //   link: "",
-  //   image: processing2023,
-  //   title: "SensorML and Processing (2024)",
-  //   desc: "Updated presentation on SensorML presented at the University of Alabama in Huntsville (UAH) Hackathon.",
-  // },
-  // {
-  //   link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
-  //   image: introOSHConSys2023,
-  //   title: "Intro to OSH and Connected Systems (2023)",
-  //   desc: "Introduction to OpenSensorHub presented at 'Security, Sensors, & Simulations: Pushing the Limits of Cloud Computing' event at UAH Invention to Innovation Center.",
-  // },
   {
     link: "https://docs.google.com/presentation/d/1La3bzu2t4zcVzyXDdafja8KiDsG-zgWnw6rDs-DcYwk/edit#slide=id.p1",
     image: sweIntro2010,
@@ -96,13 +82,5 @@ p{
 
 .orange-card:hover{
   transform: translateY(-5px);
-}
-
-
-@media (max-width: 768px) {
-}
-
-@media screen and (max-width: 480px) {
-
 }
 </style>

@@ -1,10 +1,9 @@
 <script setup>
 
 import {onMounted} from "vue";
-import LargeCard from "@/components/learn/LargeCard.vue";
-import OSHLaptop from "@/components/learn/OSHLaptop.vue";
-import ProjectComp from "@/components/learn/SoftwareCards.vue";
-import GeoRobotix from "@/components/learn/GeoRobotix.vue";
+import LargeCard from "@/_components/learn/LargeCard.vue";
+import OSHLaptop from "@/_components/learn/OSHLaptop.vue";
+import SoftwareCards from "@/_components/learn/SoftwareCards.vue";
 
 onMounted(() => {
   function reveal() {
@@ -28,10 +27,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="">
-    <div class="row py-5">
-      <div class="text-center justify-content-center align-content-center text-white">
-        <h1>Learn to Build with the OpenSensorHub Platform</h1>
+  <div class="page-content">
+    <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col-12 text-center text-white">
+          <h1>Learn to Build with the OpenSensorHub Platform</h1>
+        </div>
       </div>
     </div>
 
@@ -44,16 +45,15 @@ onMounted(() => {
     </section>
 
     <section class="py-3 reveal">
-      <ProjectComp/>
-    </section>
-
-    <section class="py-3 reveal">
-      <GeoRobotix/>
+      <SoftwareCards/>
     </section>
   </div>
 </template>
 
 <style scoped>
+.page-content {
+  padding-top: 80px;
+}
 
 .reveal{
   position: relative;

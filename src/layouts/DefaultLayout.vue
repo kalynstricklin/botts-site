@@ -1,10 +1,10 @@
 <script>
-import BottsHeader from '@/components/BottsHeader.vue'
-import BottsFooter from '@/components/BottsFooter.vue'
+import GeoRobotixHeader from '@/_components/GeoRobotixHeader.vue'
+import GeoRobotixFooter from '@/_components/GeoRobotixFooter.vue'
 export default {
   components: {
-    BottsHeader,
-    BottsFooter
+    GeoRobotixHeader: GeoRobotixHeader,
+    GeoRobotixFooter: GeoRobotixFooter
   },
 };
 
@@ -12,9 +12,9 @@ export default {
 
 <template>
   <div>
-    <BottsHeader/>
+    <GeoRobotixHeader/>
     <router-view/>
-    <BottsFooter/>
+    <GeoRobotixFooter/>
 
   </div>
 </template>

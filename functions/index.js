@@ -22,7 +22,7 @@ const transport = nodemailer.createTransport({
 
 const sender = {
     address: "hello@demomailtrap.com",
-    name: "Botts HR Team",
+    name: "GeoRobotix HR Team",
 };
 
 const recipients = ["kalynstricklin@botts-inc.com"];
@@ -42,24 +42,43 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
         res.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
         try {
+            const escapeHtml = (str) => {
+                if (!str) return '';
+                return String(str)
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;');
+            };
+
             const mailOptions = {
                 from: sender,
                 to: recipients,
-                subject: "***New Job Application",
+                subject: `New Job Application - ${escapeHtml(req.body.position)}`,
                 html: `
-                    <h3>New Job Application for ${req.body.position}</h3>
-                    <p><strong>Name:</strong> ${req.body.legalName}</p>
-                    <p><strong>Preferred Name:</strong> ${req.body.preferredName}</p>
-                    <p><strong>Email:</strong> ${req.body.email}</p>
-                    <p><strong>Phone Number:</strong> ${req.body.phoneNumber}</p>
-                    <p><strong>Current Role:</strong> ${req.body.role}</p>
-                    <p><strong>Years of Experience:</strong> ${req.body.yrsExperience}</p>
-                    <p><strong>Skills:</strong> ${req.body.skills}</p>
-                    <p><strong>Portfolio:</strong> <a href="${req.body.portfolioUrl}" target="_blank">${req.body.portfolioUrl}</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="${req.body.linkedInProfile}" target="_blank">${req.body.linkedInProfile}</a></p>
-                    <p><strong>Additional Information:</strong> ${req.body.message}</p>
-                `
+                    <h3>New Job Application for ${escapeHtml(req.body.position)}</h3>
+                    <p><strong>Name:</strong> ${escapeHtml(req.body.legalName)}</p>
+                    <p><strong>Preferred Name:</strong> ${escapeHtml(req.body.preferredName)}</p>
+                    <p><strong>Email:</strong> ${escapeHtml(req.body.email)}</p>
+                    <p><strong>Phone Number:</strong> ${escapeHtml(req.body.phoneNumber)}</p>
+                    <p><strong>Current Role:</strong> ${escapeHtml(req.body.role)}</p>
+                    <p><strong>Years of Experience:</strong> ${escapeHtml(req.body.yrsExperience)}</p>
+                    <p><strong>Skills:</strong> ${escapeHtml(req.body.skills)}</p>
+                    <p><strong>Portfolio:</strong> <a href="${escapeHtml(req.body.portfolioUrl)}" target="_blank">${escapeHtml(req.body.portfolioUrl)}</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="${escapeHtml(req.body.linkedInProfile)}" target="_blank">${escapeHtml(req.body.linkedInProfile)}</a></p>
+                    <p><strong>Additional Information:</strong> ${escapeHtml(req.body.message)}</p>
+                `,
+                attachments: []
             };
+
+            if (req.body.resume && req.body.resume.content) {
+                mailOptions.attachments.push({
+                    filename: req.body.resume.filename,
+                    content: req.body.resume.content,
+                    encoding: 'base64',
+                    contentType: req.body.resume.contentType
+                });
+            }
 
             await transport.sendMail(mailOptions);
             res.status(200).json({ success: true, message: "Email sent successfully" });

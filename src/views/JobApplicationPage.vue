@@ -51,8 +51,27 @@ const dragFile = (event) => {
   formDetails.value.resume = event.dataTransfer.files[0];
 };
 
+const fileToBase64 = (file) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+};
 
 const sendMail = async () => {
+  let resumeData = null;
+
+  if (formDetails.value.resume) {
+    const base64 = await fileToBase64(formDetails.value.resume);
+    resumeData = {
+      filename: formDetails.value.resume.name,
+      content: base64.split(',')[1],
+      contentType: formDetails.value.resume.type
+    };
+  }
+
   const applicationData = {
     position: position.value,
     legalName: formDetails.value.legalName,
@@ -65,6 +84,7 @@ const sendMail = async () => {
     linkedInProfile: formDetails.value.linkedInProfile,
     skills: selectedSkills.value.join(","),
     message: formDetails.value.message,
+    resume: resumeData
   };
 
   const url = "https://us-central1-stock-track499.cloudfunctions.net/sendEmail";
@@ -111,8 +131,9 @@ const resetForm = () => {
 </script>
 
 <template>
-  <div class="container">
-    <div class="form-container">
+  <div class="page-content">
+    <div class="container">
+      <div class="form-container">
 
       <div class="form-header">
         <h2>{{ position }}</h2>
@@ -184,11 +205,17 @@ const resetForm = () => {
 
           <div class="col-md-12">
             <label class="form-label">Resume Upload</label>
-            <div class="file-upload" id="resumeUpload" @click="triggerFileUpload" @drop="dragFile" @dragover.prevent>
+            <div class="file-upload" :class="{ 'file-selected': formDetails.resume }" id="resumeUpload" @click="triggerFileUpload" @drop="dragFile" @dragover.prevent>
               <input type="file" id="resume" class="d-none" accept=".pdf,.doc,.docx" @change="uploadFile">
               <div class="upload-content">
-                <p class="mb-1">Drag and drop your resume here</p>
-                <p class="text-muted small">or click to browse (PDF, DOC, DOCX)</p>
+                <template v-if="formDetails.resume">
+                  <p class="mb-1 file-name">{{ formDetails.resume.name }}</p>
+                  <p class="text-muted small">Click to change file</p>
+                </template>
+                <template v-else>
+                  <p class="mb-1">Drag and drop your resume here</p>
+                  <p class="text-muted small">or click to browse (PDF, DOC, DOCX)</p>
+                </template>
               </div>
             </div>
           </div>
@@ -223,11 +250,15 @@ const resetForm = () => {
           </div>
         </div>
       </form>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.page-content {
+  padding-top: 80px;
+}
 
 .form-header {
   text-align: center;
@@ -242,16 +273,17 @@ const resetForm = () => {
   font-family: var(--font-secondary);
 }
 
-.form-container{
+.form-container {
   max-width: 900px;
   margin: 3rem auto;
   padding: 2.5rem;
+  background-color: white;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   text-align: left;
 }
 
-.submit-btn{
+.submit-btn {
   color: #fff;
   background-color: #171b24;
   border-radius: 25px;
@@ -261,20 +293,11 @@ const resetForm = () => {
   letter-spacing: var(--letterSpacingWide);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
   background-color: var(--primary-color);
   transition-duration: .25s;
   transition-timing-function: ease-in-out;
-
-}
-.form-container{
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2.5rem;
-  background-color: white;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  text-align: left;
 }
 
 
@@ -339,6 +362,16 @@ const resetForm = () => {
 .file-upload:hover {
   border-color: var(--primary-color);
   background-color: rgb(37 99 235 / 0.05);
+}
+
+.file-upload.file-selected {
+  border-color: var(--success-color);
+  background-color: rgb(5 150 105 / 0.05);
+}
+
+.file-name {
+  color: var(--success-color);
+  font-weight: 600;
 }
 
 @keyframes fadeIn {

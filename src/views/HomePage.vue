@@ -1,12 +1,7 @@
 <script setup>
-import HomeImage from "@/components/homepage/HomeImage.vue";
+import HomeImage from "@/_components/homepage/HomeImage.vue";
 import {onMounted} from "vue";
-// import TestimonialScroller from "@/components/homepage/TestimonialScroller.vue";
-import ServicesCards from "@/components/homepage/ServicesCards.vue";
-import MikeTestimonial from "@/components/homepage/MikeTestimonial.vue";
-
-
-// import teamImg from "@/assets/team.webp"
+import ServicesCards from "@/_components/homepage/ServicesCards.vue";
 
 onMounted(() => {
   function reveal() {
@@ -30,28 +25,22 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <section id="header-section" class="mt-5 reveal">
+  <div class="page-content">
+    <section id="header-section" class="reveal">
       <HomeImage />
     </section>
-
 
     <section id="service-section" class="py-4 reveal">
       <ServicesCards/>
     </section>
-
-<!--    <section id="test-scroller" class="py-3 reveal">-->
-<!--      <TestimonialScroller/>-->
-<!--    </section>-->
-
-    <section id="mike-test" class="">
-      <MikeTestimonial/>
-    </section>
-
   </div>
 </template>
 
 <style scoped>
+.page-content {
+  padding-top: 80px;
+}
+
 .btn{
   border-color: var(--secondary-color);
   color: var(--secondary-color);
@@ -64,23 +53,6 @@ onMounted(() => {
   background-image: linear-gradient(to bottom, var(--primary-color), #000);
   border-color: var(--secondary-color);
 }
-
-/**
-@keyframes enter-animation {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.card-animation {
-  animation: enter-animation 0.6s ease-out forwards;
-}
-**/
 
 .reveal{
   position: relative;
