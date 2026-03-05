@@ -5,7 +5,7 @@
   <header>
     <b-navbar toggleable="lg" type="dark" fixed="top" class="sticky-top">
       <b-navbar-brand href="/">
-        <img class="logo" alt="Botts Logo" src="../assets/logos/geologo.png" />
+        <img class="logo" alt="GeoRobotiX Innovative Research" src="../assets/logos/geologo.png" />
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

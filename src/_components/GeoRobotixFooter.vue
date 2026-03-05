@@ -24,7 +24,7 @@
             <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
               <h6 class="text-uppercase footer-heading">Connect with Us</h6>
               <p>
-                <a href="https://github.com/Botts-Innovative-Research" target="_blank">
+                <a href="https://github.com/georobotix" target="_blank">
                   <b-icon icon="github"></b-icon> Github
                 </a>
               </p>
