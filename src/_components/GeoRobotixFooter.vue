@@ -7,7 +7,7 @@
       <div class="row p-4">
 
         <div class="col-12 col-lg-4 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
-          <img class="footer-logo" alt="GeoRobotix Logo" src="../assets/logos/geologo.png" />
+          <img class="footer-logo" alt="GeoRobotix Logo" src="../assets/logos/GeoLogo.png" />
         </div>
 
         <div class="col-12 col-lg-8 col-md-12">
